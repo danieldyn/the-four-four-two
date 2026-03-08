@@ -1,0 +1,22 @@
+{
+    "name": "lineup-quiz-backend",
+    "version": "1.0.0",
+    "description": "Football lineup quiz backend",
+    "main": "src/server.js",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "start": "node src/server.js",
+        "prisma:migrate": "prisma migrate dev",
+        "prisma:generate": "prisma generate",
+        "import:match": "node scripts/importMatch.js"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.0",
+        "prisma": "^5.0.0"
+    }
+}
