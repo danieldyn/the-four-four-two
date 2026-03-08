@@ -1,8 +1,23 @@
 const express = require("express")
 const router = express.Router()
 
-router.get("/", (req, res) => {
-  res.json({ message: "matches endpoint" })
+const prisma = require("../db")
+
+router.get("/:id", async (req, res) => {
+  const id = parseInt(req.params.id)
+
+  const match = await prisma.match.findUnique({
+    where: { id },
+    include: {
+      lineups: {
+        include: {
+          player: true
+        }
+      }
+    }
+  })
+
+  res.json(match)
 })
 
 module.exports = router

@@ -1,26 +1,25 @@
 const prisma = require("../db")
 
 async function checkGuess(matchId, guess) {
-  const players = await prisma.lineup.findMany({
-    where: { matchId, starter: true },
-    include: { player: true }
-  })
 
-  // Accept guesses with inconsistent capitalization or special characters
-  const slug = guess
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+ const players = await prisma.lineup.findMany({
+   where: { matchId, starter: true },
+   include: { player: true }
+ })
 
-  const found = players.find(
-    p => p.player.slug === slug
-  )
+ const found = players.find(
+   p => p.player.slug === guess
+ )
 
-  if (found) {
-    return { result: "correct", player: found.player.lastName }
-  }
+ if (found) {
+   return {
+     result: "correct",
+     player: found.player.lastName,
+     team: found.team
+   }
+ }
 
-  return { result: "incorrect" }
+ return { result: "incorrect" }
 }
 
 module.exports = { checkGuess }

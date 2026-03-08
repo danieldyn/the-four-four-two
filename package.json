@@ -1,0 +1,31 @@
+{
+  "name": "the-four-four-two",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Football Starting 11 Quiz Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "studio": "npx prisma studio --schema backend/prisma/schema.prisma",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "reset-db": "cd backend && npx prisma migrate reset --force && npm run import:match",
+    "dev:fresh": "npm run reset-db && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldyn/the-four-four-two.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/danieldyn/the-four-four-two/issues"
+  },
+  "homepage": "https://github.com/danieldyn/the-four-four-two#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
