@@ -6,10 +6,10 @@ export default function GuessHistory({ guesses }) {
     <div style={{ marginTop: "1rem" }}>
       <h3>Guesses:</h3>
       <ul>
-        {guesses.map((g, i) => (
-          <li key={i}>
-            {g.guess} — {g.result === "correct" ? "✔" : "✖"}
-          </li>
+        {guesses.map(g => (
+          <div key={g.guess}>
+            {g.display} {g.result === "correct" ? "✔" : "✖"}
+          </div>
         ))}
       </ul>
     </div>

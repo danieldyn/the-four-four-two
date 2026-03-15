@@ -6,7 +6,8 @@ export default function GuessInput({ matchId, addGuess }) {
 
   const handleSubmit = async e => {
     e.preventDefault()
-    if (!value) return
+    if (!value)
+      return
 
     // Normalise all user input before sending
     const normalisedGuess = slugify(value)
@@ -19,10 +20,11 @@ export default function GuessInput({ matchId, addGuess }) {
 
     const data = await res.json()
 
-    addGuess(value, data.result, {
+    addGuess(data.player.slug, data.result, {
       player: data.player,
       team: data.team
     })
+
     setValue("")
   }
 

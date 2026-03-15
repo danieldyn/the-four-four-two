@@ -1,29 +1,54 @@
-export default function LineupGrid({ revealed }) {
+import { groupLineup } from "../utils/formation"
 
-  const france = revealed.filter(p => p.team === "France")
-  const italy = revealed.filter(p => p.team === "Italy")
+function Line({ players, guesses, justify = "center" }) {
+  return (
+    <div className="line" style={{ justifyContent: justify }}>
+      {players.map(p => {
+        const guessed = guesses.some(g => g.guess === p.player.slug)
+        return (
+          <div className="player-slot" key={p.id}>
+            {guessed ? p.player.lastName : "?"}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+export default function LineupBoard({ lineup = [], guesses = [] }) {
+  if (!lineup.length) return <div>No lineup data</div>
+
+  const groups = groupLineup(lineup)
 
   return (
-    <div style={{ marginTop: "20px" }}>
+    <div className="pitch">
+      {/* Attack line */}
+      <Line
+        players={groups.attack}
+        guesses={guesses}
+        justify="space-around"
+      />
 
-      <h3>France</h3>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 120px)", gap: "10px" }}>
-        {Array.from({ length: 11 }).map((_, i) => (
-          <div key={i} style={{ border: "1px solid black", padding: "10px", minHeight: "40px" }}>
-            {france[i]?.player || ""}
-          </div>
-        ))}
-      </div>
+      {/* Midfield line */}
+      <Line
+        players={groups.midfield}
+        guesses={guesses}
+        justify="space-around"
+      />
 
-      <h3 style={{ marginTop: "20px" }}>Italy</h3>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 120px)", gap: "10px" }}>
-        {Array.from({ length: 11 }).map((_, i) => (
-          <div key={i} style={{ border: "1px solid black", padding: "10px", minHeight: "40px" }}>
-            {italy[i]?.player || ""}
-          </div>
-        ))}
-      </div>
+      {/* Defence line */}
+      <Line
+        players={groups.defence}
+        guesses={guesses}
+        justify="space-around"
+      />
 
+      {/* Goalkeeper */}
+      <Line
+        players={groups.goalkeeper}
+        guesses={guesses}
+        justify="center"
+      />
     </div>
   )
 }

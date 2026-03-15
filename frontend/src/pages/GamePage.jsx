@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
 import GuessInput from "../components/GuessInput"
 import GuessHistory from "../components/GuessHistory"
-import LineupGrid from "../components/LineupBoard"
+import LineupBoard from "../components/LineupBoard"
+import MatchHeader from "../components/MatchHeader"
 
 export default function GamePage() {
 
   const [match, setMatch] = useState(null)
   const [guesses, setGuesses] = useState([])
-  const [revealed, setRevealed] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:4000/matches/1")
@@ -15,29 +15,39 @@ export default function GamePage() {
       .then(data => setMatch(data))
   }, [])
 
-  const addGuess = (guess, result, playerData) => {
-
-    setGuesses(prev => [...prev, { guess, result }])
-
-    if (result === "correct") {
-      setRevealed(prev => [...prev, playerData])
-    }
+  const addGuess = (slug, result, playerData) => {
+    setGuesses(prev => [...prev, {
+      guess: slug,
+      result,
+      display: playerData.player.lastName
+    }])
   }
 
-  if (!match) return <div>Loading...</div>
+if (!match)
+  return <div>Loading...</div>
 
-  return (
-    <div style={{ padding: "20px" }}>
+const homeLineup = match.lineups.filter(p => p.team === match.homeTeam)
+const awayLineup = match.lineups.filter(p => p.team === match.awayTeam)
 
-      <h2>{match.homeTeam} vs {match.awayTeam}</h2>
-      <p>{match.competition}</p>
+return (
+  <div style={{ padding: "20px" }}>
+    <MatchHeader match={match} />
 
-      <GuessInput matchId={match.id} addGuess={addGuess} />
+    <div style={{ display: "flex", gap: "40px" }}>
+      <div>
+        <h2>{match.homeTeam}</h2>
+          <LineupBoard lineup={homeLineup} guesses={guesses} />
+      </div>
 
-      <GuessHistory guesses={guesses} />
-
-      <LineupGrid revealed={revealed} />
-
+      <div>
+        <h2>{match.awayTeam}</h2>
+          <LineupBoard lineup={awayLineup} guesses={guesses} />
+      </div>
     </div>
-  )
+
+    <GuessInput matchId={match.id} addGuess={addGuess} />
+
+    <GuessHistory guesses={guesses} />
+  </div>
+)
 }
