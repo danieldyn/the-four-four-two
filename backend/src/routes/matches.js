@@ -1,7 +1,8 @@
-const express = require("express")
-const router = express.Router()
+// backend/routes/matches.js
+import express from "express"
+import prisma from "../db.js"
 
-const prisma = require("../db")
+const router = express.Router()
 
 router.get("/:id", async (req, res) => {
   const id = parseInt(req.params.id)
@@ -20,4 +21,4 @@ router.get("/:id", async (req, res) => {
   res.json(match)
 })
 
-module.exports = router
+export default router

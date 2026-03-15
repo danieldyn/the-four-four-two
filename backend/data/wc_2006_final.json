@@ -1,0 +1,36 @@
+{
+  "homeTeam": "France",
+  "awayTeam": "Italy",
+  "competition": "World Cup Final - 2006",
+  "venue": "Olympiastadion",
+  "date": "2006-07-09",
+  "score": "1-1",
+
+  "homeLineup": [
+    {"number":16,"name":"Fabien Barthez","position":"GK"},
+    {"number":19,"name":"Willy Sagnol","position":"RB"},
+    {"number":15,"name":"Lilian Thuram","position":"CB"},
+    {"number":5,"name":"William Gallas","position":"CB"},
+    {"number":3,"name":"Eric Abidal","position":"LB"},
+    {"number":4,"name":"Patrick Vieira","position":"CM"},
+    {"number":6,"name":"Claude Makelele","position":"CM"},
+    {"number":10,"name":"Zinedine Zidane","position":"AM"},
+    {"number":7,"name":"Franck Ribery","position":"RW"},
+    {"number":22,"name":"Florent Malouda","position":"LW"},
+    {"number":12,"name":"Thierry Henry","position":"ST"}
+  ],
+
+  "awayLineup": [
+    {"number":1,"name":"Gianluigi Buffon","position":"GK"},
+    {"number":19,"name":"Gianluca Zambrotta","position":"RB"},
+    {"number":23,"name":"Marco Materazzi","position":"CB"},
+    {"number":5,"name":"Fabio Cannavaro","position":"CB"},
+    {"number":3,"name":"Fabio Grosso","position":"LB"},
+    {"number":8,"name":"Gennaro Gattuso","position":"CM"},
+    {"number":21,"name":"Andrea Pirlo","position":"CM"},
+    {"number":20,"name":"Simone Perrotta","position":"LM"},
+    {"number":16,"name":"Mauro Camoranesi","position":"RM"},
+    {"number":10,"name":"Francesco Totti","position":"SS"},
+    {"number":9,"name":"Luca Toni","position":"ST"}
+  ]
+}
