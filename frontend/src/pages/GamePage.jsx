@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import GuessInput from "../components/GuessInput"
-import GuessHistory from "../components/GuessHistory"
 import LineupBoard from "../components/LineupBoard"
 import MatchHeader from "../components/MatchHeader"
 
@@ -23,31 +22,37 @@ export default function GamePage() {
     }])
   }
 
-if (!match)
-  return <div>Loading...</div>
+  if (!match)
+    return <div>Loading...</div>
 
-const homeLineup = match.lineups.filter(p => p.team === match.homeTeam)
-const awayLineup = match.lineups.filter(p => p.team === match.awayTeam)
+  const homeLineup = match.lineups.filter(p => p.team === match.homeTeam)
+  const awayLineup = match.lineups.filter(p => p.team === match.awayTeam)
 
-return (
-  <div style={{ padding: "20px" }}>
-    <MatchHeader match={match} />
+  return (
+    <div className="page">
+      <div className="container">
+        <MatchHeader match={match} />
 
-    <div style={{ display: "flex", gap: "40px" }}>
-      <div>
-        <h2>{match.homeTeam}</h2>
-          <LineupBoard lineup={homeLineup} guesses={guesses} />
-      </div>
+        <div className="pitches">
+          <div>
+            <h2>{match.homeTeam}</h2>
+            <LineupBoard
+              lineup={homeLineup}
+              guesses={guesses}
+            />
+          </div>
 
-      <div>
-        <h2>{match.awayTeam}</h2>
-          <LineupBoard lineup={awayLineup} guesses={guesses} />
+          <div>
+            <h2>{match.awayTeam}</h2>
+            <LineupBoard
+              lineup={awayLineup}
+              guesses={guesses}
+            />
+          </div>
+        </div>
+
+        <GuessInput matchId={match.id} addGuess={addGuess} />
       </div>
     </div>
-
-    <GuessInput matchId={match.id} addGuess={addGuess} />
-
-    <GuessHistory guesses={guesses} />
-  </div>
-)
+  )
 }

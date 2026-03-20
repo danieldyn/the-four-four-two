@@ -1,8 +1,8 @@
 export default function MatchHeader({ match }) {
   return (
     <div>
-      <h1>{match.homeTeam} vs {match.awayTeam}</h1>
-      <p>{match.competition} — {match.venue}</p>
+      <h1>The Four-Four-Two</h1>
+      <h3>{match.homeTeam} vs {match.awayTeam}, {match.competition} -- {match.venue}</h3>
     </div>
   )
 }

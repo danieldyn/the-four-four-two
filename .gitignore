@@ -12,7 +12,6 @@ yarn.lock
 
 # Prisma
 backend/prisma/dev.db*
-backend/prisma/migrations/*
 backend/prisma/.env
 
 # Vite, React, Frontend

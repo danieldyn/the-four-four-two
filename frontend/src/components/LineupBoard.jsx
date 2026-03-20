@@ -1,54 +1,39 @@
-import { groupLineup } from "../utils/formation"
-
-function Line({ players, guesses, justify = "center" }) {
-  return (
-    <div className="line" style={{ justifyContent: justify }}>
-      {players.map(p => {
-        const guessed = guesses.some(g => g.guess === p.player.slug)
-        return (
-          <div className="player-slot" key={p.id}>
-            {guessed ? p.player.lastName : "?"}
-          </div>
-        )
-      })}
-    </div>
-  )
-}
+import { mapLineupToPositions } from "../utils/formation"
 
 export default function LineupBoard({ lineup = [], guesses = [] }) {
-  if (!lineup.length) return <div>No lineup data</div>
+  if (!lineup.length)
+    return null
 
-  const groups = groupLineup(lineup)
+  const positioned = mapLineupToPositions(lineup)
 
   return (
     <div className="pitch">
-      {/* Attack line */}
-      <Line
-        players={groups.attack}
-        guesses={guesses}
-        justify="space-around"
-      />
+      {positioned.map(p => {
+        const guessed = guesses.some(g => g.guess === p.player.slug)
 
-      {/* Midfield line */}
-      <Line
-        players={groups.midfield}
-        guesses={guesses}
-        justify="space-around"
-      />
+        return (
+          <div
+            key={p.id}
+            className="player-wrapper"
+            style={{
+              position: "absolute",
+              left: `${p.x}%`,
+              top: `${p.y}%`,
+              transform: "translate(-50%, -50%)"
+            }}
+          >
+            {guessed && (
+              <div className="player-name">
+                {p.player.lastName}
+              </div>
+            )}
 
-      {/* Defence line */}
-      <Line
-        players={groups.defence}
-        guesses={guesses}
-        justify="space-around"
-      />
-
-      {/* Goalkeeper */}
-      <Line
-        players={groups.goalkeeper}
-        guesses={guesses}
-        justify="center"
-      />
+            <div className="player-slot">
+              {p.shirtNumber}
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
