@@ -24,10 +24,85 @@ input {
   font-weight: bold;
 }
 
+/* Main Page Header */
+.game-header {
+  width: 100%;
+  background: #0f2b0f;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.game-title {
+  margin: 0;
+}
+
+.home-button {
+  padding: 8px 16px;
+  background: #2e7d32;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: #1b5e20;
+}
+
+/* Main layout */
+.game-page {
+  min-height: 100vh;
+  background: linear-gradient(#0b1d0b, #123d12);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+/* Side panels */
+.side-panel {
+  min-height: 600px;
+}
+
+.left-panel {
+  min-width: none;
+}
+
+.right-panel {
+  min-width: none;
+}
+
+/* Responsiveness enhancement for mobile */
+@media (max-width: 900px) {
+
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-panel {
+    display: none;
+  }
+
+}
+
 /* Main content container */
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 650px;
   text-align: center;
 
   padding: 20px;
@@ -67,7 +142,7 @@ input {
 /* Football pitch */
 .pitch {
   width: 400px;
-  height: 500px;
+  height: 480px;
   background: linear-gradient(#4caf50, #66bb6a);
   border-radius: 12px;
   padding: 20px;

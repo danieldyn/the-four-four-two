@@ -1,14 +1,18 @@
-// backend/routes/matches.js
 import express from "express"
 import prisma from "../db.js"
 
 const router = express.Router()
 
-router.get("/:id", async (req, res) => {
-  const id = parseInt(req.params.id)
+router.get("/random", async (req, res) => {
+  const matches = await prisma.match.findMany({
+    select: { id: true }
+  })
+
+  // This very basic randomiser may be changed later
+  const random = matches[Math.floor(Math.random() * matches.length)]
 
   const match = await prisma.match.findUnique({
-    where: { id },
+    where: { id: random.id },
     include: {
       lineups: {
         include: {
