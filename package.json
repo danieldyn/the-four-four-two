@@ -8,9 +8,9 @@
     "backend": "npm run dev --prefix backend",
     "frontend": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "studio": "npx prisma studio --schema backend/prisma/schema.prisma",
-    "import:match": "node backend/scripts/importMatch.js backend/data/wc_2006_final.json",
-    "reset-db": "cd backend && npx prisma migrate reset --force && cd .. && npm run import:match",
+    "studio": "cd backend && npx prisma studio",
+    "import:match": "node backend/scripts/importMatch.js",
+    "reset-db": "cd backend && npx prisma migrate reset --force && cd ..",
     "dev:fresh": "npm run reset-db && npm run dev"
   },
   "repository": {

@@ -2,6 +2,7 @@
     "name": "lineup-quiz-backend",
     "version": "1.0.0",
     "description": "Football lineup quiz backend",
+    "type": "module",
     "main": "src/server.js",
     "scripts": {
         "dev": "nodemon src/server.js",

@@ -1,16 +1,19 @@
-const { PrismaClient } = require("@prisma/client")
-const prisma = new PrismaClient()
-const fs = require("fs")
+import fs from "fs"
+import prisma from "../src/db.js"
+import slugify from "../utils/slugify.js"
+import splitName from "../utils/splitName.js"
 
-function slugify(name) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-}
-
+/**
+ * Coordinates the JSON match import process, leading to a new entry in the Prisma database.
+ * @param {file} file 
+ */
 async function importMatch(file) {
-  const data = JSON.parse(fs.readFileSync(file))
+  if (!file) {
+    console.error("Please provide a JSON file")
+    process.exit(1)
+  }
+
+  const data = JSON.parse(fs.readFileSync(file, "utf-8"))
 
   const match = await prisma.match.create({
     data: {
@@ -23,36 +26,42 @@ async function importMatch(file) {
     }
   })
 
+  /**
+   * Adds a player to the given team, using a full-name slug to avoid confusion
+   * @param {*} player 
+   * @param {*} team 
+   */
   async function addPlayer(player, team) {
 
-    const lastName = player.name.split(" ").slice(-1)[0]
-    const slug = slugify(lastName)
+  const { firstName, lastName } = splitName(player.name)
 
-    let dbPlayer = await prisma.player.findUnique({
-      where: { slug }
-    })
+  const slug = slugify(player.name)
 
-    if (!dbPlayer) {
-      dbPlayer = await prisma.player.create({
-        data: {
-          firstName: player.name.replace(" " + lastName, ""),
-          lastName,
-          slug
-        }
-      })
-    }
+  let dbPlayer = await prisma.player.findUnique({
+    where: { slug }
+  })
 
-    await prisma.lineup.create({
+  if (!dbPlayer) {
+    dbPlayer = await prisma.player.create({
       data: {
-        matchId: match.id,
-        playerId: dbPlayer.id,
-        team,
-        shirtNumber: player.number,
-        position: player.position,
-        starter: true
+        firstName,
+        lastName,
+        slug
       }
     })
   }
+
+  await prisma.lineup.create({
+    data: {
+      matchId: match.id,
+      playerId: dbPlayer.id,
+      team,
+      shirtNumber: player.number,
+      position: player.position,
+      starter: true
+    }
+  })
+}
 
   for (const p of data.homeLineup) {
     await addPlayer(p, data.homeTeam)
@@ -62,9 +71,15 @@ async function importMatch(file) {
     await addPlayer(p, data.awayTeam)
   }
 
-  console.log("Imported:", match.homeTeam, "vs", match.awayTeam)
+  // Debug message in the terminal
+  console.log(`Imported: ${match.homeTeam} vs ${match.awayTeam}`)
 }
 
-importMatch(process.argv[2])
-  .then(() => process.exit())
+const file = process.argv[2]
 
+importMatch(file)
+  .then(() => process.exit())
+  .catch(err => {
+    console.error(err)
+    process.exit(1)
+  })
