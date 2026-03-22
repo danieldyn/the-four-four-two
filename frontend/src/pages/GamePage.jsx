@@ -25,11 +25,27 @@ export default function GamePage() {
   }, [])
 
   const addGuess = (slug, result, playerData) => {
-    setGuesses(prev => [...prev, {
-      guess: slug,
-      result,
-      display: playerData.player.lastName
-    }])
+    if (result === "correct") {
+      const fullName = playerData.player.firstName + " " + playerData.player.lastName
+
+      setGuesses(prev => [
+        ...prev,
+        {
+          guess: slug,
+          result,
+          display: fullName
+        }
+      ])
+    } else {
+      setGuesses(prev => [
+        ...prev,
+        {
+          guess: slug,
+          result,
+          display: slug
+        }
+      ])
+    }
   }
 
   // Return a basic answer if loading the match fails
@@ -47,7 +63,10 @@ export default function GamePage() {
       <div className="game-layout">
 
         <div className="side-panel left-panel">
-          {/* TODO: Future content */}
+          <GuessInput
+            matchId={match.id}
+            addGuess={addGuess}
+          />
         </div>
 
         <div className="main-content">
@@ -72,17 +91,10 @@ export default function GamePage() {
             </div>
           </div>
 
-          <GuessInput
-            matchId={match.id}
-            addGuess={addGuess}
-          />
-
-          <GuessHistory guesses={guesses} />
-
         </div>
 
         <div className="side-panel right-panel">
-          {/* TODO: Future content */}
+          <GuessHistory guesses={guesses} />
         </div>
 
       </div>

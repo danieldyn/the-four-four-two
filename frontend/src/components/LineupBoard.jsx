@@ -8,6 +8,13 @@ export default function LineupBoard({ lineup = [], guesses = [] }) {
 
   return (
     <div className="pitch">
+      <div className="center-line"></div>
+      <div className="center-circle"></div>
+      <div className="penalty-box top"></div>
+      <div className="penalty-box bottom"></div>
+      <div className="goal-box top"></div>
+      <div className="goal-box bottom"></div>
+
       {positioned.map(p => {
         const guessed = guesses.some(g => g.guess === p.player.slug)
 

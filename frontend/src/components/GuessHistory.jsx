@@ -1,17 +1,24 @@
+/**
+ * 
+ * @param {*} guesses 
+ * @returns A component which contains the player's guess history
+ */
 export default function GuessHistory({ guesses }) {
   if (!guesses.length)
     return null
 
   return (
-    <div style={{ marginTop: "1rem" }}>
-      <h3>Guesses:</h3>
+    <div className="guess-history">
+      <h3>Guesses</h3>
+
       <ul>
-        {guesses.map(g => (
-          <div key={g.guess}>
+        {guesses.map((g, index) => (
+          <li key={index}>
             {g.display} {g.result === "correct" ? "✔" : "✖"}
-          </div>
+          </li>
         ))}
       </ul>
+
     </div>
   )
 }
