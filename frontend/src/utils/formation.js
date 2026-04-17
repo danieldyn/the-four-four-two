@@ -31,15 +31,15 @@ export const positionCoords = {
   CDM: { x: CENTRE_X, y: MID_Y + 5 },
   RDM: { x: RLEFT_X, y: MID_Y + 5 },
 
-  LCM: { x: CLEFT_X, y: MID_Y },
-  RCM: { x: RLEFT_X, y: MID_Y },
+  LCM: { x: CLEFT_X - 3, y: MID_Y },
+  RCM: { x: RLEFT_X + 3, y: MID_Y },
 
   LAM: { x: CLEFT_X, y: AMID_Y },
   CAM: { x: CENTRE_X, y: AMID_Y },
   RAM: { x: RLEFT_X, y: AMID_Y },
 
-  LM: { x: LEFT_X, y: MID_Y - 5 },
-  RM: { x: RIGHT_X, y: MID_Y - 5 },
+  LM: { x: LEFT_X - 2, y: MID_Y - 5 },
+  RM: { x: RIGHT_X + 2, y: MID_Y - 5 },
 
   /* Attack (includes right-sided second striker) */
   LW: { x: LEFT_X + 5, y: WING_Y },

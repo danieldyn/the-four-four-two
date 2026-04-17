@@ -1,0 +1,74 @@
+/* Animated right-hand side panel containing guesses */
+
+.guess-history {
+  color: white;
+  width: 100%;
+}
+
+.guess-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guess-history li {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.team-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.team-block h4 {
+  text-align: left;
+  font-size: large;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+/* Newly revealed player */
+.player-row.revealed {
+  color: #bbe017;
+}
+
+.shirt-number {
+  width: 25px;
+  text-align: right;
+}
+
+.history-player-name {
+  text-align: right;
+  font-family: monospace;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Reveal animation */
+.player-row.revealed .history-player-name {
+  animation: revealName 0.4s ease forwards;
+}
+
+/* Keyframes */
+@keyframes revealName {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(5px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-2px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}

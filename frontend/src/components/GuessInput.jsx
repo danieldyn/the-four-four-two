@@ -20,10 +20,15 @@ export default function GuessInput({ matchId, addGuess }) {
 
     const data = await res.json()
 
+    if (data.result === "correct") {
     addGuess(data.player.slug, data.result, {
       player: data.player,
       team: data.team
     })
+    } else {
+      // Fallback for wrong user guesses
+      addGuess(normalisedGuess, "wrong", null)
+    }
 
     setValue("")
   }

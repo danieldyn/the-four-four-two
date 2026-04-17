@@ -62,13 +62,6 @@ export default function GamePage() {
 
       <div className="game-layout">
 
-        <div className="side-panel left-panel">
-          <GuessInput
-            matchId={match.id}
-            addGuess={addGuess}
-          />
-        </div>
-
         <div className="main-content">
 
           <MatchHeader match={match} />
@@ -94,7 +87,16 @@ export default function GamePage() {
         </div>
 
         <div className="side-panel right-panel">
-          <GuessHistory guesses={guesses} />
+          <GuessInput
+            matchId={match.id}
+            addGuess={addGuess}
+          />
+
+          <GuessHistory 
+            homeLineup={homeLineup}
+            awayLineup={awayLineup}
+            guesses={guesses}
+          />
         </div>
 
       </div>

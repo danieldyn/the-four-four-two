@@ -1,0 +1,31 @@
+/* Page header design */
+
+.game-header {
+  width: 100%;
+  background: #0f2b0f;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.game-title {
+  margin: 0;
+}
+
+.home-button {
+  padding: 8px 16px;
+  background: #2e7d32;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: #1b5e20;
+}

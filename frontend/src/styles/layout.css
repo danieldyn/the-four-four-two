@@ -1,0 +1,79 @@
+/* Defines only how the page is arranged */
+
+
+/* Main layout */
+.game-page {
+  min-height: 100vh;
+	background: linear-gradient(#0b1d0b, #123d12);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 30px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Side panels */
+.side-panel {
+  min-height: 600px;
+}
+
+.left-panel {
+  min-width: none;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.right-panel {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  width: 300px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  top: 10px;
+  gap: 10px;
+  height: fit-content;
+  font-size: 0.8rem;
+}
+
+/* Responsiveness enhancement for mobile */
+@media (max-width: 900px) {
+
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-panel {
+    display: none;
+  }
+
+}
+
+/* Main content container */
+.container {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+
+  padding: 10px;
+}
+
+/* Full page wrapper */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}

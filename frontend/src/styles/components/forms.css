@@ -1,0 +1,14 @@
+/* In-game form design and layout */
+
+form {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  width: 180px;
+  padding: 8px;
+  font-weight: bold;
+}

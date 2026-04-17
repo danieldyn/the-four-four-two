@@ -1,0 +1,24 @@
+/* General layout and design rules for the in-game lineups */
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+}
+
+/* Pitches side by side */
+.pitches {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 900px;  /* Prevents overflow */
+  width: 100%;
+  flex-wrap: wrap; /* Mobile friendly */
+}

@@ -1,0 +1,13 @@
+/* Resets, typography and global colours. */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#0b1d0b, #123d12);
+  min-height: 100vh;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  color: white;
+}
