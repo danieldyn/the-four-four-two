@@ -29,3 +29,11 @@
 .home-button:hover {
   background: #1b5e20;
 }
+
+.match-header {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

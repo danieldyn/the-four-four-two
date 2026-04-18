@@ -1,7 +1,7 @@
 import { useState } from "react"
 import slugify from "../utils/slugify"
 
-export default function GuessInput({ matchId, addGuess }) {
+export default function GuessInput({ matchId, addGuess, onHint }) {
   const [value, setValue] = useState("")
 
   const handleSubmit = async e => {
@@ -34,14 +34,15 @@ export default function GuessInput({ matchId, addGuess }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: "1rem" }}>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         value={value}
         onChange={e => setValue(e.target.value)}
         placeholder="Enter player last name"
       />
-      <button type="submit">Guess</button>
+      <button type="submit" className="submit-button">Guess</button>
+      <button type="button" className="hint-button" onClick={onHint}>Hint</button>
     </form>
   )
 }

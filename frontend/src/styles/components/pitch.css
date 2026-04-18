@@ -121,4 +121,9 @@
   margin-bottom: 4px;
   text-align: center;
   white-space: nowrap;
+  z-index: 3;
+
+  text-shadow: /* Avoid interference with the pitch markings */
+    0 0 2px rgba(0,0,0,0.9),
+    0 0 6px rgba(0,0,0,0.7);
 }

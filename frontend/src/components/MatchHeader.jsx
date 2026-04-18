@@ -7,7 +7,7 @@ import format_date from "../utils/format_date"
  */
 export default function MatchHeader({ match }) {
   return (
-    <div>
+    <div className="match-header">
       <h3>{format_date(match.date)}, {match.competition} -- {match.venue}</h3>
     </div>
   )

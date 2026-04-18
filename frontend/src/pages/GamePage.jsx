@@ -9,14 +9,14 @@ import GameHeader from "../components/GameHeader"
  * 
  * @returns The Game Page component, containing:
  *            - The header (game name + return to Home Page button)
- *            - A left container (TODO what it contains)
- *            - A central container (the lineups + the guessing form)
- *            - A right container (TODO what it contains)
+ *            - A left container (two side-by-side pitches)
+ *            - A right container (a list of masked and guessed names and the input form)
  */
 export default function GamePage() {
 
   const [match, setMatch] = useState(null)
   const [guesses, setGuesses] = useState([])
+  const [hintsUsed, setHintsUsed] = useState({})
 
   useEffect(() => {
     fetch("http://localhost:4000/matches/random")
@@ -46,6 +46,28 @@ export default function GamePage() {
         }
       ])
     }
+  }
+
+  // Using a hint wll reveal several letters from the mask of a player
+  const handleHint = () => {
+    const availablePlayers = match.lineups.filter(p => {
+      const slug = p.player.slug
+
+      const alreadyGuessed = guesses.some(g => g.guess === slug)
+      const alreadyHinted = hintsUsed[slug]
+
+      return !alreadyGuessed && !alreadyHinted
+    })
+
+    if (!availablePlayers.length) return
+
+    const randomPlayer =
+      availablePlayers[Math.floor(Math.random() * availablePlayers.length)]
+
+    setHintsUsed(prev => ({
+      ...prev,
+      [randomPlayer.player.slug]: true
+    }))
   }
 
   // Return a basic answer if loading the match fails
@@ -90,12 +112,14 @@ export default function GamePage() {
           <GuessInput
             matchId={match.id}
             addGuess={addGuess}
+            onHint={handleHint}
           />
 
           <GuessHistory 
             homeLineup={homeLineup}
             awayLineup={awayLineup}
             guesses={guesses}
+            hintsUsed={hintsUsed}
           />
         </div>
 

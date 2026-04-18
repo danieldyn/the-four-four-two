@@ -5,7 +5,7 @@ import { maskName } from "../utils/maskName"
  * @param {*} guesses 
  * @returns A component which contains the player's guess history
  */
-export default function GuessHistory({ homeLineup, awayLineup, guesses }) {
+export default function GuessHistory({ homeLineup, awayLineup, guesses, hintsUsed }) {
   // Extract the user's guesses
   const guessedSlugs = guesses
     .filter(g => g.result === "correct")
@@ -32,7 +32,7 @@ export default function GuessHistory({ homeLineup, awayLineup, guesses }) {
                 <span className="history-player-name">
                   {isGuessed
                     ? `${p.player.firstName} ${p.player.lastName}`
-                    : maskName(p.player.firstName, p.player.lastName)
+                    : maskName(p.player.firstName, p.player.lastName, hintsUsed[p.player.slug])
                   }
                 </span>
 
