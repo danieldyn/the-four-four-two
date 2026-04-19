@@ -31,7 +31,7 @@ export default function LineupBoard({ lineup = [], guesses = [] }) {
           >
             {guessed && (
               <div className="player-name">
-                {p.player.lastName}
+                {p.player.display}
               </div>
             )}
 

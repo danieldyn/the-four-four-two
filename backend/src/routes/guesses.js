@@ -13,13 +13,20 @@ router.post("/", async (req, res) => {
   const normalisedGuess = slugify(guess)
 
   try {
-    const lineups = await prisma.lineup.findMany({
-      where: { matchId: Number(matchId) },
+    // Query the DB for a player based on perfect input, last name slug or the alias
+    const lineup = await prisma.lineup.findFirst({
+      where: {
+        matchId: Number(matchId),
+        player: {
+          OR: [
+            { slug: normalisedGuess },
+            { slug: { endsWith: `-${normalisedGuess}` } },
+            { alias: normalisedGuess }
+          ]
+        }
+      },
       include: { player: true }
     })
-
-    // Check if any player's slug ends with the guess
-    const lineup = lineups.find(l => l.player.slug.endsWith(normalisedGuess))
 
     if (lineup) {
       return res.json({ result: "correct", player: lineup.player, team: lineup.team })

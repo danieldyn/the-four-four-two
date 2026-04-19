@@ -45,6 +45,8 @@ model Player {
     firstName String
     lastName  String
     slug      String @unique
+    alias     String?
+    display   String?
 
     lineups   Lineup[]
 }

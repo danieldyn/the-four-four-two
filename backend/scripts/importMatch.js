@@ -32,36 +32,41 @@ async function importMatch(file) {
    * @param {*} team 
    */
   async function addPlayer(player, team) {
+    const { firstName, lastName } = splitName(player.name)
+    const slug = slugify(player.name)
 
-  const { firstName, lastName } = splitName(player.name)
+    const rawAlias = player.alias ?? null // Alias entry missing equivalent with null
+    const alias = rawAlias ? slugify(rawAlias) : null
 
-  const slug = slugify(player.name)
+    const display = player.display ?? lastName // Display entry missing leads to last name fallback
 
-  let dbPlayer = await prisma.player.findUnique({
-    where: { slug }
-  })
+    let dbPlayer = await prisma.player.findUnique({
+      where: { slug }
+    })
 
-  if (!dbPlayer) {
-    dbPlayer = await prisma.player.create({
+    if (!dbPlayer) {
+      dbPlayer = await prisma.player.create({
+        data: {
+          firstName,
+          lastName,
+          slug,
+          alias,
+          display
+        }
+      })
+    }
+
+    await prisma.lineup.create({
       data: {
-        firstName,
-        lastName,
-        slug
+        matchId: match.id,
+        playerId: dbPlayer.id,
+        team,
+        shirtNumber: player.number,
+        position: player.position,
+        starter: true
       }
     })
   }
-
-  await prisma.lineup.create({
-    data: {
-      matchId: match.id,
-      playerId: dbPlayer.id,
-      team,
-      shirtNumber: player.number,
-      position: player.position,
-      starter: true
-    }
-  })
-}
 
   for (const p of data.homeLineup) {
     await addPlayer(p, data.homeTeam)
