@@ -1,0 +1,36 @@
+{
+  "homeTeam": "Germany",
+  "awayTeam": "Argentina",
+  "competition": "World Cup Final 2014",
+  "venue": "Maracanã Stadium",
+  "date": "2014-07-13",
+  "score": "1-0 (A.E.T.)",
+
+  "homeLineup": [
+    { "number": 1, "name": "Manuel Neuer", "position": "GK" },
+    { "number": 16, "name": "Philipp Lahm", "position": "RB" },
+    { "number": 20, "name": "Jérôme Boateng", "position": "RCB" },
+    { "number": 5, "name": "Mats Hummels", "position": "LCB" },
+    { "number": 4, "name": "Benedikt Höwedes", "position": "LB" },
+    { "number": 23, "name": "Christoph Kramer", "position": "RCM" },
+    { "number": 7, "name": "Bastian Schweinsteiger", "position": "CDM" },
+    { "number": 13, "name": "Thomas Müller", "position": "RW" },
+    { "number": 18, "name": "Toni Kroos", "position": "LCM" },
+    { "number": 8, "name": "Mesut Özil", "position": "LW" },
+    { "number": 11, "name": "Miroslav Klose", "position": "ST" }
+  ],
+
+  "awayLineup": [
+    { "number": 1, "name": "Sergio Romero", "position": "GK" },
+    { "number": 4, "name": "Pablo Zabaleta", "position": "RB" },
+    { "number": 15, "name": "Martín Demichelis", "position": "RCB" },
+    { "number": 2, "name": "Ezequiel Garay", "position": "LCB" },
+    { "number": 16, "name": "Marcos Rojo", "position": "LB" },
+    { "number": 8, "name": "Enzo Pérez", "position": "RW" },
+    { "number": 14, "name": "Javier Mascherano", "position": "RDM" },
+    { "number": 6, "name": "Lucas Biglia", "position": "LDM" },
+    { "number": 22, "name": "Ezequiel Lavezzi", "position": "LW" },
+    { "number": 10, "name": "Lionel Messi", "position": "CAM" },
+    { "number": 9, "name": "Gonzalo Higuaín", "position": "ST" }
+  ]
+}
