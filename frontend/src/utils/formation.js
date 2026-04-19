@@ -23,8 +23,8 @@ export const positionCoords = {
   RB: { x: RIGHT_X + 2, y: DEF_Y },
 
   /* Wingbacks (if needed) */
-  LWB: { x: LEFT_X - 5, y: DEF_Y - 5 },
-  RWB: { x: RIGHT_X - 5, y: DEF_Y - 5 },
+  LWB: { x: LEFT_X - 2, y: DEF_Y - 8 },
+  RWB: { x: RIGHT_X + 2, y: DEF_Y - 8 },
 
   /* Midfield (all possibilities) */
   LDM: { x: CLEFT_X, y: MID_Y + 5 },

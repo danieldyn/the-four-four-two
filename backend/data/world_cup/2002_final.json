@@ -1,0 +1,36 @@
+{
+  "homeTeam": "Germany",
+  "awayTeam": "Brazil",
+  "competition": "World Cup Final 2002",
+  "venue": "International Stadium Yokohama",
+  "date": "2002-06-30",
+  "score": "0-2",
+
+  "homeLineup": [
+    { "number": 1, "name": "Oliver Kahn", "position": "GK" },
+    { "number": 2, "name": "Thomas Linke", "position": "RCB" },
+    { "number": 5, "name": "Carsten Ramelow", "position": "CB" },
+    { "number": 21, "name": "Christoph Metzelder", "position": "LCB" },
+    { "number": 22, "name": "Torsten Frings", "position": "RM" },
+    { "number": 8, "name": "Dietmar Hamann", "position": "RCM" },
+    { "number": 16, "name": "Jens Jeremies", "position": "LCM" },
+    { "number": 17, "name": "Marco Bode", "position": "LM" },
+    { "number": 19, "name": "Bernd Schneider", "position": "CAM" },
+    { "number": 11, "name": "Miroslav Klose", "position": "RS" },
+    { "number": 7, "name": "Oliver Neuville", "position": "LS" }
+  ],
+
+  "awayLineup": [
+    { "number": 1, "name": "Marcos Roberto Silveira dos Reis", "position": "GK", "alias": "marcos", "display": "Marcos" },
+    { "number": 3, "name": "Lucimar Ferreira da Silva", "position": "RCB", "alias": "lucio", "display": "Lúcio" },
+    { "number": 5, "name": "José Edmílson Gomes de Moraes", "position": "CB", "alias": "edmilson", "display": "Edmílson" },
+    { "number": 4, "name": "José Vítor Roque Júnior", "position": "LCB", "alias": "roque-junior", "display": "Roque Júnior" },
+    { "number": 2, "name": "Marcos Evangelista de Morais", "position": "RWB", "alias": "cafu", "display": "Cafu" },
+    { "number": 8, "name": "Gilberto Aparecido da Silva", "position": "RCM", "alias": "gilberto-silva", "display": "Gilberto Silva" },
+    { "number": 15, "name": "José Kléberson Pereira", "position": "LCM", "alias": "kleberson", "display": "Kléberson" },
+    { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LWB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+    { "number": 11, "name": "Ronaldo de Assis Moreira", "position": "CAM", "alias": "ronaldinho", "display": "Ronaldinho" },
+    { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "RS", "alias": "rivaldo", "display": "Rivaldo" },
+    { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo" }
+  ]
+}
