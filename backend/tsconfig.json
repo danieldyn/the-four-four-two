@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "noEmit": true,
+    "allowJs": true,
+
+    "lib": ["ESNext"],
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*", "prisma/seed.ts", "scripts/**/*", "utils/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -3,13 +3,13 @@
     "version": "1.0.0",
     "description": "Football lineup quiz backend",
     "type": "module",
-    "main": "src/server.js",
+    "main": "src/server.ts",
     "scripts": {
-        "dev": "nodemon src/server.js",
+        "dev": "nodemon --exec tsx src/server.ts",
         "start": "node src/server.js",
         "prisma:migrate": "prisma migrate dev",
         "prisma:generate": "prisma generate",
-        "import:match": "node scripts/importMatch.js"
+        "import:match": "tsx scripts/importMatch.ts"
     },
     "dependencies": {
         "@prisma/client": "^5.0.0",
@@ -17,7 +17,15 @@
         "express": "^4.18.2"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
+        "@types/node": "^25.6.0",
         "nodemon": "^3.0.0",
-        "prisma": "^5.0.0"
+        "prisma": "^5.0.0",
+        "tsx": "^4.21.0",
+        "typescript": "^6.0.3"
+    },
+    "prisma": {
+        "seed": "tsx prisma/seed.ts"
     }
 }
