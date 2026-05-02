@@ -4,7 +4,7 @@ import GuessHistory from "../components/GuessHistory";
 import LineupBoard from "../components/LineupBoard";
 import MatchHeader from "../components/MatchHeader";
 import GameHeader from "../components/GameHeader";
-import { Match, LineupEntry, Player } from "../types/football";
+import { Match, GuessResponse } from "../types/football";
 
 /**
  * The shape of a guess' tracker.
@@ -13,15 +13,6 @@ export interface Guess {
   guess: string;
   result: "correct" | "wrong";
   display: string;
-}
-
-/**
- * The shape of the backend's response to a guess.
- */
-interface GuessResponse {
-  result: "correct" | "wrong";
-  player: Player;
-  team: string;
 }
 
 // Key-value pair for hints
@@ -46,8 +37,8 @@ const GamePage: React.FC = () => {
   }, []);
 
   // Process the guess
-  const addGuess = (slug: string, result: "correct" | "wrong", playerData?: GuessResponse) => {
-    if (result === "correct" && playerData) {
+  const addGuess = (slug: string, result: "correct" | "wrong", playerData: GuessResponse | null) => {
+    if (result === "correct" && playerData?.player) {
       const fullName = `${playerData.player.firstName} ${playerData.player.lastName}`;
 
       setGuesses((prev) => [

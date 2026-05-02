@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import slugify from "../utils/slugify";
-import { Player } from "../types/football";
-
-/**
- * The object returned by the /guess endpoint.
- * Only correct results have more than the first field.
- */
-interface GuessResponse {
-  result: "correct" | "wrong";
-  player?: Player;
-  team?: string;
-}
+import { GuessResponse } from "../types/football";
 
 /**
  * The shape of the Guess Input panel's attributes.

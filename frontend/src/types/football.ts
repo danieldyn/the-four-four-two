@@ -43,3 +43,14 @@ export interface Match {
   score: string;
   lineups: LineupEntry[];
 }
+
+/**
+ * The shape of a guess response component.
+ * It is returned by the backend via the guess/ endpoint.
+ * Wrong guesses do not have a player or a team.
+ */
+export interface GuessResponse {
+  result: "correct" | "wrong";
+  player?: Player;
+  team?: string;
+}
