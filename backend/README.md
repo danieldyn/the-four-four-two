@@ -12,6 +12,15 @@ Example: If you were to add the **Champions League final** from **2013**, you wo
 - full names
 - correct date
 - correct venue
+- custom display names and/or a player alias (if necessary)
+
+**Important**: In spirit of how football fans refer to certain players, depending on the footballing
+cultures and traditions, a blind "full name only" guessing logic is poor in the long run. Thus, the database
+offers you the option to add a player alias and a custom display name, besides the mandatory full name. A great
+example is in the `world_cup/2010_final.json` file, where we have the winger Pedro Rodríguez. Everyone has known
+him as just "Pedro" since his early days in the Spanish League. The database needs the full name to help us have
+unique "full-name slugs", but the guess logic tries to see if an alias exists when checking player guesses.
+Similarly, when displaying a correctly guessed player, the app checks whether the database contains a display name.
 
 ## 2. Import the Match
 
