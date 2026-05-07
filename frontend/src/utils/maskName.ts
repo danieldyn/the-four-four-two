@@ -2,28 +2,21 @@
  * Masks or partially reveals a player's name using dots.
  * Revealing causes approximately 1/3 of the letters to become visible.
  * 
- * @param firstName 
- * @param lastName  
+ * @param name 
  * @param revealHint - Whether to reveal a portion of the name
  * @returns The masked or partially revealed name
  */
-export function maskName(
-  firstName: string, 
-  lastName: string, 
-  revealHint: boolean = false
-): string {
-  const fullName: string = `${firstName} ${lastName}`.trim();
-
+export function maskName(name: string, revealHint: boolean = false): string {
   // Defaults to no hints unless specified
   if (!revealHint) {
-    return fullName
+    return name
       .split("")
       .map((char: string) => (char === " " ? " " : "•"))
       .join("");
   }
 
   // Hint random logic
-  const chars: string[] = fullName.split("");
+  const chars: string[] = name.split("");
 
   // Get indexes of letters only (ignoring spaces)
   const letterIndexes: number[] = chars

@@ -1,8 +1,17 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
+
+  // Player instructions about provided in-game info
+  const components = [
+    'The teams involved in the match',
+    'The competition and date of the match',
+    'The final score (including penalties or extra time)',
+    'The shirt numbers and positions of the players',
+    'A list that will help track your correct guesses and masked unguessed players'
+  ]
+  const listComponents = components.map(c => <li>{c}</li>);
 
   return (
     <div className="page">
@@ -12,19 +21,13 @@ const HomePage: React.FC = () => {
         <p>
           Your goal is to guess the starting 11 players from iconic football matches.
         </p>
+        <p>
+          You will be given:
+        </p>
+
+        <ul>{listComponents}</ul>
 
         <div>
-          <p>You will be given:</p>
-          <ul>
-            <li>The teams involved in the match</li>
-            <li>The competition and date of the match</li>
-            <li>The final score (including penalties or extra time)</li>
-            <li>The players' shirt numbers and positions</li>
-            <li>A list that will track your correct guesses and masked unguessed players</li>
-          </ul>
-        </div>
-
-        <div style={{ marginTop: "1rem" }}>
           <p>How to play?</p>
           <p>
             Type player last names and press Enter (or click the Submit button) to take a guess.

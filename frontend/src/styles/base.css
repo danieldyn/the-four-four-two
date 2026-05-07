@@ -11,3 +11,9 @@ h1, h2, h3, p {
   text-align: center;
   color: white;
 }
+
+ul {
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+}

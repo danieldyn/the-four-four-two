@@ -12,7 +12,7 @@
   grid-template-columns: 1fr 260px;
   gap: 30px;
   max-width: 1250px;
-  margin: 0 auto;
+  margin-left: 30px;
 }
 
 .main-content {
@@ -36,7 +36,7 @@
   background: rgba(0, 0, 0, 0.25);
   border-left: 1px solid rgba(255,255,255,0.1);
   border-radius: 12px;
-  width: 330px;
+  width: 350px;
   position: sticky;
   display: flex;
   flex-direction: column;
@@ -63,8 +63,11 @@
 /* Main content container */
 .container {
   width: 100%;
-  max-width: 650px;
+  max-width: 680px;
   text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
 
   padding: 10px;
 }

@@ -41,6 +41,9 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
         <ul>
           {sorted.map((p) => {
             const isGuessed = guessedSlugs.includes(p.player.slug);
+            const correctAnswer = (p.player.alias && p.player.display)
+                                ? p.player.display 
+                                : `${p.player.firstName} ${p.player.lastName}`;
 
             return (
               <li key={p.id} className={`player-row ${isGuessed ? "revealed" : ""}`}>
@@ -50,8 +53,8 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
 
                 <span className="history-player-name">
                   {isGuessed
-                    ? `${p.player.firstName} ${p.player.lastName}`
-                    : maskName(p.player.firstName, p.player.lastName, hintsUsed[p.player.slug])
+                    ? correctAnswer
+                    : maskName(correctAnswer, hintsUsed[p.player.slug])
                   }
                 </span>
               </li>
