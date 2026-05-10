@@ -26,6 +26,10 @@
   },
   "homepage": "https://github.com/danieldyn/the-four-four-two#readme",
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "prisma": "^6.19.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.8.0"
   }
 }
