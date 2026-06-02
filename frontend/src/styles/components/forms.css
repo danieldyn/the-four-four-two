@@ -1,27 +1,32 @@
 /* In-game form design and layout */
 
 form {
-  margin: 20px auto;
+  margin: 10px 0;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  flex-wrap: nowrap; /* Prevents the buttons from stacking on two lines */
 }
 
 input {
-  width: 160px;
+  flex: 1;
+  min-width: 0;
   padding: 8px;
   font-weight: bold;
 }
 
 .submit-button {
-  margin-right: 8px;
-  padding: 8px 16px;
+  margin: 0;
+  padding: 8px 12px;
   background: #253fb3;
   border: none;
   color: white;
   font-size: medium;
   border-radius: 6px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .submit-button:hover {
@@ -29,14 +34,15 @@ input {
 }
 
 .hint-button {
-  margin-right: 8px;
-  padding: 8px 16px;
+  margin-left: 8px;
+  padding: 8px 12px;
   background: #bb4419;
   border: none;
   color: white;
   font-size: medium;
   border-radius: 6px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .hint-button:hover {

@@ -17,8 +17,8 @@
 .pitches {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  max-width: 900px;  /* Prevents overflow */
+  gap: 60px;
+  max-width: 1100px;  /* Prevents overflow */
   width: 100%;
   flex-wrap: wrap; /* Mobile friendly */
 }

@@ -13,6 +13,7 @@ const MID_Y = 50;
 const AMID_Y = 35;
 const WING_Y = 25;
 const ATT_Y = 17;
+const DEPTH_GROUPING_FACTOR = 12; // Used for grouping players based on depth similarity
 
 /**
  * The pair of coordinates necessary for absolute positining.
@@ -59,8 +60,8 @@ export const positionCoords: Record<string, Coordinates> = {
 };
 
 export function mapLineupToPositions(lineup: LineupEntry[]): PositionedPlayer[] {
-  return lineup.map(player => {
-    // Fallback to center if position key is missing
+  // Assign static coordinates first, resulting in a draft of the mapped positions
+  const positioned = lineup.map(player => {
     const coords = (player.position && positionCoords[player.position]) 
       || { x: CENTRE_X, y: MID_Y };
 
@@ -70,4 +71,53 @@ export function mapLineupToPositions(lineup: LineupEntry[]): PositionedPlayer[] 
       y: coords.y
     };
   });
+
+  // Separate outfield players for rearranging, sorting them based on depth (Y)
+  const keeper = positioned.filter(p => p.position === 'GK');
+  const outfielders = positioned.filter(p => p.position !== 'GK');
+  outfielders.sort((a, b) => b.y - a.y);
+
+  const rows: PositionedPlayer[][] = [];
+  let currentRow: PositionedPlayer[] = [];
+
+  // Group players into rows based on depth (Y) to emulate the compartments of a real lineup
+  outfielders.forEach(player => {
+    if (currentRow.length === 0) {
+      currentRow.push(player);
+    } else {
+      // Include players in the current group based on the global factor
+      const rowDeepestY = currentRow[0].y;
+      if (Math.abs(rowDeepestY - player.y) <= DEPTH_GROUPING_FACTOR) {
+        currentRow.push(player);
+      } else {
+        rows.push(currentRow);
+        currentRow = [player];
+      }
+    }
+  });
+  if (currentRow.length > 0)
+    rows.push(currentRow);
+
+  // Distribute X coordinates based on row size
+  const rowSpreads: Record<number, number[]> = {
+    1: [50],
+    2: [35, 65],             // Usage: 2 Centre Backs, 2 Defensive Midfielders, or 2 Strikers
+    3: [20, 50, 80],         // Usage: 3 at the back, or Winger duo plus Striker in attack
+    4: [15, 38, 62, 85],     // Usage: Classic back 4 or flat midfield 4
+    5: [12, 31, 50, 69, 88]  // Usage: Condensed back 5
+  };
+
+  rows.forEach(row => {
+    // Sort the grouped players based on their initial static X
+    row.sort((a, b) => a.x - b.x);
+
+    const count = row.length;
+    const spread = rowSpreads[count];
+
+    // Aplly dynamically determined X coordinate
+    row.forEach((player, index) => { player.x = spread[index]; });
+  });
+
+  // Combine GK back with the repositioned outfielders
+  return [...keeper, ...rows.flat()];
 }

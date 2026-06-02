@@ -67,7 +67,9 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
 
   return (
     <div className="guess-history">
+      <hr></hr>
       {renderTeam(homeLineup[0]?.team, homeLineup)}
+      <hr></hr>
       {renderTeam(awayLineup[0]?.team, awayLineup)}
     </div>
   );

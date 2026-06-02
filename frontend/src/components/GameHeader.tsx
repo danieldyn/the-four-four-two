@@ -15,6 +15,13 @@ const GameHeader: React.FC = () => {
 
       <button
         className="home-button"
+        onClick={() => window.location.reload()}
+      >
+        New Random Game
+      </button>
+
+      <button
+        className="home-button"
         onClick={() => navigate("/")}
       >
         Back to Home

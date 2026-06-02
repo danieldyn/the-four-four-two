@@ -1,8 +1,8 @@
 /* Football pitch design */
 
 .pitch {
-  width: 380px;
-  height: 460px;
+  width: 420px;
+  height: 480px;
   background: repeating-linear-gradient(
     to bottom,
     #4caf50,
