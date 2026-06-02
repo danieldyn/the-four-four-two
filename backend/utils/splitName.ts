@@ -21,7 +21,8 @@ export default function splitName(fullName: string): NameSplit {
   const particles: string[] = [
     "di", "de", "del", "della", "da",
     "van", "von", "le", "la", "den",
-    "el", "al", "dos", "das", "mac"
+    "el", "al", "dos", "das", "mac",
+    "van der", "van den", "De"
   ];
 
   const parts: string[] = fullName.trim().split(" ");
@@ -34,19 +35,36 @@ export default function splitName(fullName: string): NameSplit {
     };
   }
 
-  const lastPart = parts[parts.length - 1] ?? "";
-  const secondLast = parts[parts.length - 2]?.toLowerCase();
+  // Sort particles by word count to match longest particles first
+  const sortedParticles = particles.sort((a, b) => 
+    b.split(" ").length - a.split(" ").length
+  );
 
-  // Check if the second to last part is a particle from the dictionary
-  if (secondLast && particles.includes(secondLast)) {
-    return {
-      firstName: parts.slice(0, -2).join(" "),
-      lastName: parts.slice(-2).join(" ")
-    };
+  // Check each particle against the end of the name
+  for (const particle of sortedParticles) {
+    const particleWords = particle.split(" ");
+    const particleLength = particleWords.length;
+
+    // Need at least one word after the particle for the last name
+    if (parts.length > particleLength + 1) {
+      const checkStart = parts.length - particleLength - 1;
+      const potentialParticle = parts
+        .slice(checkStart, checkStart + particleLength)
+        .map(p => p.toLowerCase())
+        .join(" ");
+
+      if (potentialParticle === particle.toLowerCase()) {
+        return {
+          firstName: parts.slice(0, checkStart).join(" "),
+          lastName: parts.slice(checkStart).join(" ")
+        };
+      }
+    }
   }
 
+  // No particle matched, use default split
   return {
     firstName: parts.slice(0, -1).join(" "),
-    lastName: lastPart
+    lastName: parts[parts.length - 1] ?? ""
   };
 }
