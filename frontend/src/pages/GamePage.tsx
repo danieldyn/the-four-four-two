@@ -18,6 +18,8 @@ export interface Guess {
 // Key-value pair for hints
 type HintsUsed = Record<string, boolean>;
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 /**
  * The Game Page component, containing:
  *            - The header (game name + return to Home Page button)
@@ -30,7 +32,7 @@ const GamePage: React.FC = () => {
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
 
   useEffect(() => {
-    fetch("http://localhost:4000/matches/random")
+    fetch(`${apiUrl}/matches/random`)
       .then((res) => res.json())
       .then((data: Match) => setMatch(data))
       .catch((err) => console.error("Failed to fetch match:", err));

@@ -5,7 +5,22 @@ import guessesRouter from "./routes/guesses.js";
 
 const app: Application = express();
 
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:5173", // Local frontend development
+  "https://danieldyn.github.io"
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    // Allow requests with no origin (mobile apps) or part of the allowed list
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes

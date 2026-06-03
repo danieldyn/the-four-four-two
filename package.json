@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Football Starting 11 Quiz Game",
-  "main": "index.js",
+  "main": "main.tsx",
   "scripts": {
     "backend": "npm run dev --prefix backend",
     "frontend": "npm run dev --prefix frontend",
@@ -15,11 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danieldyn/the-four-four-two.git"
+    "url": "https://github.com/danieldyn/the-four-four-two.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["Football", "Quiz Game", "Web"],
+  "author": "Daniel-Ioan Dinu",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/danieldyn/the-four-four-two/issues"

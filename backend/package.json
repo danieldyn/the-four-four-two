@@ -1,13 +1,13 @@
 {
-    "name": "lineup-quiz-backend",
+    "name": "the-four-four-two-backend",
     "version": "1.0.0",
-    "description": "Football lineup quiz backend",
+    "description": "Football starting lineup quiz backend",
     "type": "module",
     "main": "src/server.ts",
     "scripts": {
         "dev": "nodemon --exec tsx src/server.ts",
-        "start": "node src/server.js",
-        "prisma:migrate": "prisma migrate dev",
+        "start": "tsx src/server.ts",
+        "prisma:migrate": "prisma migrate deploy",
         "prisma:generate": "prisma generate",
         "import:match": "tsx scripts/importMatch.ts"
     },

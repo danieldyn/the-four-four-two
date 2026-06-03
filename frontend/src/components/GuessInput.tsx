@@ -12,6 +12,8 @@ interface GuessInputProps {
   onHint: () => void;
 }
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 /**
  * Captures and processes user input, communicating with the backend.
  * Also supports the in-game hint system.
@@ -27,7 +29,7 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) =>
     const normalisedGuess = slugify(value);
 
     try {
-      const res = await fetch("http://localhost:4000/guess", {
+      const res = await fetch(`${apiUrl}/guess`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ matchId, guess: normalisedGuess }),
