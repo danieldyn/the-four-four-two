@@ -1,0 +1,38 @@
+/* Styling for the loading screens used in the game */
+
+.warmup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  color: #e2e8f0;
+}
+
+.warmup-container h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #38bdf8;
+  animation: pulse 1.5s infinite;
+}
+
+.warmup-container p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.pitch-spinner {
+  font-size: 3rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

@@ -87,3 +87,8 @@
   align-items: flex-start;
   padding: 20px 0;
 }
+
+.button-group {
+  display: inline-flex;
+  justify-content: space-between;
+}

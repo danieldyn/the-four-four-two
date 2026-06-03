@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
+// REVIEW: More categories are to be added
+const CATEGORIES = ["All Matches", "World Cup", "Champions League"];
+
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
@@ -12,6 +15,15 @@ const HomePage: React.FC = () => {
     'A list that will help track your correct guesses and masked unguessed players'
   ]
   const listComponents = components.map(c => <li>{c}</li>);
+
+  // Navigation decision
+  const handleStartGame = (category: string) => {
+    if (category === "All Matches") {
+      navigate("/game");
+    } else {
+      navigate(`/game?category=${encodeURIComponent(category)}`);
+    }
+  };
 
   return (
     <div className="page">
@@ -28,7 +40,7 @@ const HomePage: React.FC = () => {
         <ul>{listComponents}</ul>
 
         <div>
-          <p>How to play?</p>
+          <h3>How to play?</h3>
           <p>
             Type player last names and press Enter (or click the Submit button) to take a guess.
             If you are correct, the player will be revealed on the lineup. You can try as many times as you want.
@@ -37,18 +49,25 @@ const HomePage: React.FC = () => {
             Use the players' positions and shirt numbers as valuable hints to discover all of them! Keep in mind
             that you can deduce the number of letters of a player's name using the right hand side panel. If you
             need it, you can press the "Hint" button, which will reveal random letters from a random player's name.
-            You must type the correct "normalised" version of the player's last name. Example: 
-            If you wish to guess "Claude Makélélé", then both <strong>"makelele"</strong> and <strong>"Makelele"</strong> would be correct.
+            You are allowed to submit the player's last name as a guess, not the full name. Accents are optional.
           </p>
         </div>
 
         <br />
-        <button
-          onClick={() => navigate("/game")}
-          className="home-button"
-        >
-          Start Game
-        </button>
+        <div>
+          <h3>Select a Category to Begin:</h3>
+          <div className="button-group">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => handleStartGame(cat)}
+                className="home-button"
+              >
+                Play {cat}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

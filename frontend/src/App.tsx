@@ -10,6 +10,7 @@ import "./styles/components/pitch.css";
 import "./styles/components/lineup.css";
 import "./styles/components/guess-history.css";
 import "./styles/components/forms.css";
+import "./styles/components/loading.css"
 
 const App: React.FC = () => {
   return (

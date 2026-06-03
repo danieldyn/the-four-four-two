@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import GuessInput from "../components/GuessInput";
 import GuessHistory from "../components/GuessHistory";
 import LineupBoard from "../components/LineupBoard";
@@ -31,12 +32,26 @@ const GamePage: React.FC = () => {
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
 
+  // Extract category parameter from the URL
+  const [searchParams] = useSearchParams();
+  const category = searchParams.get("category");
+
   useEffect(() => {
-    fetch(`${apiUrl}/matches/random`)
-      .then((res) => res.json())
+    let fetchUrl = `${apiUrl}/matches/random`;
+
+    if (category) {
+      fetchUrl += `?category=${encodeURIComponent(category)}`;
+    }
+
+    fetch(fetchUrl)
+      .then((res) => {
+        if (!res.ok) throw new Error("No matches found");
+        return res.json();
+      })
       .then((data: Match) => setMatch(data))
       .catch((err) => console.error("Failed to fetch match:", err));
-  }, []);
+      
+  }, [category]);
 
   // Process the guess
   const addGuess = (slug: string, result: "correct" | "wrong", playerData: GuessResponse | null) => {
@@ -89,9 +104,17 @@ const GamePage: React.FC = () => {
     }
   };
 
-   // Return a basic answer if loading the match fails
+   // Return a special warmup screen while the full match data is unavailable
   if (!match)
-    return <div className="loading">The players are still warming up...</div>;
+    return (
+      <div className="warmup-container">
+        <div className="pitch-spinner">
+          <div className="football">⚽</div>
+        </div>
+        <h2>The players are warming up...</h2>
+        <p>Prepare your football knowledge for kickoff time!</p>
+      </div>
+    );
 
   const homeLineup = match.lineups.filter((p) => p.team === match.homeTeam);
   const awayLineup = match.lineups.filter((p) => p.team === match.awayTeam);

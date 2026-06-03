@@ -42,6 +42,7 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) =>
 
       if (data.result === "correct" && data.player) {
         addGuess(data.player.slug, data.result, data);
+        setValue("");
       } else {
         // Fallback for wrong user guesses
         addGuess(normalisedGuess, "wrong", null);
@@ -49,8 +50,6 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) =>
     } catch (err) {
       console.error("Guess submission error:", err);
     }
-
-    setValue("");
   };
 
   return (

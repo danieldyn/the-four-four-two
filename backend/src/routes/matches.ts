@@ -5,27 +5,26 @@ const router: Router = express.Router();
 
 router.get("/random", async (_req: Request, res: Response) => {
   try {
-    // Obtain all match IDs
-    const matches = await prisma.match.findMany({
-      select: { id: true }
+    // Extract the category from the URL query string
+    const category = _req.query.category as string | undefined;
+
+    // Database filtering criteria
+    const whereClause = category 
+      ? { competition: { startsWith: category } } 
+      : {}; // If no category is given, use the whole pool
+
+    const count = await prisma.match.count({
+      where: whereClause
     });
 
-    // Sanity check
-    if (matches.length === 0) {
-      return res.status(404).json({ error: "No matches found in database" });
-    }
+    if (count === 0)
+      return res.status(404).json({ error: "No matches found for this category" });
 
-    // Select a random ID
-    const randomIndex = Math.floor(Math.random() * matches.length);
-    const randomMatch = matches[randomIndex];
-
-    if (!randomMatch) {
-      throw new Error("Random selection failed");
-    }
-
-    // Fetch the full match data
-    const match = await prisma.match.findUnique({
-      where: { id: randomMatch.id },
+    // Select a random match
+    const skip = Math.floor(Math.random() * count);
+    const match = await prisma.match.findFirst({
+      where: whereClause,
+      skip: skip,
       include: {
         lineups: {
           include: {
