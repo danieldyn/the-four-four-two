@@ -1,0 +1,30 @@
+# Node, NPM
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Prisma
+backend/prisma/dev.db*
+backend/prisma/.env
+
+# Vite, React, Frontend
+dist/
+.vite/
+*.log
+
+# OS, Editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Misc
+coverage/
