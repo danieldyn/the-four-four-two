@@ -6,12 +6,12 @@ const router: Router = express.Router();
 router.get("/random", async (_req: Request, res: Response) => {
   try {
     // Extract the category from the URL query string
-    const category = _req.query.category as string | undefined;
+    const category = (_req.query.category as string | undefined)?.trim();
 
     // Database filtering criteria
     const whereClause = category 
-      ? { competition: { startsWith: category } } 
-      : {}; // If no category is given, use the whole pool
+      ? { competition: { contains: category } } 
+      : {};
 
     const count = await prisma.match.count({
       where: whereClause

@@ -1,5 +1,9 @@
 /* Football pitch design */
 
+:root {
+  --chalk: rgba(255, 255, 255, 0.7);
+}
+
 .pitch {
   width: 420px;
   height: 480px;
@@ -10,8 +14,12 @@
     #43a047 40px,
     #43a047 80px
   );
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  border: 3px solid white;
+
+  box-shadow: 
+    inset 0 0 60px rgba(0, 0, 0, 0.6), /* Darkens the edges of the grass */
+    0 10px 30px rgba(0, 0, 0, 0.4);    /* Floats the pitch off the page */
+
+  border: 3px solid var(--chalk);
   border-radius: 12px;
   padding: 20px;
 
@@ -25,69 +33,99 @@
   z-index: 0;
 }
 
-/* Pitch central line */
-.pitch::before {
-  content: "";
+.center-line, .center-circle, .penalty-box, .goal-box, .penalty-arc {
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background: white;
-  top: 50%;
-  z-index: 0;
+  border-color: var(--chalk);
+  z-index: 1; /* Keep below players */
 }
 
-/* Pitch central circle */
-.pitch::after {
-  content: "";
-  position: absolute;
+/* Centre Markings */
+.center-line {
+  width: 100%;
+  height: 2px;
+  background: var(--chalk);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.center-circle {
   width: 120px;
   height: 120px;
-  border: 2px solid white;
+  border: 2px solid var(--chalk);
   border-radius: 50%;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 0;
 }
 
-/* Pitch penalty box */
+.center-spot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--chalk);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Penalty Boxes */
 .penalty-box {
-  position: absolute;
   width: 200px;
-  height: 120px;
-  border: 2px solid white;
+  height: 90px;
+  border: 2px solid var(--chalk);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
 }
+.penalty-box.top { top: 0; border-top: none; }
+.penalty-box.bottom { bottom: 0; border-bottom: none; }
 
-.penalty-box.top {
-  top: 0;
-}
-
-.penalty-box.bottom {
-  bottom: 0;
-}
-
-/* Pitch goal box */
+/* Goal Boxes */
 .goal-box {
+  width: 90px;
+  height: 35px;
+  border: 2px solid var(--chalk);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.goal-box.top { top: 0; border-top: none; }
+.goal-box.bottom { bottom: 0; border-bottom: none; }
+
+/* Penalty Arcs */
+.penalty-arc {
+  width: 70px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.penalty-arc.top {
+  top: 90px;
+  border-radius: 0 0 70px 70px;
+  border: 2px solid var(--chalk);
+  border-top: none;
+}
+.penalty-arc.bottom {
+  bottom: 90px;
+  border-radius: 70px 70px 0 0;
+  border: 2px solid var(--chalk);
+  border-bottom: none;
+}
+
+/* Penalty Spots */
+.penalty-spot {
   position: absolute;
-  width: 100px;
-  height: 50px;
-  border: 2px solid white;
+  width: 5px;
+  height: 5px;
+  background: var(--chalk);
+  border-radius: 50%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
-
-.goal-box.top {
-  top: 0;
-}
-
-.goal-box.bottom {
-  bottom: 0;
-}
+.penalty-spot.top { top: 65px; }
+.penalty-spot.bottom { bottom: 65px; }
 
 .player-wrapper {
   position: absolute;
@@ -115,15 +153,24 @@
 
 /* Name above the shirt */
 .player-name {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 4px;
+  position: absolute;
+  bottom: 100%; /* Pushes the bottom of the label exactly to the top of the token */
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
   text-align: center;
   white-space: nowrap;
   z-index: 3;
+  letter-spacing: 0.5px;
 
-  text-shadow: /* Avoid interference with the pitch markings */
-    0 0 2px rgba(0,0,0,0.9),
-    0 0 6px rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.50);
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(2px);
 }

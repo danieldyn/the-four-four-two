@@ -23,10 +23,19 @@ const LineupBoard: React.FC<LineupBoardProps> = ({ lineup = [], guesses = [] }) 
       {/* Pitch Markings */}
       <div className="center-line"></div>
       <div className="center-circle"></div>
+      <div className="center-spot"></div>
+
+      {/* Top Goal Area */}
       <div className="penalty-box top"></div>
-      <div className="penalty-box bottom"></div>
       <div className="goal-box top"></div>
+      <div className="penalty-arc top"></div>
+      <div className="penalty-spot top"></div>
+
+      {/* Bottom Goal Area */}
+      <div className="penalty-box bottom"></div>
       <div className="goal-box bottom"></div>
+      <div className="penalty-arc bottom"></div>
+      <div className="penalty-spot bottom"></div>
 
       {/* Player Rendering */}
       {positioned.map((p) => {

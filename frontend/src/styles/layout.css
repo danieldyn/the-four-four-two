@@ -54,7 +54,43 @@
 }
 
 /* Responsiveness enhancement for mobile */
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
+  /* Game page stacked vertically */
+  .game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  /* Pitches are downscaled to allow the form to be visible */
+  .pitch {
+    width: 100%;
+    max-width: 400px;
+    height: 60vh;
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
+
+  /* Fully visible form */
+  .guess-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .guess-history {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
   .game-layout {
     grid-template-columns: 1fr;
@@ -91,4 +127,5 @@
 .button-group {
   display: inline-flex;
   justify-content: space-between;
+  gap: 30px;
 }
