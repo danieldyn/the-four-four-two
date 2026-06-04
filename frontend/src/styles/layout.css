@@ -75,14 +75,46 @@
     margin-bottom: 20px;
   }
 
-  /* Fully visible form */
+  /* Fully visible form that sticks above the phone keyboard */
   .guess-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 400px;
+
+    background-color: #1e293b; 
+    padding: 15px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 100; 
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 10px;
-    margin-bottom: 20px;
+
+    padding-bottom: calc(15px + env(safe-area-inset-bottom));
+  }
+
+  .guess-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .guess-form .button-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .guess-form .button-group button {
+    flex: 1; /* Makes both buttons exactly 50% width */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .guess-history {
@@ -124,7 +156,7 @@
   padding: 20px 0;
 }
 
-.button-group {
+.buttons {
   display: inline-flex;
   justify-content: space-between;
   gap: 30px;

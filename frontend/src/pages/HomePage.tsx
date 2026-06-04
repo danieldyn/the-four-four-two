@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
         <br />
         <div>
           <h3>Select a Category to Begin:</h3>
-          <div className="button-group">
+          <div className="buttons">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}

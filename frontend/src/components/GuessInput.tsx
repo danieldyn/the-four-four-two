@@ -61,7 +61,7 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) =>
         placeholder="Enter player last name"
         className="guess-input"
       />
-      <div>
+      <div className="button-group">
         <button type="submit" className="submit-button">
           Guess
         </button>
