@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "France",
+    "awayTeam": "Croatia",
+    "competition": "World Cup Final 2018",
+    "venue": "Luzhniki Stadium",
+    "date": "2018-07-15",
+    "score": "4-2",
+
+    "homeLineup": [
+      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 2, "name": "Benjamin Pavard", "position": "RB" },
+      { "number": 4, "name": "Raphaël Varane", "position": "RCB" },
+      { "number": 5, "name": "Samuel Umtiti", "position": "LCB" },
+      { "number": 21, "name": "Lucas Hernández", "position": "LB" },
+      { "number": 6, "name": "Paul Pogba", "position": "RDM" },
+      { "number": 13, "name": "N'Golo Kanté", "position": "LDM" },
+      { "number": 10, "name": "Kylian Mbappé", "position": "RW" },
+      { "number": 7, "name": "Antoine Griezmann", "position": "CAM" },
+      { "number": 14, "name": "Blaise Matuidi", "position": "LW" },
+      { "number": 9, "name": "Olivier Giroud", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 23, "name": "Danijel Subašić", "position": "GK" },
+      { "number": 2, "name": "Šime Vrsaljko", "position": "RB" },
+      { "number": 6, "name": "Dejan Lovren", "position": "RCB" },
+      { "number": 21, "name": "Domagoj Vida", "position": "LCB" },
+      { "number": 3, "name": "Ivan Strinić", "position": "LB" },
+      { "number": 11, "name": "Marcelo Brozović", "position": "RDM" },
+      { "number": 7, "name": "Ivan Rakitić", "position": "LDM" },
+      { "number": 18, "name": "Ante Rebić", "position": "RW" },
+      { "number": 10, "name": "Luka Modrić", "position": "CAM" },
+      { "number": 4, "name": "Ivan Perišić", "position": "LW" },
+      { "number": 17, "name": "Mario Mandžukić", "position": "ST" }
+    ]
+  }
+  ,
+  {
+    "homeTeam": "France",
+    "awayTeam": "Belgium",
+    "competition": "World Cup Semi Final 2018",
+    "venue": "Saint Petersburg Stadium",
+    "date": "2018-07-10",
+    "score": "1-0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 2, "name": "Benjamin Pavard", "position": "RB" },
+      { "number": 4, "name": "Raphaël Varane", "position": "RCB" },
+      { "number": 5, "name": "Samuel Umtiti", "position": "LCB" },
+      { "number": 21, "name": "Lucas Hernández", "position": "LB" },
+      { "number": 6, "name": "Paul Pogba", "position": "RDM" },
+      { "number": 13, "name": "N'Golo Kanté", "position": "LDM" },
+      { "number": 10, "name": "Kylian Mbappé", "position": "RW" },
+      { "number": 7, "name": "Antoine Griezmann", "position": "CAM" },
+      { "number": 14, "name": "Blaise Matuidi", "position": "LW" },
+      { "number": 9, "name": "Olivier Giroud", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Toby Alderweireld", "position": "RCB" },
+      { "number": 4, "name": "Vincent Kompany", "position": "CB" },
+      { "number": 5, "name": "Jan Vertonghen", "position": "LCB" },
+      { "number": 22, "name": "Nacer Chadli", "position": "RM" },
+      { "number": 8, "name": "Marouane Fellaini", "position": "LCM" },
+      { "number": 6, "name": "Axel Witsel", "position": "CDM" },
+      { "number": 19, "name": "Mousa Dembélé", "position": "RCM" },
+      { "number": 7, "name": "Kevin De Bruyne", "position": "LM" },
+      { "number": 9, "name": "Romelu Lukaku", "position": "RS" },
+      { "number": 10, "name": "Eden Hazard", "position": "LS" }
+    ]
+  }
+  ,
+  {
+    "homeTeam": "Croatia",
+    "awayTeam": "England",
+    "competition": "World Cup Semi Final 2018",
+    "venue": "Luzhniki Stadium",
+    "date": "2018-07-11",
+    "score": "2-1 (a.e.t.)",
+
+    "homeLineup": [
+      { "number": 23, "name": "Danijel Subašić", "position": "GK" },
+      { "number": 2, "name": "Šime Vrsaljko", "position": "RB" },
+      { "number": 6, "name": "Dejan Lovren", "position": "RCB" },
+      { "number": 21, "name": "Domagoj Vida", "position": "LCB" },
+      { "number": 3, "name": "Ivan Strinić", "position": "LB" },
+      { "number": 11, "name": "Marcelo Brozović", "position": "LDM" },
+      { "number": 18, "name": "Ante Rebić", "position": "RM" },
+      { "number": 10, "name": "Luka Modrić", "position": "CAM" },
+      { "number": 7, "name": "Ivan Rakitić", "position": "RDM" },
+      { "number": 4, "name": "Ivan Perišić", "position": "LM" },
+      { "number": 17, "name": "Mario Mandžukić", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Jordan Pickford", "position": "GK" },
+      { "number": 2, "name": "Kyle Walker", "position": "RCB" },
+      { "number": 5, "name": "John Stones", "position": "CB" },
+      { "number": 6, "name": "Harry Maguire", "position": "LCB" },
+      { "number": 12, "name": "Kieran Trippier", "position": "RM" },
+      { "number": 20, "name": "Dele Alli", "position": "RCM" },
+      { "number": 8, "name": "Jordan Henderson", "position": "CDM" },
+      { "number": 7, "name": "Jesse Lingard", "position": "LCM" },
+      { "number": 18, "name": "Ashley Young", "position": "LM" },
+      { "number": 10, "name": "Raheem Sterling", "position": "RS" },
+      { "number": 9, "name": "Harry Kane", "position": "LS" }
+    ]
+  }
+]
