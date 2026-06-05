@@ -10,11 +10,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const prisma = new PrismaClient();
 
 /**
- * Parses and adds a match to the database, ensuring there are no duplicates.
+ * Identical player shape with the one used by the match importer.
  */
-async function processMatchFile(filePath: string) {
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+interface PlayerInput {
+  name: string;
+  number: number;
+  position: string;
+  alias?: string;
+  display?: string;
+}
 
+/**
+ * Parses and adds one match to the database, ensuring there are no duplicates.
+ */
+async function processMatch(data: any) {
   // Use a findFirst check to see if this specific game already exists
   let match = await prisma.match.findFirst({
     where: {
@@ -36,17 +45,6 @@ async function processMatchFile(filePath: string) {
         venue: data.venue
       }
     });
-  }
-
-  /**
-   * Identical player shape with the one used by the match importer.
-   */
-  interface PlayerInput {
-    name: string;
-    number: number;
-    position: string;
-    alias?: string;
-    display?: string;
   }
 
   const addPlayerToLineup = async (player: PlayerInput, teamName: string) => {
@@ -79,10 +77,27 @@ async function processMatchFile(filePath: string) {
     });
   };
 
-  for (const p of data.homeLineup) await addPlayerToLineup(p, data.homeTeam);
-  for (const p of data.awayLineup) await addPlayerToLineup(p, data.awayTeam);
+  // Ensure lineups exist in the payload before iterating
+  if (data.homeLineup) {
+    for (const p of data.homeLineup) await addPlayerToLineup(p, data.homeTeam);
+  }
+  if (data.awayLineup) {
+    for (const p of data.awayLineup) await addPlayerToLineup(p, data.awayTeam);
+  }
 
   console.log(`Processed: ${data.homeTeam} vs ${data.awayTeam}`);
+}
+
+/**
+ * Reads a JSON file, normalises it to an array, and processes each match sequentially.
+ */
+async function processMatchFile(filePath: string) {
+  const rawData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  const matches = Array.isArray(rawData) ? rawData : [rawData];
+
+  for (const match of matches) {
+    await processMatch(match);
+  }
 }
 
 // Recursive crawler to find all .json files in /data
