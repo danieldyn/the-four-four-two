@@ -9,7 +9,7 @@
     "competition": "World Cup Final 2022",
     "venue": "Lusail Stadium",
     "date": "2022-12-18",
-    "score": "3-3 (4-2 on pens)",
+    "score": "3 - 3 (4 - 2 on pens)",
 
     "homeLineup": [
       { "number": 23, "name": "Emiliano Martínez", "position": "GK" },
@@ -50,7 +50,7 @@
     "competition": "World Cup Semi Final 2022",
     "venue": "Lusail Stadium",
     "date": "2022-12-13",
-    "score": "3-0",
+    "score": "3 - 0",
 
     "homeLineup": [
       { "number": 23, "name": "Emiliano Martínez", "position": "GK" },
@@ -91,7 +91,7 @@
     "competition": "World Cup Semi Final 2022",
     "venue": "Al Bayt Stadium",
     "date": "2022-12-14",
-    "score": "2-0",
+    "score": "2 - 0",
 
     "homeLineup": [
       { "number": 1, "name": "Hugo Lloris", "position": "GK" },

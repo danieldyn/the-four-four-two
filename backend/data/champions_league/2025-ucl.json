@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Paris Saint-Germain",
+    "homePrimaryColour": "#004170",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Inter Milan",
+    "awayPrimaryColour": "#FEDF00",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Final 2025",
+    "venue": "Allianz Arena, Munich",
+    "date": "2025-05-31",
+    "score": "5 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Gianluigi Donnarumma", "position": "GK" },
+      { "number": 2, "name": "Achraf Hakimi", "position": "RB" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 51, "name": "Willian Pacho", "position": "LCB" },
+      { "number": 25, "name": "Nuno Mendes", "position": "LB" },
+      { "number": 87, "name": "João Neves", "position": "RCM" },
+      { "number": 17, "name": "Vitinha", "position": "CDM" },
+      { "number": 8, "name": "Fabián Ruiz", "position": "LCM", "display": "Fabián" },
+      { "number": 10, "name": "Ousmane Dembélé", "position": "RW" },
+      { "number": 14, "name": "Désiré Doué", "position": "ST" },
+      { "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Yann Sommer", "position": "GK" },
+      { "number": 28, "name": "Benjamin Pavard", "position": "RCB" },
+      { "number": 15, "name": "Francesco Acerbi", "position": "CB" },
+      { "number": 95, "name": "Alessandro Bastoni", "position": "LCB" },
+      { "number": 2, "name": "Denzel Dumfries", "position": "RWB" },
+      { "number": 23, "name": "Nicolò Barella", "position": "RCM" },
+      { "number": 20, "name": "Hakan Çalhanoğlu", "position": "CDM" },
+      { "number": 22, "name": "Henrikh Mkhitaryan", "position": "LCM" },
+      { "number": 32, "name": "Federico Dimarco", "position": "LWB" },
+      { "number": 9, "name": "Marcus Thuram", "position": "RS" },
+      { "number": 10, "name": "Lautaro Martínez", "position": "LS" }
+    ]
+  }
+]

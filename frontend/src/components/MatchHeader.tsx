@@ -18,6 +18,7 @@ const MatchHeader: React.FC<MatchHeaderProps> = ({ match }) => {
       <h3>
         {formatDate(match.date.toString())}, {match.competition} — {match.venue}
       </h3>
+      <h2> {match.score} </h2>
     </div>
   );
 };

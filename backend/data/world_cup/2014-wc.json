@@ -1,11 +1,15 @@
 [
   {
     "homeTeam": "Germany",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
     "awayTeam": "Argentina",
+    "awayPrimaryColour": "#152BBC",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Final 2014",
     "venue": "Maracanã Stadium",
     "date": "2014-07-13",
-    "score": "1-0 (a.e.t.)",
+    "score": "1 - 0 (a.e.t.)",
 
     "homeLineup": [
       { "number": 1, "name": "Manuel Neuer", "position": "GK" },
@@ -34,15 +38,19 @@
       { "number": 10, "name": "Lionel Messi", "position": "CAM" },
       { "number": 9, "name": "Gonzalo Higuaín", "position": "ST" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "Brazil",
+    "homePrimaryColour": "#FEDF00",
+    "homeSecondaryColour": "#009B3A",
     "awayTeam": "Germany",
+    "awayPrimaryColour": "#000000",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Semi Final 2014",
     "venue": "Estádio Mineirão",
     "date": "2014-07-08",
-    "score": "1-7",
+    "score": "1 - 7",
 
     "homeLineup": [
       { "number": 12, "name": "Júlio César Soares de Espíndola", "position": "GK", "alias": "julio-cesar", "display": "Júlio César" },
@@ -71,15 +79,19 @@
       { "number": 8, "name": "Mesut Özil", "position": "LW" },
       { "number": 11, "name": "Miroslav Klose", "position": "ST" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "Netherlands",
+    "homePrimaryColour": "#F36C21",
+    "homeSecondaryColour": "#000000",
     "awayTeam": "Argentina",
+    "awayPrimaryColour": "#43A1D5",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Semi Final 2014",
     "venue": "Arena de São Paulo",
     "date": "2014-07-09",
-    "score": "0-0 (2-4 on pens)",
+    "score": "0 - 0 (2 - 4 on pens)",
 
     "homeLineup": [
       { "number": 1, "name": "Jasper Cillessen", "position": "GK" },

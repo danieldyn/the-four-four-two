@@ -1,11 +1,15 @@
 [
   {
     "homeTeam": "France",
+    "homePrimaryColour": "#21304D",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "Croatia",
+    "awayPrimaryColour": "#ED1C24",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Final 2018",
     "venue": "Luzhniki Stadium",
     "date": "2018-07-15",
-    "score": "4-2",
+    "score": "4 - 2",
 
     "homeLineup": [
       { "number": 1, "name": "Hugo Lloris", "position": "GK" },
@@ -34,15 +38,19 @@
       { "number": 4, "name": "Ivan Perišić", "position": "LW" },
       { "number": 17, "name": "Mario Mandžukić", "position": "ST" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "France",
+    "homePrimaryColour": "#21304D",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "Belgium",
+    "awayPrimaryColour": "#E30613",
+    "awaySecondaryColour": "#FEFF17",
     "competition": "World Cup Semi Final 2018",
     "venue": "Saint Petersburg Stadium",
     "date": "2018-07-10",
-    "score": "1-0",
+    "score": "1 - 0",
 
     "homeLineup": [
       { "number": 1, "name": "Hugo Lloris", "position": "GK" },
@@ -71,15 +79,19 @@
       { "number": 9, "name": "Romelu Lukaku", "position": "RS" },
       { "number": 10, "name": "Eden Hazard", "position": "LS" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "Croatia",
+    "homePrimaryColour": "#21304D",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "England",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000040",
     "competition": "World Cup Semi Final 2018",
     "venue": "Luzhniki Stadium",
     "date": "2018-07-11",
-    "score": "2-1 (a.e.t.)",
+    "score": "2 - 1 (a.e.t.)",
 
     "homeLineup": [
       { "number": 23, "name": "Danijel Subašić", "position": "GK" },

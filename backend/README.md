@@ -21,6 +21,7 @@ example is in the `world_cup/2010_final.json` file, where we have the winger Ped
 him as just "Pedro" since his early days in the Spanish League. The database needs the full name to help us have
 unique "full-name slugs", but the guess logic tries to see if an alias exists when checking player guesses.
 Similarly, when displaying a correctly guessed player, the app checks whether the database contains a display name.
+Also refer to `data/template.txt` for a good starting point. It's just as fine to start from an existing curated JSON too.
 
 ## 2. Import the Match
 
