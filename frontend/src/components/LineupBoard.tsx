@@ -6,17 +6,28 @@ import { Guess } from "../pages/GamePage";
 interface LineupBoardProps {
   lineup: LineupEntry[];
   guesses: Guess[];
+  primaryColour?: string | null;
+  secondaryColour?: string | null;
 }
 
 /**
  * Renders a football pitch containing a team's starting lineup.
  */
-const LineupBoard: React.FC<LineupBoardProps> = ({ lineup = [], guesses = [] }) => {
+const LineupBoard: React.FC<LineupBoardProps> = ({ 
+  lineup = [],
+  guesses = [],
+  primaryColour,
+  secondaryColour
+}) => {
   if (!lineup.length)
     return null;
 
   // This adds the .x and .y properties based on the player's position
   const positioned: PositionedPlayer[] = mapLineupToPositions(lineup);
+
+  // Define default fallback colours in case their are not included
+  const defaultPrimary = "#2e7d32";
+  const defaultSecondary = "#ffffff";
 
   return (
     <div className="pitch">
@@ -54,11 +65,19 @@ const LineupBoard: React.FC<LineupBoardProps> = ({ lineup = [], guesses = [] }) 
           >
             {isGuessed && (
               <div className="player-name">
-                {p.player.display || p.player.lastName}
+                {/* The order of preference is: custom display name, last name */}
+                {p.player.display || p.player.lastName} 
               </div>
             )}
 
-            <div className={`player-slot ${isGuessed ? "revealed" : ""}`}>
+            <div
+              className={`player-slot ${isGuessed ? "revealed" : ""}`}
+              style={{
+                backgroundColor: primaryColour || defaultPrimary,
+                color: secondaryColour || defaultSecondary,
+                borderColor: secondaryColour || defaultSecondary
+              }}
+            >
               {p.shirtNumber ?? "?"}
             </div>
           </div>

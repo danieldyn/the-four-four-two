@@ -8,15 +8,22 @@ datasource db {
 }
 
 model Match {
-    id          Int      @id @default(autoincrement())
-    homeTeam    String
-    awayTeam    String
-    competition String
-    date        DateTime
-    venue       String
-    score       String
+    id                  Int      @id @default(autoincrement())
 
-    lineups     Lineup[]
+    homeTeam            String
+    homePrimaryColour   String?
+    homeSecondaryColour String?
+
+    awayTeam            String
+    awayPrimaryColour   String?
+    awaySecondaryColour String?
+
+    competition         String
+    date                DateTime
+    venue               String
+    score               String
+
+    lineups             Lineup[]
 }
 
 model Lineup {
@@ -27,8 +34,8 @@ model Lineup {
 
     team String
 
-    shirtNumber Int?
-    position    String?
+    shirtNumber Int
+    position    String
 
     starter Boolean @default(true)
     minuteIn  Int?

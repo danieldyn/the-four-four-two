@@ -36,7 +36,11 @@ export interface LineupEntry {
 export interface Match {
   id: number;
   homeTeam: string;
+  homePrimaryColour: string;
+  homeSecondaryColour: string;
   awayTeam: string;
+  awayPrimaryColour: string;
+  awaySecondaryColour: string;
   competition: string;
   date: string | Date;
   venue: string;

@@ -130,12 +130,22 @@ const GamePage: React.FC = () => {
           <div className="pitches">
             <div>
               <h2>{match.homeTeam}</h2>
-              <LineupBoard lineup={homeLineup} guesses={guesses} />
+              <LineupBoard
+                lineup={homeLineup}
+                guesses={guesses}
+                primaryColour={match.homePrimaryColour}
+                secondaryColour={match.homeSecondaryColour}
+              />
             </div>
 
             <div>
               <h2>{match.awayTeam}</h2>
-              <LineupBoard lineup={awayLineup} guesses={guesses} />
+              <LineupBoard
+                lineup={awayLineup}
+                guesses={guesses}
+                primaryColour={match.awayPrimaryColour}
+                secondaryColour={match.awaySecondaryColour}
+              />
             </div>
           </div>
         </div>

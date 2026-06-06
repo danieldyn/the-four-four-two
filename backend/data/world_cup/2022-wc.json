@@ -1,7 +1,11 @@
 [
   {
     "homeTeam": "Argentina",
+    "homePrimaryColour": "#43A1D5",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "France",
+    "awayPrimaryColour": "#21304D",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Final 2022",
     "venue": "Lusail Stadium",
     "date": "2022-12-18",
@@ -34,11 +38,15 @@
       { "number": 10, "name": "Kylian Mbappé", "position": "LW" },
       { "number": 9, "name": "Olivier Giroud", "position": "ST" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "Argentina",
+    "homePrimaryColour": "#43A1D5",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "Croatia",
+    "awayPrimaryColour": "#ED1C24",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Semi Final 2022",
     "venue": "Lusail Stadium",
     "date": "2022-12-13",
@@ -71,11 +79,15 @@
       { "number": 9, "name": "Andrej Kramarić", "position": "ST" },
       { "number": 4, "name": "Ivan Perišić", "position": "LW" }
     ]
-  }
-  ,
+  },
+
   {
     "homeTeam": "France",
+    "homePrimaryColour": "#21304D",
+    "homeSecondaryColour": "#FFFFFF",
     "awayTeam": "Morocco",
+    "awayPrimaryColour": "#C1272D",
+    "awaySecondaryColour": "#FFFFFF",
     "competition": "World Cup Semi Final 2022",
     "venue": "Al Bayt Stadium",
     "date": "2022-12-14",

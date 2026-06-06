@@ -38,7 +38,11 @@ async function processMatch(data: any) {
     match = await prisma.match.create({
       data: {
         homeTeam: data.homeTeam,
+        homePrimaryColour: data.homePrimaryColour,
+        homeSecondaryColour: data.homeSecondaryColour,
         awayTeam: data.awayTeam,
+        awayPrimaryColour: data.awayPrimaryColour,
+        awaySecondaryColour: data.awaySecondaryColour,
         competition: data.competition,
         date: new Date(data.date),
         score: data.score,
