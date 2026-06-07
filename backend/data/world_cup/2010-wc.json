@@ -38,5 +38,87 @@
       { "number": 18, "name": "Pedro Rodríguez", "position": "LW", "alias": "pedro", "display": "Pedro" },
       { "number": 7, "name": "David Villa", "position": "ST" }
     ]
+  },
+
+  {
+    "homeTeam": "Uruguay",
+    "homePrimaryColour": "#75AADB",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Netherlands",
+    "awayPrimaryColour": "#F36C21",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "World Cup Semi Final 2010",
+    "venue": "Cape Town Stadium",
+    "date": "2010-07-06",
+    "score": "2 - 3",
+
+    "homeLineup": [
+      { "number": 1, "name": "Fernando Muslera", "position": "GK" },
+      { "number": 16, "name": "Maxi Pereira", "position": "RB", "display": "M. Pereira" },
+      { "number": 6, "name": "Mauricio Victorino", "position": "LCB" },
+      { "number": 3, "name": "Diego Godín", "position": "RCB" },
+      { "number": 22, "name": "Martín Cáceres", "position": "LB" },
+      { "number": 15, "name": "Diego Pérez", "position": "RM" },
+      { "number": 5, "name": "Walter Gargano", "position": "RCM" },
+      { "number": 17, "name": "Egidio Arévalo Ríos", "position": "LCM", "display": "Arévalo Ríos" },
+      { "number": 11, "name": "Álvaro Pereira", "position": "LM", "display": "A. Pereira" },
+      { "number": 7, "name": "Edinson Cavani", "position": "RS" },
+      { "number": 10, "name": "Diego Forlán", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Maarten Stekelenburg", "position": "GK" },
+      { "number": 12, "name": "Khalid Boulahrouz", "position": "RB" },
+      { "number": 3, "name": "John Heitinga", "position": "RCB" },
+      { "number": 4, "name": "Joris Mathijsen", "position": "LCB" },
+      { "number": 5, "name": "Giovanni van Bronckhorst", "position": "LB" },
+      { "number": 6, "name": "Mark van Bommel", "position": "RDM" },
+      { "number": 14, "name": "Demy de Zeeuw", "position": "LDM" },
+      { "number": 11, "name": "Arjen Robben", "position": "RW" },
+      { "number": 10, "name": "Wesley Sneijder", "position": "CAM" },
+      { "number": 7, "name": "Dirk Kuyt", "position": "LW" },
+      { "number": 9, "name": "Robin van Persie", "position": "ST" }
+    ]
+  },
+
+  {
+    "homeTeam": "Germany",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Spain",
+    "awayPrimaryColour": "#0A2240",
+    "awaySecondaryColour": "#FFC400",
+    "competition": "World Cup Semi Final 2010",
+    "venue": "Moses Mabhida Stadium",
+    "date": "2010-07-07",
+    "score": "0 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Manuel Neuer", "position": "GK" },
+      { "number": 16, "name": "Philipp Lahm", "position": "RB" },
+      { "number": 3, "name": "Arne Friedrich", "position": "RCB" },
+      { "number": 17, "name": "Per Mertesacker", "position": "LCB" },
+      { "number": 20, "name": "Jérôme Boateng", "position": "LB" },
+      { "number": 6, "name": "Sami Khedira", "position": "RDM" },
+      { "number": 7, "name": "Bastian Schweinsteiger", "position": "LDM" },
+      { "number": 15, "name": "Piotr Trochowski", "position": "RW" },
+      { "number": 8, "name": "Mesut Özil", "position": "CAM" },
+      { "number": 10, "name": "Lukas Podolski", "position": "LW" },
+      { "number": 11, "name": "Miroslav Klose", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 15, "name": "Sergio Ramos", "position": "RB" },
+      { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
+      { "number": 5, "name": "Carles Puyol", "position": "LCB" },
+      { "number": 11, "name": "Joan Capdevila", "position": "LB" },
+      { "number": 16, "name": "Sergio Busquets", "position": "RDM" },
+      { "number": 14, "name": "Xabi Alonso", "position": "LDM" },
+      { "number": 8, "name": "Xavi Hernández", "position": "CAM", "alias": "xavi", "display": "Xavi" },
+      { "number": 6, "name": "Andrés Iniesta", "position": "RW" },
+      { "number": 18, "name": "Pedro Rodríguez", "position": "LW", "alias": "pedro", "display": "Pedro" },
+      { "number": 7, "name": "David Villa", "position": "ST" }
+    ]
   }
 ]
