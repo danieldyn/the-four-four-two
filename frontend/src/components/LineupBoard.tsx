@@ -8,6 +8,7 @@ interface LineupBoardProps {
   guesses: Guess[];
   primaryColour?: string | null;
   secondaryColour?: string | null;
+  hasResigned: boolean;
 }
 
 /**
@@ -17,7 +18,8 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
   lineup = [],
   guesses = [],
   primaryColour,
-  secondaryColour
+  secondaryColour,
+  hasResigned
 }) => {
   if (!lineup.length)
     return null;
@@ -51,6 +53,8 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
       {/* Player Rendering */}
       {positioned.map((p) => {
         const isGuessed = guesses.some((g) => g.guess === p.player.slug);
+        const isMissing = !isGuessed && hasResigned;
+        const showPlayer = isGuessed || hasResigned;
 
         return (
           <div
@@ -63,15 +67,17 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
               transform: "translate(-50%, -50%)",
             }}
           >
-            {isGuessed && (
-              <div className="player-name">
-                {/* The order of preference is: custom display name, last name */}
+            {showPlayer && (
+              <div 
+                className="player-name"
+                style={{ color: isMissing ? "#ef4444" : undefined }}
+              >
                 {p.player.display || p.player.lastName} 
               </div>
             )}
 
             <div
-              className={`player-slot ${isGuessed ? "revealed" : ""}`}
+              className={`player-slot ${showPlayer ? "revealed" : ""}`}
               style={{
                 backgroundColor: primaryColour || defaultPrimary,
                 color: secondaryColour || defaultSecondary,

@@ -4,12 +4,14 @@ import { GuessResponse } from "../types/football";
 
 /**
  * The shape of the Guess Input panel's attributes.
- * Requires a callback for hints and one for adding guesses.
+ * Requires a callback for hints, one for resigning and one for adding guesses.
  */
 interface GuessInputProps {
   matchId: number;
   addGuess: (slug: string, result: "correct" | "wrong", playerData: GuessResponse | null) => void;
   onHint: () => void;
+  hasResigned: boolean;
+  onResign: () => void;
 }
 
 const apiUrl = import.meta.env.VITE_API_URL;
@@ -18,12 +20,13 @@ const apiUrl = import.meta.env.VITE_API_URL;
  * Captures and processes user input, communicating with the backend.
  * Also supports the in-game hint system.
  */
-const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) => {
+const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint, hasResigned, onResign }) => {
   const [value, setValue] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!value.trim()) return;
+    if (!value.trim() || hasResigned)
+      return;
 
     // Normalise all user input before sending
     const normalisedGuess = slugify(value);
@@ -60,13 +63,24 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint }) =>
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
         placeholder="Enter player last name"
         className="guess-input"
+        disabled={hasResigned}
       />
       <div className="button-group">
-        <button type="submit" className="submit-button">
-          Guess
-        </button>
-        <button type="button" className="hint-button" onClick={onHint}>
+        <button
+          type="button"
+          className="hint-button"
+          onClick={onHint}
+          disabled={hasResigned}
+        >
           Hint
+        </button>
+        <button
+          type="button"
+          className="resign-button"
+          onClick={onResign}
+          disabled={hasResigned}
+        >
+          {hasResigned ? "Game Over" : "Resign"}
         </button>
       </div>
     </form>

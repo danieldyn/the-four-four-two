@@ -13,13 +13,15 @@ interface GuessHistoryProps {
   awayLineup: LineupEntry[];
   guesses: Guess[];
   hintsUsed: Record<string, boolean>;
+  hasResigned: boolean;
 }
 
 const GuessHistory: React.FC<GuessHistoryProps> = ({ 
   homeLineup, 
   awayLineup, 
   guesses, 
-  hintsUsed 
+  hintsUsed,
+  hasResigned
 }) => {
   // Extract the slugs of players correctly guessed
   const guessedSlugs = guesses
@@ -41,21 +43,20 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
         <ul>
           {sorted.map((p) => {
             const isGuessed = guessedSlugs.includes(p.player.slug);
+            const isMissing = !isGuessed && hasResigned;
+            const showRealName = isGuessed || hasResigned;
             const correctAnswer = (p.player.alias && p.player.display)
                                 ? p.player.display 
                                 : `${p.player.firstName} ${p.player.lastName}`;
 
             return (
-              <li key={p.id} className={`player-row ${isGuessed ? "revealed" : ""}`}>
-                <span className="shirt-number">
-                  {p.shirtNumber ?? "?"}
-                </span>
-
-                <span className="history-player-name">
-                  {isGuessed
-                    ? correctAnswer
-                    : maskName(correctAnswer, hintsUsed[p.player.slug])
-                  }
+              <li key={p.id} className={`player-row ${isGuessed ? "revealed" : ""} ${isMissing ? "missed" : ""}`}>
+                <span className="shirt-number">{p.shirtNumber ?? "?"}</span>
+                <span 
+                  className="history-player-name"
+                  style={{ color: isMissing ? "#ef4444" : undefined }}
+                >
+                  {showRealName ? correctAnswer : maskName(correctAnswer, hintsUsed[p.player.slug])}
                 </span>
               </li>
             );

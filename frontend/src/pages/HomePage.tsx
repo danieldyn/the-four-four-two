@@ -42,14 +42,22 @@ const HomePage: React.FC = () => {
         <div>
           <h3>How to play?</h3>
           <p>
-            Type player last names and press Enter (or click the Submit button) to take a guess.
-            If you are correct, the player will be revealed on the lineup. You can try as many times as you want.
+            Type player last names and press Enter to take a guess.
+            If you are correct, the corresponding player will be revealed on the lineup.
+            You can try as many times as you want.
+            You are allowed to submit the player's last name as a guess, not the full name. Accents are optional.
+            Note that your guess is taken into consideration for both teams.
+          </p>
+          <p>
+            For this reason, there is a fair-play rule that is enforced when involving players that share their last name.
+            Let's assume you have the famous 2009 Champions League Semi Final second leg between Barcelona and Inter Milan,
+            which features both Gabriel and Diego Milito. You need to use their first names as tiebreakers when guessing.
+            This prevents accidental combos and aligns better with the idea of the quiz.
           </p>
           <p>
             Use the players' positions and shirt numbers as valuable hints to discover all of them! Keep in mind
             that you can deduce the number of letters of a player's name using the right hand side panel. If you
             need it, you can press the "Hint" button, which will reveal random letters from a random player's name.
-            You are allowed to submit the player's last name as a guess, not the full name. Accents are optional.
           </p>
         </div>
 

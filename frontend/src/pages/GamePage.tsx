@@ -31,6 +31,10 @@ const GamePage: React.FC = () => {
   const [match, setMatch] = useState<Match | null>(null);
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
+  const [hasResigned, setHasResigned] = useState<boolean>(false);
+
+  // Resigning will reveal unguessed players and finish the game
+  const handleResign = () => setHasResigned(true);
 
   // Extract category parameter from the URL
   const [searchParams] = useSearchParams();
@@ -133,6 +137,7 @@ const GamePage: React.FC = () => {
               <LineupBoard
                 lineup={homeLineup}
                 guesses={guesses}
+                hasResigned={hasResigned}
                 primaryColour={match.homePrimaryColour}
                 secondaryColour={match.homeSecondaryColour}
               />
@@ -143,6 +148,7 @@ const GamePage: React.FC = () => {
               <LineupBoard
                 lineup={awayLineup}
                 guesses={guesses}
+                hasResigned={hasResigned}
                 primaryColour={match.awayPrimaryColour}
                 secondaryColour={match.awaySecondaryColour}
               />
@@ -155,6 +161,8 @@ const GamePage: React.FC = () => {
             matchId={match.id}
             addGuess={addGuess}
             onHint={handleHint}
+            hasResigned={hasResigned}
+            onResign={handleResign}
           />
 
           <GuessHistory
@@ -162,6 +170,7 @@ const GamePage: React.FC = () => {
             awayLineup={awayLineup}
             guesses={guesses}
             hintsUsed={hintsUsed}
+            hasResigned={hasResigned}
           />
         </div>
       </div>

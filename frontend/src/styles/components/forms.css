@@ -17,7 +17,7 @@ input {
   font-weight: bold;
 }
 
-.submit-button {
+.hint-button {
   margin: 0;
   padding: 8px 12px;
   background: #253fb3;
@@ -29,11 +29,11 @@ input {
   white-space: nowrap;
 }
 
-.submit-button:hover {
+.hint-button:hover {
   background: #2054a8;
 }
 
-.hint-button {
+.resign-button {
   margin-left: 8px;
   padding: 8px 12px;
   background: #bb4419;
@@ -45,6 +45,6 @@ input {
   white-space: nowrap;
 }
 
-.hint-button:hover {
+.resign-button:hover {
   background: #ba260c;
 }
