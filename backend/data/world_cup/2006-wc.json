@@ -4,10 +4,10 @@
     "homePrimaryColour": "#FFFFFF",
     "homeSecondaryColour": "#1F56E3",
     "awayTeam": "Italy",
-    "awayPrimaryColour": "#4372EC",
-    "awaySecondaryColour": "#FFFFFF",
+    "awayPrimaryColour": "#00529F",
+    "awaySecondaryColour": "#D4AF37",
     "competition": "World Cup Final 2006",
-    "venue": "Olympiastadion",
+    "venue": "Olympiastadion, Berlin",
     "date": "2006-07-09",
     "score": "1 - 1 (5 - 3 on pens)",
 
@@ -37,6 +37,88 @@
       { "number": 16, "name": "Mauro Camoranesi", "position": "RM" },
       { "number": 10, "name": "Francesco Totti", "position": "SS" },
       { "number": 9, "name": "Luca Toni", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Germany",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Italy",
+    "awayPrimaryColour": "#00529F",
+    "awaySecondaryColour": "#D4AF37",
+    "competition": "World Cup Semi Final 2006",
+    "venue": "Westfalenstadion, Dortmund",
+    "date": "2006-07-04",
+    "score": "0 - 2 (a.e.t.)",
+
+    "homeLineup": [
+      { "number": 1, "name": "Jens Lehmann", "position": "GK" },
+      { "number": 3, "name": "Arne Friedrich", "position": "RB" },
+      { "number": 17, "name": "Per Mertesacker", "position": "RCB" },
+      { "number": 21, "name": "Christoph Metzelder", "position": "LCB" },
+      { "number": 16, "name": "Philipp Lahm", "position": "LB" },
+      { "number": 19, "name": "Bernd Schneider", "position": "RM" },
+      { "number": 5, "name": "Sebastian Kehl", "position": "RCM" },
+      { "number": 13, "name": "Michael Ballack", "position": "LCM" },
+      { "number": 18, "name": "Tim Borowski", "position": "LM" },
+      { "number": 11, "name": "Miroslav Klose", "position": "RS" },
+      { "number": 20, "name": "Lukas Podolski", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 19, "name": "Gianluca Zambrotta", "position": "RB" },
+      { "number": 23, "name": "Marco Materazzi", "position": "LCB" },
+      { "number": 5, "name": "Fabio Cannavaro", "position": "RCB" },
+      { "number": 3, "name": "Fabio Grosso", "position": "LB" },
+      { "number": 16, "name": "Mauro Camoranesi", "position": "RM" },
+      { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "LCM" },
+      { "number": 20, "name": "Simone Perrotta", "position": "LM" },
+      { "number": 10, "name": "Francesco Totti", "position": "SS" },
+      { "number": 9, "name": "Luca Toni", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Portugal",
+    "homePrimaryColour": "#9C1B14",
+    "homeSecondaryColour": "#FFC400",
+    "awayTeam": "France",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#002395",
+    "competition": "World Cup Semi Final 2006",
+    "venue": "Allianz Arena, Munich",
+    "date": "2006-07-05",
+    "score": "0 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Ricardo Alexandre Martins Soares Pereira", "position": "GK", "alias": "ricardo", "display": "Ricardo" },
+      { "number": 13, "name": "Luís Miguel Brito Garcia Monteiro", "position": "RB", "alias": "miguel", "display": "Miguel" },
+      { "number": 5, "name": "Fernando Meira", "position": "RCB" },
+      { "number": 16, "name": "Ricardo Carvalho", "position": "LCB" },
+      { "number": 14, "name": "Nuno Valente", "position": "LB" },
+      { "number": 6, "name": "Francisco José Rodrigues da Costa", "position": "RDM", "alias": "costinha", "display": "Costinha" },
+      { "number": 18, "name": "Nuno Ricardo de Oliveira Ribeiro", "position": "LDM", "alias": "maniche", "display": "Maniche" },
+      { "number": 7, "name": "Luís Figo", "position": "RW" },
+      { "number": 20, "name": "Anderson Luís de Souza", "position": "CAM", "alias": "deco", "display": "Deco" },
+      { "number": 17, "name": "Cristiano Ronaldo", "position": "LW" },
+      { "number": 9, "name": "Pedro Miguel Carreiro Resendes", "position": "ST", "alias": "pauleta", "display": "Pauleta`" }
+    ],
+
+    "awayLineup": [
+      { "number": 16, "name": "Fabien Barthez", "position": "GK" },
+      { "number": 19, "name": "Willy Sagnol", "position": "RB" },
+      { "number": 15, "name": "Lilian Thuram", "position": "RCB" },
+      { "number": 5, "name": "William Gallas", "position": "LCB" },
+      { "number": 3, "name": "Éric Abidal", "position": "LB" },
+      { "number": 4, "name": "Patrick Vieira", "position": "RDM" },
+      { "number": 6, "name": "Claude Makélélé", "position": "LDM" },
+      { "number": 22, "name": "Franck Ribéry", "position": "RW" },
+      { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 7, "name": "Florent Malouda", "position": "LW" },
+      { "number": 12, "name": "Thierry Henry", "position": "ST" }
     ]
   }
 ]
