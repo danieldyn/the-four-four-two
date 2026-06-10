@@ -38,5 +38,87 @@
       { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "RS", "alias": "rivaldo", "display": "Rivaldo" },
       { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo" }
     ]
+  },
+
+  {
+    "homeTeam": "Germany",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "South Korea",
+    "awayPrimaryColour": "#E30613",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "World Cup Semi Final 2002",
+    "venue": "Seoul World Cup Stadium",
+    "date": "2002-06-25",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Oliver Kahn", "position": "GK" },
+      { "number": 22, "name": "Torsten Frings", "position": "RWB" },
+      { "number": 2, "name": "Thomas Linke", "position": "RCB" },
+      { "number": 5, "name": "Carsten Ramelow", "position": "CB" },
+      { "number": 21, "name": "Christoph Metzelder", "position": "LCB" },
+      { "number": 17, "name": "Marco Bode", "position": "LWB" },
+      { "number": 19, "name": "Bernd Schneider", "position": "LCM" },
+      { "number": 8, "name": "Dietmar Hamann", "position": "RCM" },
+      { "number": 13, "name": "Michael Ballack", "position": "CAM" },
+      { "number": 7, "name": "Oliver Neuville", "position": "LS" },
+      { "number": 11, "name": "Miroslav Klose", "position": "RS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Lee Woon-jae", "position": "GK" },
+      { "number": 4, "name": "Choi Jin-cheul", "position": "RCB" },
+      { "number": 20, "name": "Hong Myung-bo", "position": "CB" },
+      { "number": 7, "name": "Kim Tae-young", "position": "LCB" },
+      { "number": 22, "name": "Song Chong-gug", "position": "RWB" },
+      { "number": 6, "name": "Yoo Sang-chul", "position": "RCM" },
+      { "number": 21, "name": "Park Ji-sung", "position": "LCM" },
+      { "number": 10, "name": "Lee Young-pyo", "position": "LWB" },
+      { "number": 16, "name": "Cha Du-ri", "position": "RW" },
+      { "number": 14, "name": "Lee Chun-soo", "position": "LW" },
+      { "number": 18, "name": "Hwang Sun-hong", "position": "ST" }
+    ]
+  },
+
+  {
+    "homeTeam": "Brazil",
+    "homePrimaryColour": "#FEDF00",
+    "homeSecondaryColour": "#009B3A",
+    "awayTeam": "Turkey",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#E30613",
+    "competition": "World Cup Semi Final 2002",
+    "venue": "Saitama Stadium",
+    "date": "2002-06-26",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Marcos Roberto Silveira dos Reis", "position": "GK", "alias": "marcos", "display": "Marcos" },
+      { "number": 3, "name": "Lucimar Ferreira da Silva", "position": "RCB", "alias": "lucio", "display": "Lúcio" },
+      { "number": 5, "name": "José Edmílson Gomes de Moraes", "position": "CB", "alias": "edmilson", "display": "Edmílson" },
+      { "number": 4, "name": "José Vítor Roque Júnior", "position": "LCB", "alias": "roque-junior", "display": "Roque Júnior" },
+      { "number": 2, "name": "Marcos Evangelista de Morais", "position": "RWB", "alias": "cafu", "display": "Cafu" },
+      { "number": 8, "name": "Gilberto Aparecido da Silva", "position": "RCM", "alias": "gilberto-silva", "display": "Gilberto Silva" },
+      { "number": 15, "name": "José Kléberson Pereira", "position": "LCM", "alias": "kleberson", "display": "Kléberson" },
+      { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LWB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 20, "name": "Edílson da Silva Ferreira", "position": "RW", "alias": "edilson", "display": "Edílson" },
+      { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "LW", "alias": "rivaldo", "display": "Rivaldo" },
+      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "ST", "alias": "ronaldo", "display": "Ronaldo" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Rüştü Reçber", "position": "GK" },
+      { "number": 4, "name": "Fatih Akyel", "position": "RB" },
+      { "number": 5, "name": "Alpay Özalan", "position": "RCB" },
+      { "number": 3, "name": "Bülent Korkmaz", "position": "LCB" },
+      { "number": 18, "name": "Ergün Penbe", "position": "LB" },
+      { "number": 22, "name": "Ümit Davala", "position": "RM" },
+      { "number": 8, "name": "Tugay Kerimoğlu", "position": "RCM" },
+      { "number": 10, "name": "Yıldıray Baştürk", "position": "LCM" },
+      { "number": 21, "name": "Emre Belözoğlu", "position": "LM" },
+      { "number": 11, "name": "Hasan Şaş", "position": "RS" },
+      { "number": 9, "name": "Hakan Şükür", "position": "LS" }
+    ]
   }
 ]
