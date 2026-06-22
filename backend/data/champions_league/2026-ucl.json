@@ -1,0 +1,42 @@
+[
+	{
+		"homeTeam": "Paris Saint-Germain",
+		"homePrimaryColour": "#004170",
+		"homeSecondaryColour": "#FFFFFF",
+		"awayTeam": "Arsenal",
+		"awayPrimaryColour": "#EF0107",
+		"awaySecondaryColour": "#FFFFFF",
+		"competition": "Champions League Final 2026",
+		"venue": "Puskás Aréna, Budapest",
+		"date": "2026-05-30",
+		"score": "1 - 1 (4 - 3 on pens)",
+
+		"homeLineup": [
+			{ "number": 39, "name": "Matvey Safonov", "position": "GK" },
+			{ "number": 2, "name": "Achraf Hakimi", "position": "RB" },
+			{ "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+			{ "number": 51, "name": "Willian Pacho", "position": "LCB" },
+			{ "number": 25, "name": "Nuno Mendes", "position": "LB" },
+			{ "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
+			{ "number": 8, "name": "Fabián Ruiz", "position": "LCM" },
+			{ "number": 87, "name": "João Neves", "position": "RCM" },
+			{ "number": 14, "name": "Désiré Doué", "position": "RW" },
+			{ "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW" },
+			{ "number": 10, "name": "Ousmane Dembélé", "position": "ST" }
+		],
+
+		"awayLineup": [
+			{ "number": 22, "name": "David Raya", "position": "GK" },
+			{ "number": 3, "name": "Cristhian Mosquera", "position": "RB" },
+			{ "number": 2, "name": "William Saliba", "position": "RCB" },
+			{ "number": 6, "name": "Gabriel dos Santos Magalhães", "position": "LCB", "alias": "gabriel", "display": "Gabriel" },
+			{ "number": 5, "name": "Piero Hincapié", "position": "LB" },
+			{ "number": 41, "name": "Declan Rice", "position": "RDM" },
+			{ "number": 49, "name": "Myles Lewis-Skelly", "position": "LDM" },
+			{ "number": 8, "name": "Martin Ødegaard", "position": "CAM" },
+			{ "number": 7, "name": "Bukayo Saka", "position": "RW" },
+			{ "number": 19, "name": "Leandro Trossard", "position": "LW" },
+			{ "number": 29, "name": "Kai Havertz", "position": "ST" }
+		]
+	}
+]
