@@ -38,5 +38,169 @@
       { "number": 11, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
       { "number": 7, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinícius Júnior" }
     ]
+  },
+
+  {
+    "homeTeam": "Bayern Munich",
+    "homePrimaryColour": "#DC052D",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#000000",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2024 (1st Leg)",
+    "venue": "Allianz Arena, Munich",
+    "date": "2024-04-30",
+    "score": "2 - 2",
+
+    "homeLineup": [
+      { "number": 1, "name": "Manuel Neuer", "position": "GK" },
+      { "number": 6, "name": "Joshua Kimmich", "position": "RB" },
+      { "number": 15, "name": "Eric Dier", "position": "RCB" },
+      { "number": 3, "name": "Kim Min-jae", "position": "LCB" },
+      { "number": 40, "name": "Noussair Mazraoui", "position": "LB" },
+      { "number": 27, "name": "Konrad Laimer", "position": "RDM" },
+      { "number": 8, "name": "Leon Goretzka", "position": "LDM" },
+      { "number": 10, "name": "Leroy Sané", "position": "RW" },
+      { "number": 25, "name": "Thomas Müller", "position": "CAM" },
+      { "number": 42, "name": "Jamal Musiala", "position": "LW" },
+      { "number": 9, "name": "Harry Kane", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 13, "name": "Andriy Lunin", "position": "GK" },
+      { "number": 17, "name": "Lucas Vázquez", "position": "RB", "display": "Lucas Vázquez" },
+      { "number": 6, "name": "Nacho Fernández", "position": "LCB", "alias": "nacho", "display": "Nacho" },
+      { "number": 22, "name": "Antonio Rüdiger", "position": "RCB" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 15, "name": "Federico Valverde", "position": "RCM" },
+      { "number": 18, "name": "Aurélien Tchouaméni", "position": "CDM" },
+      { "number": 8, "name": "Toni Kroos", "position": "LCM" },
+      { "number": 5, "name": "Jude Bellingham", "position": "CAM" },
+      { "number": 11, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
+      { "number": 7, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinícius Júnior" }
+    ]
+  },
+
+  {
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Bayern Munich",
+    "awayPrimaryColour": "#000000",
+    "awaySecondaryColour": "#DC052D",
+    "competition": "Champions League Semi Final 2024 (2nd Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2024-05-08",
+    "score": "2 - 1",
+
+    "homeLineup": [
+      { "number": 13, "name": "Andriy Lunin", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 22, "name": "Antonio Rüdiger", "position": "RCB" },
+      { "number": 6, "name": "Nacho Fernández", "position": "LCB", "alias": "nacho", "display": "Nacho" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 15, "name": "Federico Valverde", "position": "RCM" },
+      { "number": 18, "name": "Aurélien Tchouaméni", "position": "LCM" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 5, "name": "Jude Bellingham", "position": "CAM" },
+      { "number": 11, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
+      { "number": 7, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinícius Júnior" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Manuel Neuer", "position": "GK" },
+      { "number": 6, "name": "Joshua Kimmich", "position": "RB" },
+      { "number": 4, "name": "Matthijs de Ligt", "position": "RCB" },
+      { "number": 15, "name": "Eric Dier", "position": "LCB" },
+      { "number": 40, "name": "Noussair Mazraoui", "position": "LB" },
+      { "number": 27, "name": "Konrad Laimer", "position": "RDM" },
+      { "number": 45, "name": "Aleksandar Pavlović", "position": "LDM" },
+      { "number": 10, "name": "Leroy Sané", "position": "RW" },
+      { "number": 42, "name": "Jamal Musiala", "position": "CAM" },
+      { "number": 7, "name": "Serge Gnabry", "position": "LW" },
+      { "number": 9, "name": "Harry Kane", "position": "ST" }
+    ]
+  },
+
+  {
+    "homeTeam": "Borussia Dortmund",
+    "homePrimaryColour": "#FDE100",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Paris Saint-Germain",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#004170",
+    "competition": "Champions League Semi Final 2024 (1st Leg)",
+    "venue": "Signal Iduna Park, Dortmund",
+    "date": "2024-05-01",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Gregor Kobel", "position": "GK" },
+      { "number": 26, "name": "Julian Ryerson", "position": "RB" },
+      { "number": 15, "name": "Mats Hummels", "position": "RCB" },
+      { "number": 4, "name": "Nico Schlotterbeck", "position": "LCB" },
+      { "number": 22, "name": "Ian Maatsen", "position": "LB" },
+      { "number": 20, "name": "Marcel Sabitzer", "position": "LDM" },
+      { "number": 23, "name": "Emre Can", "position": "RDM" },
+      { "number": 10, "name": "Jadon Sancho", "position": "LW" },
+      { "number": 19, "name": "Julian Brandt", "position": "CAM" },
+      { "number": 27, "name": "Karim Adeyemi", "position": "RW" },
+      { "number": 14, "name": "Niclas Füllkrug", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 99, "name": "Gianluigi Donnarumma", "position": "GK" },
+      { "number": 2, "name": "Achraf Hakimi", "position": "RB" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 21, "name": "Lucas Hernández", "position": "LCB" },
+      { "number": 25, "name": "Nuno Mendes", "position": "LB" },
+      { "number": 33, "name": "Warren Zaïre-Emery", "position": "RCM" },
+      { "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
+      { "number": 8, "name": "Fabián Ruiz", "position": "LCM", "alias": "fabian", "display": "Fabián Ruiz" },
+      { "number": 10, "name": "Ousmane Dembélé", "position": "RW" },
+      { "number": 7, "name": "Kylian Mbappé", "position": "ST" },
+      { "number": 29, "name": "Bradley Barcola", "position": "LW" }
+    ]
+  },
+
+  {
+    "homeTeam": "Paris Saint-Germain",
+    "homePrimaryColour": "#004170",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Borussia Dortmund",
+    "awayPrimaryColour": "#FDE100",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2024 (2nd Leg)",
+    "venue": "Parc des Princes, Paris",
+    "date": "2024-05-07",
+    "score": "0 - 1",
+
+    "homeLineup": [
+      { "number": 99, "name": "Gianluigi Donnarumma", "position": "GK" },
+      { "number": 2, "name": "Achraf Hakimi", "position": "RB" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 35, "name": "Lucas Beraldo", "position": "LCB" },
+      { "number": 25, "name": "Nuno Mendes", "position": "LB" },
+      { "number": 33, "name": "Warren Zaïre-Emery", "position": "RCM" },
+      { "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
+      { "number": 8, "name": "Fabián Ruiz", "position": "LCM", "alias": "fabian", "display": "Fabián Ruiz" },
+      { "number": 10, "name": "Ousmane Dembélé", "position": "RW" },
+      { "number": 9, "name": "Gonçalo Ramos", "position": "ST" },
+      { "number": 7, "name": "Kylian Mbappé", "position": "LW" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Gregor Kobel", "position": "GK" },
+      { "number": 26, "name": "Julian Ryerson", "position": "RB" },
+      { "number": 15, "name": "Mats Hummels", "position": "RCB" },
+      { "number": 4, "name": "Nico Schlotterbeck", "position": "LCB" },
+      { "number": 22, "name": "Ian Maatsen", "position": "LB" },
+      { "number": 20, "name": "Marcel Sabitzer", "position": "LDM" },
+      { "number": 23, "name": "Emre Can", "position": "RDM" },
+      { "number": 10, "name": "Jadon Sancho", "position": "RW" },
+      { "number": 19, "name": "Julian Brandt", "position": "CAM" },
+      { "number": 27, "name": "Karim Adeyemi", "position": "LW" },
+      { "number": 14, "name": "Niclas Füllkrug", "position": "ST" }
+    ]
   }
 ]

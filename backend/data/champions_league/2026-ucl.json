@@ -18,7 +18,7 @@
 			{ "number": 51, "name": "Willian Pacho", "position": "LCB" },
 			{ "number": 25, "name": "Nuno Mendes", "position": "LB" },
 			{ "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
-			{ "number": 8, "name": "Fabián Ruiz", "position": "LCM" },
+			{ "number": 8, "name": "Fabián Ruiz", "position": "LCM", "alias": "fabian", "display": "Fabián Ruiz" },
 			{ "number": 87, "name": "João Neves", "position": "RCM" },
 			{ "number": 14, "name": "Désiré Doué", "position": "RW" },
 			{ "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW" },
