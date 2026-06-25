@@ -38,5 +38,169 @@
       { "number": 10, "name": "Lautaro Martínez", "position": "LS" },
       { "number": 9, "name": "Edin Džeko", "position": "RS" }
     ]
+  },
+
+  {
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Manchester City",
+    "awayPrimaryColour": "#000000",
+    "awaySecondaryColour": "#E30613",
+    "competition": "Champions League Semi Final 2023 (1st Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2023-05-09",
+    "score": "1 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 22, "name": "Antonio Rüdiger", "position": "RCB" },
+      { "number": 4, "name": "David Alaba", "position": "LCB" },
+      { "number": 12, "name": "Eduardo Camavinga", "position": "LB" },
+      { "number": 15, "name": "Federico Valverde", "position": "RCM" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 10, "name": "Luka Modrić", "position": "LCM" },
+      { "number": 21, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinicius Júnior" }
+    ],
+
+    "awayLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RB" },
+      { "number": 5, "name": "John Stones", "position": "RCB" },
+      { "number": 3, "name": "Rúben Dias", "position": "LCB" },
+      { "number": 25, "name": "Manuel Akanji", "position": "LB" },
+      { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "LCM", "alias": "rodri", "display": "Rodri" },
+      { "number": 8, "name": "İlkay Gündoğan", "position": "CDM" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "RCM" },
+      { "number": 20, "name": "Bernardo Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 9, "name": "Erling Haaland", "position": "ST" },
+      { "number": 10, "name": "Jack Grealish", "position": "LW" }
+    ]
+  },
+
+  {
+    "homeTeam": "Manchester City",
+    "homePrimaryColour": "#6CABDD",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#000000",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2023 (2nd Leg)",
+    "venue": "Etihad Stadium, Manchester",
+    "date": "2023-05-17",
+    "score": "4 - 0",
+
+    "homeLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RCB" },
+      { "number": 3, "name": "Rúben Dias", "position": "CB" },
+      { "number": 25, "name": "Manuel Akanji", "position": "LCB" },
+      { "number": 5, "name": "John Stones", "position": "RDM" },
+      { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "LCDM", "alias": "rodri", "display": "Rodri" },
+      { "number": 8, "name": "İlkay Gündoğan", "position": "LAM" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "RAM" },
+      { "number": 20, "name": "Bernardo Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 9, "name": "Erling Haaland", "position": "ST" },
+      { "number": 10, "name": "Jack Grealish", "position": "LW" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 3, "name": "Éder Militão", "position": "RCB" },
+      { "number": 4, "name": "David Alaba", "position": "LCB" },
+      { "number": 12, "name": "Eduardo Camavinga", "position": "LB" },
+      { "number": 15, "name": "Federico Valverde", "position": "RCM" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 10, "name": "Luka Modrić", "position": "LCM" },
+      { "number": 21, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinicius Júnior" }
+    ]
+  },
+
+  {
+    "homeTeam": "AC Milan",
+    "homePrimaryColour": "#FB090B",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Inter Milan",
+    "awayPrimaryColour": "#001EA0",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2023 (1st Leg)",
+    "venue": "San Siro, Milan",
+    "date": "2023-05-10",
+    "score": "0 - 2",
+
+    "homeLineup": [
+      { "number": 16, "name": "Mike Maignan", "position": "GK" },
+      { "number": 2, "name": "Davide Calabria", "position": "RB" },
+      { "number": 24, "name": "Simon Kjaer", "position": "RCB" },
+      { "number": 23, "name": "Fikayo Tomori", "position": "LCB" },
+      { "number": 19, "name": "Théo Hernandez", "position": "LB" },
+      { "number": 8, "name": "Sandro Tonali", "position": "LDM" },
+      { "number": 33, "name": "Rade Krunić", "position": "RDM" },
+      { "number": 56, "name": "Alexis Saelemaekers", "position": "RW" },
+      { "number": 4, "name": "Ismaël Bennacer", "position": "CAM" },
+      { "number": 10, "name": "Brahim Abdelkader Díaz", "position": "LW", "alias": "brahim", "display": "Brahim Díaz" },
+      { "number": 9, "name": "Olivier Giroud", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 24, "name": "André Onana", "position": "GK" },
+      { "number": 36, "name": "Matteo Darmian", "position": "RCB" },
+      { "number": 15, "name": "Francesco Acerbi", "position": "CB" },
+      { "number": 95, "name": "Alessandro Bastoni", "position": "LCB" },
+      { "number": 2, "name": "Denzel Dumfries", "position": "RM" },
+      { "number": 23, "name": "Nicolò Barella", "position": "RCM" },
+      { "number": 20, "name": "Hakan Çalhanoğlu", "position": "CM" },
+      { "number": 22, "name": "Henrikh Mkhitaryan", "position": "LCM" },
+      { "number": 32, "name": "Federico Dimarco", "position": "LM" },
+      { "number": 10, "name": "Lautaro Martínez", "position": "RS" },
+      { "number": 9, "name": "Edin Džeko", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Inter Milan",
+    "homePrimaryColour": "#001EA0",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "AC Milan",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2023 (2nd Leg)",
+    "venue": "San Siro, Milan",
+    "date": "2023-05-16",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 24, "name": "André Onana", "position": "GK" },
+      { "number": 36, "name": "Matteo Darmian", "position": "RCB" },
+      { "number": 15, "name": "Francesco Acerbi", "position": "CB" },
+      { "number": 95, "name": "Alessandro Bastoni", "position": "LCB" },
+      { "number": 2, "name": "Denzel Dumfries", "position": "RM" },
+      { "number": 23, "name": "Nicolò Barella", "position": "RCM" },
+      { "number": 20, "name": "Hakan Çalhanoğlu", "position": "CM" },
+      { "number": 22, "name": "Henrikh Mkhitaryan", "position": "LCM" },
+      { "number": 32, "name": "Federico Dimarco", "position": "LM" },
+      { "number": 10, "name": "Lautaro Martínez", "position": "RS" },
+      { "number": 9, "name": "Edin Džeko", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 16, "name": "Mike Maignan", "position": "GK" },
+      { "number": 2, "name": "Davide Calabria", "position": "RB" },
+      { "number": 28, "name": "Malick Thiaw", "position": "RCB" },
+      { "number": 23, "name": "Fikayo Tomori", "position": "LCB" },
+      { "number": 19, "name": "Théo Hernandez", "position": "LB" },
+      { "number": 8, "name": "Sandro Tonali", "position": "RDM" },
+      { "number": 33, "name": "Rade Krunić", "position": "LDM" },
+      { "number": 30, "name": "Junior Messias", "position": "RW", "display": "Junior Messias" },
+      { "number": 10, "name": "Brahim Abdelkader Díaz", "position": "CAM", "alias": "brahim", "display": "Brahim Díaz" },
+      { "number": 17, "name": "Rafael Alexandre da Conceição Leão", "position": "LW", "alias": "rafael-leao", "display": "Rafael Leão" },
+      { "number": 9, "name": "Olivier Giroud", "position": "ST" }
+    ]
   }
 ]
