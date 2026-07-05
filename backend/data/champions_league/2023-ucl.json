@@ -18,7 +18,7 @@
       { "number": 6, "name": "Nathan Aké", "position": "LCB" },
       { "number": 5, "name": "John Stones", "position": "RDM" },
       { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "LDM", "alias": "rodri", "display": "Rodri" },
-      { "number": 20, "name": "Bernardo Silva", "position": "RM" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RM", "alias": "bernardo", "display": "Bernardo Silva" },
       { "number": 17, "name": "Kevin De Bruyne", "position": "RAM" },
       { "number": 8, "name": "İlkay Gündoğan", "position": "LAM" },
       { "number": 10, "name": "Jack Grealish", "position": "LM" },
@@ -75,7 +75,7 @@
       { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "LCM", "alias": "rodri", "display": "Rodri" },
       { "number": 8, "name": "İlkay Gündoğan", "position": "CDM" },
       { "number": 17, "name": "Kevin De Bruyne", "position": "RCM" },
-      { "number": 20, "name": "Bernardo Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
       { "number": 9, "name": "Erling Haaland", "position": "ST" },
       { "number": 10, "name": "Jack Grealish", "position": "LW" }
     ]
@@ -102,7 +102,7 @@
       { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "LCDM", "alias": "rodri", "display": "Rodri" },
       { "number": 8, "name": "İlkay Gündoğan", "position": "LAM" },
       { "number": 17, "name": "Kevin De Bruyne", "position": "RAM" },
-      { "number": 20, "name": "Bernardo Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RW", "alias": "bernardo", "display": "Bernardo Silva" },
       { "number": 9, "name": "Erling Haaland", "position": "ST" },
       { "number": 10, "name": "Jack Grealish", "position": "LW" }
     ],

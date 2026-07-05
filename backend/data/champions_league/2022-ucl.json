@@ -1,0 +1,206 @@
+[
+  {
+    "homeTeam": "Liverpool",
+    "homePrimaryColour": "#C8102E",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#00529F",
+    "competition": "Champions League Final 2022",
+    "venue": "Stade de France, Paris",
+    "date": "2022-05-28",
+    "score": "0 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Alisson Ramses Becker", "position": "GK", "alias": "alisson", "display": "Alisson" },
+      { "number": 66, "name": "Trent Alexander-Arnold", "position": "RB" },
+      { "number": 5, "name": "Ibrahima Konaté", "position": "RCB" },
+      { "number": 4, "name": "Virgil van Dijk", "position": "LCB" },
+      { "number": 26, "name": "Andrew Robertson", "position": "LB" },
+      { "number": 14, "name": "Jordan Henderson", "position": "RCM" },
+      { "number": 3, "name": "Fábio Henrique Tavares", "position": "CDM", "alias": "fabinho", "display": "Fabinho" },
+      { "number": 6, "name": "Thiago Alcântara do Nascimento", "position": "LCM", "alias": "thiago", "display": "Thiago Alcântara" },
+      { "number": 11, "name": "Mohamed Salah", "position": "RW" },
+      { "number": 10, "name": "Sadio Mané", "position": "ST" },
+      { "number": 23, "name": "Luis Díaz", "position": "LW", "display": "Luis Díaz" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
+      { "number": 4, "name": "David Alaba", "position": "LCB" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 10, "name": "Luka Modrić", "position": "RCM" },
+      { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
+      { "number": 8, "name": "Toni Kroos", "position": "LCM" },
+      { "number": 15, "name": "Federico Valverde", "position": "RW" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinicius Júnior" }
+    ]
+  },
+
+  {
+    "homeTeam": "Manchester City",
+    "homePrimaryColour": "#6CABDD",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#00529F",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2022 (1st Leg)",
+    "venue": "Etihad Stadium, Manchester",
+    "date": "2022-04-26",
+    "score": "4 - 3",
+
+    "homeLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 5, "name": "John Stones", "position": "RB" },
+      { "number": 3, "name": "Rúben Dias", "position": "RCB" },
+      { "number": 14, "name": "Aymeric Laporte", "position": "LCB" },
+      { "number": 11, "name": "Oleksandr Zinchenko", "position": "LB" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "RCM" },
+      { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "CDM", "alias": "rodri", "display": "Rodri" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "LCM", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 9, "name": "Gabriel Jesus", "position": "ST" },
+      { "number": 47, "name": "Phil Foden", "position": "LW" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
+      { "number": 4, "name": "David Alaba", "position": "LCB" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 15, "name": "Federico Valverde", "position": "RCM" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 10, "name": "Luka Modrić", "position": "LCM" },
+      { "number": 21, "name": "Rodrygo Silva de Goes", "position": "RW", "alias": "rodrygo", "display": "Rodrygo" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinicius Júnior" }
+    ]
+  },
+
+	{
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Manchester City",
+    "awayPrimaryColour": "#6CABDD",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2022 (2nd Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2022-05-04",
+    "score": "3 - 1 (a.e.t.)",
+
+		"homeLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RB" },
+      { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
+      { "number": 6, "name": "Nacho Fernández", "position": "LCB", "alias": "nacho", "display": "Nacho" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 10, "name": "Luka Modrić", "position": "LCM" },
+      { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
+      { "number": 8, "name": "Toni Kroos", "position": "RCM" },
+      { "number": 15, "name": "Federico Valverde", "position": "RW" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LW", "alias": "vinicius-junior", "display": "Vinicius Júnior" }
+    ],
+
+		"awayLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RB" },
+      { "number": 3, "name": "Rúben Dias", "position": "RCB" },
+      { "number": 14, "name": "Aymeric Laporte", "position": "LCB" },
+      { "number": 27, "name": "João Cancelo", "position": "LB" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RCM", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "CDM", "alias": "rodri", "display": "Rodri" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "LCM" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 9, "name": "Gabriel Jesus", "position": "ST" },
+      { "number": 47, "name": "Phil Foden", "position": "LW" }
+    ]
+  },
+
+  {
+    "homeTeam": "Liverpool",
+    "homePrimaryColour": "#C8102E",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Villarreal",
+    "awayPrimaryColour": "#FCE300",
+    "awaySecondaryColour": "#002D72",
+    "competition": "Champions League Semi Final 2022 (1st Leg)",
+    "venue": "Anfield, Liverpool",
+    "date": "2022-04-27",
+    "score": "2 - 0",
+
+		"homeLineup": [
+      { "number": 1, "name": "Alisson Ramses Becker", "position": "GK", "alias": "alisson", "display": "Alisson" },
+      { "number": 66, "name": "Trent Alexander-Arnold", "position": "RB" },
+      { "number": 5, "name": "Ibrahima Konaté", "position": "RCB" },
+      { "number": 4, "name": "Virgil van Dijk", "position": "LCB" },
+      { "number": 26, "name": "Andrew Robertson", "position": "LB" },
+      { "number": 14, "name": "Jordan Henderson", "position": "RCM" },
+      { "number": 3, "name": "Fábio Henrique Tavares", "position": "CDM", "alias": "fabinho", "display": "Fabinho" },
+      { "number": 6, "name": "Thiago Alcântara do Nascimento", "position": "LCM", "alias": "thiago", "display": "Thiago Alcântara" },
+      { "number": 11, "name": "Mohamed Salah", "position": "RW" },
+      { "number": 10, "name": "Sadio Mané", "position": "ST" },
+      { "number": 23, "name": "Luis Díaz", "position": "LW", "display": "Luis Díaz" }
+    ],
+
+		"awayLineup": [
+      { "number": 13, "name": "Gerónimo Rulli", "position": "GK" },
+      { "number": 8, "name": "Juan Foyth", "position": "RB" },
+      { "number": 3, "name": "Raúl Albiol", "position": "RCB" },
+      { "number": 4, "name": "Pau Torres", "position": "LCB", "display": "Pau Torres" },
+      { "number": 12, "name": "Pervis Estupiñán", "position": "LB" },
+      { "number": 11, "name": "Samuel Chukwueze", "position": "RM" },
+      { "number": 5, "name": "Dani Parejo", "position": "RCM" },
+      { "number": 6, "name": "Étienne Capoue", "position": "LCM" },
+      { "number": 19, "name": "Francis Coquelin", "position": "LM" },
+      { "number": 15, "name": "Arnaut Danjuma", "position": "LS" },
+			{ "number": 21, "name": "Giovani Lo Celso", "position": "RS" }
+    ]
+  },
+
+	{
+    "homeTeam": "Villarreal",
+    "homePrimaryColour": "#FCE300",
+    "homeSecondaryColour": "#002D72",
+    "awayTeam": "Liverpool",
+    "awayPrimaryColour": "#C8102E",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2022 (2nd Leg)",
+    "venue": "Estadio de la Cerámica, Villarreal",
+    "date": "2022-05-03",
+    "score": "2 - 3",
+
+		"homeLineup": [
+      { "number": 13, "name": "Gerónimo Rulli", "position": "GK" },
+      { "number": 8, "name": "Juan Foyth", "position": "RB" },
+      { "number": 3, "name": "Raúl Albiol", "position": "RCB" },
+      { "number": 4, "name": "Pau Torres", "position": "LCB", "display": "Pau Torres" },
+      { "number": 12, "name": "Pervis Estupiñán", "position": "LB" },
+      { "number": 21, "name": "Giovani Lo Celso", "position": "RM" },
+      { "number": 5, "name": "Dani Parejo", "position": "RCM" },
+      { "number": 6, "name": "Étienne Capoue", "position": "LCM" },
+      { "number": 19, "name": "Francis Coquelin", "position": "LM" },
+      { "number": 7, "name": "Gerard Moreno", "position": "RS", "display": "Gerard Moreno" },
+      { "number": 16, "name": "Boulaye Dia", "position": "LS" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Alisson Ramses Becker", "position": "GK", "alias": "alisson", "display": "Alisson" },
+      { "number": 66, "name": "Trent Alexander-Arnold", "position": "RB" },
+      { "number": 5, "name": "Ibrahima Konaté", "position": "RCB" },
+      { "number": 4, "name": "Virgil van Dijk", "position": "LCB" },
+      { "number": 26, "name": "Andrew Robertson", "position": "LB" },
+      { "number": 8, "name": "Naby Keïta", "position": "RCM" },
+      { "number": 3, "name": "Fábio Henrique Tavares", "position": "CDM", "alias": "fabinho", "display": "Fabinho" },
+      { "number": 6, "name": "Thiago Alcântara do Nascimento", "position": "LCM", "alias": "thiago", "display": "Thiago Alcântara" },
+      { "number": 11, "name": "Mohamed Salah", "position": "RW" },
+      { "number": 20, "name": "Diogo José Teixeira da Silva", "position": "LW", "alias": "diogo-jota", "display": "Diogo Jota" },
+      { "number": 10, "name": "Sadio Mané", "position": "ST" }
+    ]
+  }
+]

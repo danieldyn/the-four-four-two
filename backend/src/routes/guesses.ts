@@ -33,7 +33,8 @@ router.post("/", async (req: Request<{}, {}, GuessRequestBody>, res: Response) =
           OR: [
             { slug: normalisedGuess },
             { slug: { endsWith: `-${normalisedGuess}` } },
-            { alias: normalisedGuess }
+            { alias: normalisedGuess },
+            { alias: { endsWith: `-${normalisedGuess}` } }
           ]
         }
       },
