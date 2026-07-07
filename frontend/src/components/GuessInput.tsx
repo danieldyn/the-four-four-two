@@ -1,58 +1,32 @@
 import React, { useState } from "react";
-import slugify from "../utils/slugify";
-import { GuessResponse } from "../types/football";
 
 /**
  * The shape of the Guess Input panel's attributes.
- * Requires a callback for hints, one for resigning and one for adding guesses.
+ * Requires a callback for hints, one for resigning and one for handling local guesses.
  */
 interface GuessInputProps {
-  matchId: number;
-  addGuess: (slug: string, result: "correct" | "wrong", playerData: GuessResponse | null) => void;
+  onGuess: (guess: string) => void;
   onHint: () => void;
-  hasResigned: boolean;
+  isFinished: boolean;
   onResign: () => void;
 }
 
-const apiUrl = import.meta.env.VITE_API_URL;
-
 /**
- * Captures and processes user input, communicating with the backend.
+ * Captures and processes user input locally against the match data obtained from the server.
  * Also supports the in-game hint system.
  */
-const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint, hasResigned, onResign }) => {
+const GuessInput: React.FC<GuessInputProps> = ({ onGuess, onHint, isFinished, onResign }) => {
   const [value, setValue] = useState<string>("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!value.trim() || hasResigned)
+
+    const trimmedGuess = value.trim();
+    if (!trimmedGuess || isFinished)
       return;
 
-    // Normalise all user input before sending
-    const normalisedGuess = slugify(value);
-
-    try {
-      const res = await fetch(`${apiUrl}/guess`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ matchId, guess: normalisedGuess }),
-      });
-
-      if (!res.ok)
-        throw new Error("Server error");
-
-      const data: GuessResponse = await res.json();
-
-      if (data.result === "correct" && data.player) {
-        addGuess(data.player.slug, data.result, data);
-        setValue("");
-      } else {
-        // Fallback for wrong user guesses
-        addGuess(normalisedGuess, "wrong", null);
-      }
-    } catch (err) {
-      console.error("Guess submission error:", err);
-    }
+    onGuess(trimmedGuess);
+    setValue("");
   };
 
   return (
@@ -63,14 +37,14 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint, hasR
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
         placeholder="Enter player last name"
         className="guess-input"
-        disabled={hasResigned}
+        disabled={isFinished}
       />
       <div className="button-group">
         <button
           type="button"
           className="hint-button"
           onClick={onHint}
-          disabled={hasResigned}
+          disabled={isFinished}
         >
           Hint
         </button>
@@ -78,9 +52,9 @@ const GuessInput: React.FC<GuessInputProps> = ({ matchId, addGuess, onHint, hasR
           type="button"
           className="resign-button"
           onClick={onResign}
-          disabled={hasResigned}
+          disabled={isFinished}
         >
-          {hasResigned ? "Game Over" : "Resign"}
+          {isFinished ? "Game Over" : "Resign"}
         </button>
       </div>
     </form>

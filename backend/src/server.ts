@@ -1,7 +1,6 @@
 import express, { Application } from "express";
 import cors from "cors";
-import matches from "./routes/matches.js";
-import guessesRouter from "./routes/guesses.js";
+import matches from "./matches.js";
 
 const app: Application = express();
 
@@ -23,9 +22,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Routes
+// Endpoints
 app.use("/matches", matches);
-app.use("/guess", guessesRouter);
 
 const PORT: number = 4000;
 

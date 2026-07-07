@@ -13,7 +13,7 @@ interface GuessHistoryProps {
   awayLineup: LineupEntry[];
   guesses: Guess[];
   hintsUsed: Record<string, boolean>;
-  hasResigned: boolean;
+  isFinished: boolean;
 }
 
 const GuessHistory: React.FC<GuessHistoryProps> = ({ 
@@ -21,7 +21,7 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
   awayLineup, 
   guesses, 
   hintsUsed,
-  hasResigned
+  isFinished
 }) => {
   // Extract the slugs of players correctly guessed
   const guessedSlugs = guesses
@@ -43,8 +43,8 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
         <ul>
           {sorted.map((p) => {
             const isGuessed = guessedSlugs.includes(p.player.slug);
-            const isMissing = !isGuessed && hasResigned;
-            const showRealName = isGuessed || hasResigned;
+            const isMissing = !isGuessed && isFinished;
+            const showRealName = isGuessed || isFinished;
             const correctAnswer = (p.player.alias && p.player.display)
                                 ? p.player.display 
                                 : `${p.player.firstName} ${p.player.lastName}`;

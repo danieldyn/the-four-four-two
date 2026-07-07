@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+
 import GuessInput from "../components/GuessInput";
 import GuessHistory from "../components/GuessHistory";
 import LineupBoard from "../components/LineupBoard";
 import MatchHeader from "../components/MatchHeader";
 import GameHeader from "../components/GameHeader";
 import { Match, GuessResponse } from "../types/football";
+import slugify from "../utils/slugify";
 
 /**
  * The shape of a guess' tracker.
@@ -31,10 +33,10 @@ const GamePage: React.FC = () => {
   const [match, setMatch] = useState<Match | null>(null);
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
-  const [hasResigned, setHasResigned] = useState<boolean>(false);
+  const [isFinished, setIsFinished] = useState<boolean>(false);
 
   // Resigning will reveal unguessed players and finish the game
-  const handleResign = () => setHasResigned(true);
+  const handleResign = () => setIsFinished(true);
 
   // Extract category parameter from the URL
   const [searchParams] = useSearchParams();
@@ -79,6 +81,34 @@ const GamePage: React.FC = () => {
           display: slug,
         },
       ]);
+    }
+  };
+
+  // Checks user input against the match data stored locally
+  const handleGuessSubmission = (guess: string) => {
+    if (!match)
+      return;
+
+    const normalisedGuess = slugify(guess);
+    const matchingLineup = match.lineups.find((lineupEntry) => {
+      const player = lineupEntry.player;
+
+      return (
+        player.slug === normalisedGuess ||
+        player.slug.endsWith(`-${normalisedGuess}`) ||
+        player.alias === normalisedGuess ||
+        player.alias?.endsWith(`-${normalisedGuess}`)
+      );
+    });
+
+    if (matchingLineup) {
+      addGuess(matchingLineup.player.slug, "correct", {
+        result: "correct",
+        player: matchingLineup.player,
+        team: matchingLineup.team,
+      });
+    } else {
+      addGuess(normalisedGuess, "wrong", null);
     }
   };
 
@@ -137,7 +167,7 @@ const GamePage: React.FC = () => {
               <LineupBoard
                 lineup={homeLineup}
                 guesses={guesses}
-                hasResigned={hasResigned}
+                isFinished={isFinished}
                 primaryColour={match.homePrimaryColour}
                 secondaryColour={match.homeSecondaryColour}
               />
@@ -148,7 +178,7 @@ const GamePage: React.FC = () => {
               <LineupBoard
                 lineup={awayLineup}
                 guesses={guesses}
-                hasResigned={hasResigned}
+                isFinished={isFinished}
                 primaryColour={match.awayPrimaryColour}
                 secondaryColour={match.awaySecondaryColour}
               />
@@ -158,10 +188,9 @@ const GamePage: React.FC = () => {
 
         <div className="side-panel right-panel">
           <GuessInput
-            matchId={match.id}
-            addGuess={addGuess}
+            onGuess={handleGuessSubmission}
             onHint={handleHint}
-            hasResigned={hasResigned}
+            isFinished={isFinished}
             onResign={handleResign}
           />
 
@@ -170,7 +199,7 @@ const GamePage: React.FC = () => {
             awayLineup={awayLineup}
             guesses={guesses}
             hintsUsed={hintsUsed}
-            hasResigned={hasResigned}
+            isFinished={isFinished}
           />
         </div>
       </div>

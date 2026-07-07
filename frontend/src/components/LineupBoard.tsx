@@ -8,7 +8,7 @@ interface LineupBoardProps {
   guesses: Guess[];
   primaryColour?: string | null;
   secondaryColour?: string | null;
-  hasResigned: boolean;
+  isFinished: boolean;
 }
 
 /**
@@ -19,7 +19,7 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
   guesses = [],
   primaryColour,
   secondaryColour,
-  hasResigned
+  isFinished
 }) => {
   if (!lineup.length)
     return null;
@@ -53,8 +53,8 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
       {/* Player Rendering */}
       {positioned.map((p) => {
         const isGuessed = guesses.some((g) => g.guess === p.player.slug);
-        const isMissing = !isGuessed && hasResigned;
-        const showPlayer = isGuessed || hasResigned;
+        const isMissing = !isGuessed && isFinished;
+        const showPlayer = isGuessed || isFinished;
 
         return (
           <div
