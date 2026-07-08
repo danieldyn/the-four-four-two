@@ -2,9 +2,17 @@ import React from "react";
 import { useNavigate, NavigateFunction } from "react-router-dom";
 
 /**
+ * The shape of the Game Header panel's attributes.
+ * It needs access to the callback for starting a new random game.
+ */
+interface GameHeaderProps {
+  onRestart: () => void
+}
+
+/**
  * Displays the game title and a navigation button to return to the Home Page.
  */
-const GameHeader: React.FC = () => {
+const GameHeader: React.FC<GameHeaderProps> = ({ onRestart }) => {
   const navigate: NavigateFunction = useNavigate();
 
   return (
@@ -15,7 +23,7 @@ const GameHeader: React.FC = () => {
 
       <button
         className="home-button"
-        onClick={() => window.location.reload()}
+        onClick={onRestart}
       >
         New Random Game
       </button>

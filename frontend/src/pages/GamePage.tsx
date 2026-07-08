@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import React, { useState, useEffect, useCallback } from "react";
+import { useSearchParams, useNavigate, NavigateFunction } from "react-router-dom";
 
 import GuessInput from "../components/GuessInput";
 import GuessHistory from "../components/GuessHistory";
@@ -34,6 +34,8 @@ const GamePage: React.FC = () => {
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
   const [isFinished, setIsFinished] = useState<boolean>(false);
+  const [gameOverMessage, setGameOverMessage] = useState<string | null>(null);
+  const navigate: NavigateFunction = useNavigate();
 
   // Resigning will reveal unguessed players and finish the game
   const handleResign = () => setIsFinished(true);
@@ -42,22 +44,57 @@ const GamePage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const category = searchParams.get("category");
 
-  useEffect(() => {
-    let fetchUrl = `${apiUrl}/matches/random`;
+  // Callback for New Random Game, which locally stores played games' IDs
+  const fetchNewGame = useCallback(() => {
+    // Reset state for new game
+    setMatch(null);
+    setGuesses([]);
+    setHintsUsed({});
+    setIsFinished(false);
+    setGameOverMessage(null);
 
-    if (category) {
-      fetchUrl += `?category=${encodeURIComponent(category)}`;
-    }
+    let fetchUrl = `${apiUrl}/matches/random`;
+    const params = new URLSearchParams();
+
+    if (category)
+      params.append("category", category);
+
+    // Read played matches from local storage
+    const playedIdsStr = localStorage.getItem("playedMatches") || "";
+    if (playedIdsStr)
+      params.append("exclude", playedIdsStr);
+
+    if (params.toString())
+      fetchUrl += `?${params.toString()}`;
 
     fetch(fetchUrl)
       .then((res) => {
-        if (!res.ok) throw new Error("No matches found");
+        if (!res.ok) {
+          if (res.status === 404)
+            throw new Error("You have played all available games in this category!");
+          throw new Error("Failed to fetch match");
+        }
         return res.json();
       })
-      .then((data: Match) => setMatch(data))
-      .catch((err) => console.error("Failed to fetch match:", err));
-      
+      .then((data: Match) => {
+        setMatch(data);
+
+        // Save new match ID in the local storage array
+        const playedArray = playedIdsStr ? playedIdsStr.split(",") : [];
+        if (!playedArray.includes(data.id.toString())) {
+          playedArray.push(data.id.toString());
+          localStorage.setItem("playedMatches", playedArray.join(","));
+        }
+      })
+      .catch((err) => {
+        console.error("Failed to fetch match:", err);
+        setGameOverMessage(err.message);
+      });
   }, [category]);
+
+  useEffect(() => {
+    fetchNewGame();
+  }, [fetchNewGame]);
 
   // Process the guess
   const addGuess = (slug: string, result: "correct" | "wrong", playerData: GuessResponse | null) => {
@@ -86,7 +123,7 @@ const GamePage: React.FC = () => {
 
   // Checks user input against the match data stored locally
   const handleGuessSubmission = (guess: string) => {
-    if (!match)
+    if (!match || isFinished)
       return;
 
     const normalisedGuess = slugify(guess);
@@ -114,7 +151,7 @@ const GamePage: React.FC = () => {
 
   // Using a hint wll reveal several letters from the mask of a player
   const handleHint = () => {
-    if (!match)
+    if (!match || isFinished)
       return;
 
     const availablePlayers = match.lineups.filter((p) => {
@@ -138,6 +175,38 @@ const GamePage: React.FC = () => {
     }
   };
 
+  // Return a special victory screen when the user beats all games in the selected category
+  if (gameOverMessage) {
+    return (
+      <div className="warmup-container">
+        <h2>Category Conquered!</h2>
+        <p>{gameOverMessage}</p>
+        <div className="button-group" style={{ display: "flex", gap: "50px" }}>
+          <button
+            type="button"
+            className="home-button"
+            onClick={() => {
+              localStorage.removeItem("playedMatches");
+              fetchNewGame();
+            }}
+          >
+            Replay Category
+          </button>
+          <button
+            type="button"
+            className="home-button"
+            onClick={() => {
+              localStorage.removeItem("playedMatches");
+              navigate("/");
+            }}
+          >
+            Back to Main Menu
+          </button>
+        </div>
+      </div>
+    );
+  }
+
    // Return a special warmup screen while the full match data is unavailable
   if (!match)
     return (
@@ -155,11 +224,11 @@ const GamePage: React.FC = () => {
 
   return (
     <div className="game-page">
-      <GameHeader />
+      <GameHeader onRestart={fetchNewGame}/>
 
       <div className="game-layout">
         <div className="main-content">
-          <MatchHeader match={match} />
+          <MatchHeader match={match}/>
 
           <div className="pitches">
             <div>

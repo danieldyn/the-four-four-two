@@ -160,4 +160,6 @@
   display: inline-flex;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }

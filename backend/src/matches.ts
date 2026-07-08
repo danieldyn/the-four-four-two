@@ -5,13 +5,21 @@ const router: Router = express.Router();
 
 router.get("/random", async (_req: Request, res: Response) => {
   try {
-    // Extract the category from the URL query string
+    // Extract additional information from the URL query string
     const category = (_req.query.category as string | undefined)?.trim();
+    const excluded = _req.query.exclude as string | undefined;
+
+    let excludedIds: number[] = [];
+    if (excluded)
+      excludedIds = excluded.split(",").map((id) => parseInt(id, 10)).filter((id) => !isNaN(id));
 
     // Database filtering criteria
-    const whereClause = category 
-      ? { competition: { contains: category } } 
-      : {};
+    const whereClause: any = {};
+    if (category)
+      whereClause.competition = { contains: category };
+
+    if (excludedIds.length > 0)
+      whereClause.id = { notIn: excludedIds };
 
     const count = await prisma.match.count({
       where: whereClause
@@ -25,6 +33,7 @@ router.get("/random", async (_req: Request, res: Response) => {
     const match = await prisma.match.findFirst({
       where: whereClause,
       skip: skip,
+      orderBy: { id: 'asc' },
       include: {
         lineups: {
           include: {
