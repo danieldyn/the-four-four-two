@@ -1,0 +1,125 @@
+[
+  {
+    "homeTeam": "Brazil",
+    "homePrimaryColour": "#FEDF00",
+    "homeSecondaryColour": "#009B3A",
+    "awayTeam": "France",
+    "awayPrimaryColour": "#002395",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "World Cup Final 1998",
+    "venue": "Stade de France, Saint-Denis",
+    "date": "1998-07-12",
+    "score": "0 - 3",
+
+    "homeLineup": [
+      { "number": 1, "name": "Cláudio Taffarel", "position": "GK"},
+      { "number": 2, "name": "Marcos Evangelista de Morais", "position": "RB", "alias": "cafu", "display": "Cafu" },
+      { "number": 3, "name": "Aldair Nascimento dos Santos", "position": "RCB", "alias": "aldair", "display": "Aldair" },
+      { "number": 4, "name": "Raimundo Ferreira Ramos Júnior", "position": "LCB", "alias": "junior-baiano", "display": "Júnior Baiano" },
+      { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 5, "name": "César Sampaio", "position": "LDM" },
+      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga" },
+      { "number": 18, "name": "Leonardo Araújo", "position": "RW", "alias": "leonardo", "display": "Leonardo" },
+      { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "LW", "alias": "rivaldo", "display": "Rivaldo" },
+      { "number": 20, "name": "José Roberto Gama de Oliveira", "position": "RS", "alias": "bebeto", "display": "Bebeto" },
+      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo" }
+    ],
+
+    "awayLineup": [
+      { "number": 16, "name": "Fabien Barthez", "position": "GK" },
+      { "number": 15, "name": "Lilian Thuram", "position": "RB" },
+      { "number": 8, "name": "Marcel Desailly", "position": "LCB" },
+      { "number": 18, "name": "Frank Leboeuf", "position": "RCB" },
+      { "number": 3, "name": "Bixente Lizarazu", "position": "LB" },
+      { "number": 7, "name": "Didier Deschamps", "position": "CDM" },
+      { "number": 19, "name": "Christian Karembeu", "position": "RCM" },
+      { "number": 17, "name": "Emmanuel Petit", "position": "LCM" },
+      { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 6, "name": "Youri Djorkaeff", "position": "LS" },
+      { "number": 9, "name": "Stéphane Guivarc'h", "position": "RS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Brazil",
+    "homePrimaryColour": "#FEDF00",
+    "homeSecondaryColour": "#009B3A",
+    "awayTeam": "Netherlands",
+    "awayPrimaryColour": "#F36C21",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "World Cup Semi Final 1998",
+    "venue": "Stade Vélodrome, Marseille",
+    "date": "1998-07-07",
+    "score": "1 - 1 (4 - 2 on pens)",
+
+    "homeLineup": [
+      { "number": 1, "name": "Cláudio Taffarel", "position": "GK" },
+      { "number": 13, "name": "José Carlos de Almeida", "position": "RB", "alias": "ze-carlos", "display": "Zé Carlos" },
+      { "number": 3, "name": "Aldair Nascimento dos Santos", "position": "RCB", "alias": "aldair", "display": "Aldair" },
+      { "number": 4, "name": "Raimundo Ferreira Ramos Júnior", "position": "LCB", "alias": "junior-baiano", "display": "Júnior Baiano" },
+      { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 5, "name": "César Sampaio", "position": "LDM" },
+      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga" },
+      { "number": 18, "name": "Leonardo Araújo", "position": "RW", "alias": "leonardo", "display": "Leonardo" },
+      { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "LW", "alias": "rivaldo", "display": "Rivaldo" },
+      { "number": 20, "name": "José Roberto Gama de Oliveira", "position": "RS", "alias": "bebeto", "display": "Bebeto" },
+      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Edwin van der Sar", "position": "GK" },
+      { "number": 2, "name": "Michael Reiziger", "position": "RB" },
+      { "number": 3, "name": "Jaap Stam", "position": "RCB" },
+      { "number": 4, "name": "Frank de Boer", "position": "LCB" },
+      { "number": 11, "name": "Phillip Cocu", "position": "LB" },
+      { "number": 6, "name": "Wim Jonk", "position": "RDM" },
+      { "number": 16, "name": "Edgar Davids", "position": "LDM" },
+      { "number": 7, "name": "Ronald de Boer", "position": "RW" },
+      { "number": 12, "name": "Boudewijn Zenden", "position": "LW" },
+      { "number": 8, "name": "Dennis Bergkamp", "position": "SS" },
+      { "number": 9, "name": "Patrick Kluivert", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "France",
+    "homePrimaryColour": "#002395",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Croatia",
+    "awayPrimaryColour": "#ED1C24",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "World Cup Semi Final 1998",
+    "venue": "Stade de France, Saint-Denis",
+    "date": "1998-07-08",
+    "score": "2 - 1",
+
+    "homeLineup": [
+      { "number": 16, "name": "Fabien Barthez", "position": "GK" },
+      { "number": 15, "name": "Lilian Thuram", "position": "RB" },
+      { "number": 8, "name": "Marcel Desailly", "position": "RCB" },
+      { "number": 5, "name": "Laurent Blanc", "position": "LCB" },
+      { "number": 3, "name": "Bixente Lizarazu", "position": "LB" },
+      { "number": 7, "name": "Didier Deschamps", "position": "CDM" },
+      { "number": 19, "name": "Christian Karembeu", "position": "RCM" },
+      { "number": 17, "name": "Emmanuel Petit", "position": "LCM" },
+      { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 6, "name": "Youri Djorkaeff", "position": "LS" },
+      { "number": 9, "name": "Stéphane Guivarc'h", "position": "RS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Dražen Ladić", "position": "GK" },
+      { "number": 4, "name": "Igor Štimac", "position": "RCB" },
+      { "number": 20, "name": "Dario Šimić", "position": "CB" },
+      { "number": 6, "name": "Slaven Bilić", "position": "LCB" },
+      { "number": 13, "name": "Mario Stanić", "position": "RM" },
+      { "number": 17, "name": "Robert Jarni", "position": "LM" },
+      { "number": 14, "name": "Zvonimir Soldo", "position": "LDM" },
+      { "number": 7, "name": "Aljoša Asanović", "position": "RDM" },
+      { "number": 10, "name": "Zvonimir Boban", "position": "CM" },
+      { "number": 19, "name": "Goran Vlaović", "position": "LS" },
+      { "number": 9, "name": "Davor Šuker", "position": "RS" }
+    ]
+  }
+]
+
