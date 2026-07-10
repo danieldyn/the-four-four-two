@@ -70,12 +70,12 @@
       { "number": 1, "name": "Edwin van der Sar", "position": "GK" },
       { "number": 2, "name": "Michael Reiziger", "position": "RB" },
       { "number": 3, "name": "Jaap Stam", "position": "RCB" },
-      { "number": 4, "name": "Frank de Boer", "position": "LCB" },
+      { "number": 4, "name": "Frank de Boer", "position": "LCB", "display": "F. de Boer" },
       { "number": 11, "name": "Phillip Cocu", "position": "LB" },
       { "number": 6, "name": "Wim Jonk", "position": "RDM" },
       { "number": 16, "name": "Edgar Davids", "position": "LDM" },
-      { "number": 7, "name": "Ronald de Boer", "position": "RW" },
-      { "number": 12, "name": "Boudewijn Zenden", "position": "LW" },
+      { "number": 7, "name": "Ronald de Boer", "position": "RM", "display": "R. de Boer" },
+      { "number": 12, "name": "Boudewijn Zenden", "position": "LM" },
       { "number": 8, "name": "Dennis Bergkamp", "position": "SS" },
       { "number": 9, "name": "Patrick Kluivert", "position": "LS" }
     ]
