@@ -1,0 +1,206 @@
+[
+  {
+    "homeTeam": "Manchester City",
+    "homePrimaryColour": "#6CABDD",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Chelsea",
+    "awayPrimaryColour": "#034694",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Final 2021",
+    "venue": "Estádio do Dragão, Porto",
+    "date": "2021-05-29",
+    "score": "0 - 1",
+
+    "homeLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RB" },
+      { "number": 5, "name": "John Stones", "position": "RCB" },
+      { "number": 3, "name": "Rúben Dias", "position": "LCB" },
+      { "number": 11, "name": "Oleksandr Zinchenko", "position": "LB" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RCM", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 8, "name": "İlkay Gündoğan", "position": "CDM" },
+      { "number": 47, "name": "Phil Foden", "position": "LCM" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "CAM" },
+      { "number": 7, "name": "Raheem Sterling", "position": "LW" }
+    ],
+
+		"awayLineup": [
+      { "number": 16, "name": "Édouard Mendy", "position": "GK" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RCB" },
+      { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
+      { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
+      { "number": 24, "name": "Reece James", "position": "RWB" },
+      { "number": 7, "name": "N'Golo Kanté", "position": "LCM" },
+      { "number": 5, "name": "Jorginho", "position": "RCM" },
+      { "number": 21, "name": "Ben Chilwell", "position": "LWB" },
+      { "number": 19, "name": "Mason Mount", "position": "LW" },
+      { "number": 29, "name": "Kai Havertz", "position": "RW" },
+      { "number": 11, "name": "Timo Werner", "position": "ST" }
+    ]
+  },
+
+	{
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Chelsea",
+    "awayPrimaryColour": "#034694",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2021 (1st Leg)",
+    "venue": "Alfredo Di Stéfano, Madrid",
+    "date": "2021-04-27",
+    "score": "1 - 1",
+
+		"homeLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
+      { "number": 5, "name": "Raphaël Varane", "position": "CB" },
+      { "number": 6, "name": "Nacho Fernández", "position": "LCB", "alias": "nacho", "display": "Nacho" },
+      { "number": 2, "name": "Dani Carvajal", "position": "RWB" },
+      { "number": 10, "name": "Luka Modrić", "position": "RCM" },
+      { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
+      { "number": 8, "name": "Toni Kroos", "position": "LCM" },
+      { "number": 12, "name": "Marcelo Vieira da Silva Júnior", "position": "LWB", "alias": "marcelo", "display": "Marcelo" },
+      { "number": 9, "name": "Karim Benzema", "position": "RS" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LS", "alias": "vinicius-junior", "display": "Vinícius Júnior" }
+    ],
+
+		"awayLineup": [
+      { "number": 16, "name": "Édouard Mendy", "position": "GK" },
+      { "number": 4, "name": "Andreas Christensen", "position": "RCB" },
+      { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
+      { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RWB" },
+      { "number": 7, "name": "N'Golo Kanté", "position": "RCM" },
+      { "number": 5, "name": "Jorginho", "position": "LCM" },
+      { "number": 21, "name": "Ben Chilwell", "position": "LWB" },
+      { "number": 19, "name": "Mason Mount", "position": "LW" },
+      { "number": 10, "name": "Christian Pulisic", "position": "RW" },
+      { "number": 11, "name": "Timo Werner", "position": "ST" }
+    ]
+  },
+
+	{
+    "homeTeam": "Chelsea",
+    "homePrimaryColour": "#034694",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2021 (2nd Leg)",
+    "venue": "Stamford Bridge, London",
+    "date": "2021-05-05",
+    "score": "2 - 0",
+
+		"homeLineup": [
+      { "number": 16, "name": "Édouard Mendy", "position": "GK" },
+      { "number": 4, "name": "Andreas Christensen", "position": "RCB" },
+      { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
+      { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RM" },
+      { "number": 7, "name": "N'Golo Kanté", "position": "RCM" },
+      { "number": 5, "name": "Jorginho", "position": "LCM" },
+      { "number": 21, "name": "Ben Chilwell", "position": "LM" },
+      { "number": 19, "name": "Mason Mount", "position": "LW" },
+      { "number": 29, "name": "Kai Havertz", "position": "RW" },
+      { "number": 11, "name": "Timo Werner", "position": "ST" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
+      { "number": 6, "name": "Nacho Fernández", "position": "RB", "alias": "nacho", "display": "Nacho" },
+      { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
+      { "number": 4, "name": "Sergio Ramos", "position": "LCB" },
+      { "number": 23, "name": "Ferland Mendy", "position": "LB" },
+      { "number": 10, "name": "Luka Modrić", "position": "RCM" },
+      { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
+      { "number": 8, "name": "Toni Kroos", "position": "LCM" },
+      { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "RW", "alias": "vinicius-junior", "display": "Vinícius Júnior" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" },
+      { "number": 7, "name": "Eden Hazard", "position": "LW" }
+    ]
+  },
+
+	{
+    "homeTeam": "Paris Saint-Germain",
+    "homePrimaryColour": "#004170",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Manchester City",
+    "awayPrimaryColour": "#6CABDD",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2021 (1st Leg)",
+    "venue": "Parc des Princes, Paris",
+    "date": "2021-04-28",
+    "score": "1 - 2",
+
+		"homeLineup": [
+      { "number": 1, "name": "Keylor Navas", "position": "GK" },
+      { "number": 24, "name": "Alessandro Florenzi", "position": "RB" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 3, "name": "Presnel Kimpembe", "position": "LCB" },
+      { "number": 25, "name": "Mitchel Bakker", "position": "LB" },
+      { "number": 27, "name": "Idrissa Gueye", "position": "RDM" },
+      { "number": 8, "name": "Leandro Paredes", "position": "LDM" },
+      { "number": 11, "name": "Ángel Di María", "position": "RW" },
+      { "number": 6, "name": "Marco Verratti", "position": "CAM" },
+      { "number": 10, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar" },
+      { "number": 7, "name": "Kylian Mbappé", "position": "ST" }
+    ],
+
+		"awayLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RB" },
+      { "number": 5, "name": "John Stones", "position": "RCB" },
+      { "number": 3, "name": "Rúben Dias", "position": "LCB" },
+      { "number": 27, "name": "João Cancelo", "position": "LB", "display": "João Cancelo" },
+      { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "CDM", "alias": "rodri", "display": "Rodri" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "CAM", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 8, "name": "İlkay Gündoğan", "position": "RCM" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "LCM" },
+      { "number": 47, "name": "Phil Foden", "position": "LW" }
+    ]
+  },
+
+	{
+    "homeTeam": "Manchester City",
+    "homePrimaryColour": "#6CABDD",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Paris Saint-Germain",
+    "awayPrimaryColour": "#004170",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2021 (2nd Leg)",
+    "venue": "Etihad Stadium, Manchester",
+    "date": "2021-05-04",
+    "score": "2 - 0",
+
+		"homeLineup": [
+      { "number": 31, "name": "Ederson Santana de Moraes", "position": "GK", "alias": "ederson", "display": "Ederson" },
+      { "number": 2, "name": "Kyle Walker", "position": "RB" },
+      { "number": 5, "name": "John Stones", "position": "RCB" },
+      { "number": 3, "name": "Rúben Dias", "position": "LCB" },
+      { "number": 11, "name": "Oleksandr Zinchenko", "position": "LB" },
+      { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RCM", "alias": "bernardo", "display": "Bernardo Silva" },
+      { "number": 25, "name": "Fernando Luiz Roza", "position": "CDM", "alias": "fernandinho", "display": "Fernandinho" },
+      { "number": 8, "name": "İlkay Gündoğan", "position": "LCM" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "ST" },
+      { "number": 47, "name": "Phil Foden", "position": "LW" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Keylor Navas", "position": "GK" },
+      { "number": 24, "name": "Alessandro Florenzi", "position": "RB" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 3, "name": "Presnel Kimpembe", "position": "LCB" },
+      { "number": 22, "name": "Abdou Diallo", "position": "LB" },
+      { "number": 21, "name": "Ander Herrera", "position": "RDM" },
+      { "number": 8, "name": "Leandro Paredes", "position": "LDM" },
+      { "number": 11, "name": "Ángel Di María", "position": "RW" },
+      { "number": 6, "name": "Marco Verratti", "position": "CAM" },
+      { "number": 10, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar" },
+      { "number": 9, "name": "Mauro Icardi", "position": "ST" }
+    ]
+  }
+]
