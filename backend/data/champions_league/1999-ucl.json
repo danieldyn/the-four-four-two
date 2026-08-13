@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Manchester United",
+    "homePrimaryColour": "#DA291C",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Bayern Munich",
+    "awayPrimaryColour": "#C0C0C0",
+    "awaySecondaryColour": "#800000",
+    "competition": "Champions League Final 1999",
+    "venue": "Camp Nou, Barcelona",
+    "date": "1999-05-26",
+    "score": "2 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Peter Schmeichel", "position": "GK" },
+      { "number": 2, "name": "Gary Neville", "position": "RB" },
+      { "number": 5, "name": "Ronny Johnsen", "position": "RCB" },
+      { "number": 6, "name": "Jaap Stam", "position": "LCB" },
+      { "number": 3, "name": "Denis Irwin", "position": "LB" },
+      { "number": 11, "name": "Ryan Giggs", "position": "RM" },
+      { "number": 7, "name": "David Beckham", "position": "RCM" },
+      { "number": 8, "name": "Nicky Butt", "position": "LCM" },
+      { "number": 15, "name": "Jesper Blomqvist", "position": "LM" },
+      { "number": 19, "name": "Dwight Yorke", "position": "SS" },
+      { "number": 9, "name": "Andy Cole", "position": "LS" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Oliver Kahn", "position": "GK" },
+      { "number": 10, "name": "Lothar Matthäus", "position": "CB" },
+      { "number": 2, "name": "Markus Babbel", "position": "RWB" },
+      { "number": 25, "name": "Thomas Linke", "position": "LCB" },
+      { "number": 4, "name": "Samuel Kuffour", "position": "RCB" },
+      { "number": 18, "name": "Michael Tarnat", "position": "LWB" },
+      { "number": 11, "name": "Stefan Effenberg", "position": "LCM" },
+      { "number": 16, "name": "Jens Jeremies", "position": "RCM" },
+      { "number": 14, "name": "Mario Basler", "position": "RW" },
+      { "number": 21, "name": "Alexander Zickler", "position": "LW" },
+      { "number": 19, "name": "Carsten Jancker", "position": "ST" }
+    ]
+  }
+]

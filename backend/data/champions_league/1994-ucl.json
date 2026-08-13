@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "AC Milan",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "FC Barcelona",
+    "awayPrimaryColour": "#004D98",
+    "awaySecondaryColour": "#A50044",
+    "competition": "Champions League Final 1994",
+    "venue": "Olympic Stadium, Athens",
+    "date": "1994-05-18",
+    "score": "4 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Sebastiano Rossi", "position": "GK" },
+      { "number": 2, "name": "Mauro Tassotti", "position": "RB" },
+      { "number": 5, "name": "Filippo Galli", "position": "LCB" },
+      { "number": 6, "name": "Paolo Maldini", "position": "RCB" },
+      { "number": 3, "name": "Christian Panucci", "position": "LB" },
+      { "number": 7, "name": "Roberto Donadoni", "position": "LM" },
+      { "number": 4, "name": "Demetrio Albertini", "position": "RDM" },
+      { "number": 8, "name": "Marcel Desailly", "position": "LDM" },
+      { "number": 9, "name": "Zvonimir Boban", "position": "RM" },
+      { "number": 10, "name": "Dejan Savićević", "position": "RS" },
+      { "number": 11, "name": "Daniele Massaro", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Andoni Zubizarreta", "position": "GK" },
+      { "number": 2, "name": "Albert Ferrer", "position": "RB" },
+      { "number": 4, "name": "Ronald Koeman", "position": "LCB" },
+      { "number": 5, "name": "Miguel Ángel Nadal", "position": "RCB", "display": "Nadal" },
+      { "number": 7, "name": "Sergi Barjuan", "position": "LB" },
+      { "number": 3, "name": "Josep Guardiola", "position": "CDM" },
+      { "number": 9, "name": "Guillermo Amor", "position": "RCM" },
+      { "number": 6, "name": "José Mari Bakero", "position": "LCM", "display": "Bakero" },
+      { "number": 8, "name": "Hristo Stoichkov", "position": "RW" },
+      { "number": 10, "name": "Romário de Souza Faria", "position": "ST", "alias": "romario", "display": "Romário" },
+      { "number": 11, "name": "Txiki Begiristain", "position": "LW" }
+    ]
+  }
+]
