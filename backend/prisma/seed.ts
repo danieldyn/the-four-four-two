@@ -1,4 +1,6 @@
 import { PrismaClient } from '@prisma/client';
+import { PrismaBetterSqlite3 } from '@prisma/adapter-better-sqlite3';
+
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,7 +9,10 @@ import slugify from '../utils/slugify.js';
 import splitName from '../utils/splitName.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const prisma = new PrismaClient();
+const adapter = new PrismaBetterSqlite3({
+    url: 'file:./prisma/dev.db'
+})
+const prisma = new PrismaClient({ adapter });
 
 /**
  * Identical player shape with the one used by the match importer.

@@ -6,26 +6,32 @@
     "main": "src/server.ts",
     "scripts": {
         "dev": "nodemon --exec tsx src/server.ts",
+        "seed": "npx prisma db seed",
         "start": "tsx src/server.ts",
         "prisma:migrate": "prisma migrate deploy",
         "prisma:generate": "prisma generate",
         "import:match": "tsx scripts/importMatch.ts"
     },
     "dependencies": {
-        "@prisma/client": "^5.0.0",
+        "@prisma/adapter-better-sqlite3": "^7.9.1",
+        "@prisma/client": "^7.9.1",
+        "better-sqlite3": "^13.0.3",
         "cors": "^2.8.5",
         "express": "^4.18.2"
     },
     "devDependencies": {
+        "@types/better-sqlite3": "^9.6.0",
         "@types/cors": "^2.8.19",
         "@types/express": "^5.0.6",
         "@types/node": "^25.6.0",
         "nodemon": "^3.0.0",
-        "prisma": "^5.0.0",
+        "prisma": "^7.9.1",
         "tsx": "^4.21.0",
         "typescript": "^6.0.3"
     },
-    "prisma": {
-        "seed": "tsx prisma/seed.ts"
+    "allowScripts": {
+        "better-sqlite3@12.11.1": true,
+        "prisma@7.9.1": true,
+        "@prisma/engines@7.9.1": true
     }
 }
