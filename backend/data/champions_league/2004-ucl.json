@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "AS Monaco",
+    "homePrimaryColour": "#E30613",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#002D72",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Quarter Final 2004 (2nd Leg)",
+    "venue": "Stade Louis II, Monaco",
+    "date": "2004-04-06",
+    "score": "3 - 1",
+
+    "homeLineup": [
+      { "number": 30, "name": "Flavio Roma", "position": "GK" },
+      { "number": 4, "name": "Hugo Ibarra", "position": "LCB" },
+      { "number": 27, "name": "Julien Rodriguez", "position": "RCB" },
+      { "number": 32, "name": "Gaël Givet", "position": "RB" },
+      { "number": 3, "name": "Patrice Evra", "position": "LB" },
+      { "number": 14, "name": "Édouard Cissé", "position": "RCM" },
+      { "number": 6, "name": "Jaroslav Plašil", "position": "CDM" },
+      { "number": 8, "name": "Ludovic Giuly", "position": "CAM" },
+      { "number": 25, "name": "Jérôme Rothen", "position": "LM" },
+      { "number": 9, "name": "Miladin Pršo", "position": "RS" },
+      { "number": 10, "name": "Fernando Morientes", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 2, "name": "Miguel Salgado", "position": "RB", "alias": "michel-salgado", "display": "Míchel Salgado" },
+      { "number": 33, "name": "Álvaro Mejía", "position": "LCB" },
+      { "number": 6, "name": "Iván Helguera", "position": "RCB" },
+      { "number": 3, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 8, "name": "Borja Fernández", "position": "RDM" },
+      { "number": 14, "name": "José María Gutiérrez Hernández", "position": "LDM", "alias": "guti", "display": "Guti" },
+      { "number": 10, "name": "Luís Filipe Madeira Caeiro Figo", "position": "RW", "alias": "luis-figo", "display": "Luís Figo" },
+      { "number": 5, "name": "Zinédine Zidane", "position": "LW" },
+      { "number": 7, "name": "Raúl González Blanco", "position": "CAM", "alias": "raul", "display": "Raúl" },
+      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "ST", "alias": "ronaldo", "display": "Ronaldo" }
+    ]
+  }
+]

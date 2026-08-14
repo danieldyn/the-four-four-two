@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "AC Milan",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Liverpool",
+    "awayPrimaryColour": "#C8102E",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Final 2005",
+    "venue": "Atatürk Olympic Stadium, Istanbul",
+    "date": "2005-05-25",
+    "score": "3 - 3 (2 - 3 on pens)",
+
+    "homeLineup": [
+      { "number": 1, "name": "Nelson de Jesus Silva", "position": "GK", "alias": "dida", "display": "Dida" },
+      { "number": 2, "name": "Marcos Evangelista de Morais", "position": "RB", "alias": "cafu", "display": "Cafu" },
+      { "number": 13, "name": "Alessandro Nesta", "position": "RCB" },
+      { "number": 31, "name": "Jaap Stam", "position": "LCB" },
+      { "number": 3, "name": "Paolo Maldini", "position": "LB" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
+      { "number": 20, "name": "Clarence Seedorf", "position": "LCM" },
+      { "number": 22, "name": "Ricardo Izecson dos Santos Leite", "position": "CAM", "alias": "kaka", "display": "Kaká" },
+      { "number": 7, "name": "Andriy Shevchenko", "position": "LS" },
+      { "number": 11, "name": "Hernán Crespo", "position": "RS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Jerzy Dudek", "position": "GK" },
+      { "number": 3, "name": "Steve Finnan", "position": "RB" },
+      { "number": 23, "name": "Jamie Carragher", "position": "RCB" },
+      { "number": 4, "name": "Sami Hyypiä", "position": "LCB" },
+      { "number": 21, "name": "Djimi Traoré", "position": "LB" },
+      { "number": 14, "name": "Xabi Alonso", "position": "RDM" },
+      { "number": 10, "name": "Luis García", "position": "RM" },
+      { "number": 8, "name": "Steven Gerrard", "position": "LDM" },
+      { "number": 6, "name": "John Arne Riise", "position": "LM" },
+      { "number": 7, "name": "Harry Kewell", "position": "CAM" },
+      { "number": 5, "name": "Milan Baroš", "position": "ST" }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Ajax",
+    "homePrimaryColour": "#D2122E",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Tottenham Hotspur",
+    "awayPrimaryColour": "#004B49",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Semi Final 2019 (2nd Leg)",
+    "venue": "Johan Cruijff ArenA, Amsterdam",
+    "date": "2019-05-08",
+    "score": "2 - 3",
+
+		"homeLineup": [
+      { "number": 24, "name": "André Onana", "position": "GK" },
+      { "number": 12, "name": "Noussair Mazraoui", "position": "RB" },
+      { "number": 4, "name": "Matthijs de Ligt", "position": "RCB" },
+      { "number": 17, "name": "Daley Blind", "position": "LCB" },
+      { "number": 31, "name": "Nicolás Tagliafico", "position": "LB" },
+      { "number": 20, "name": "Lasse Schöne", "position": "RCM" },
+      { "number": 21, "name": "Frenkie de Jong", "position": "LCM" },
+      { "number": 22, "name": "Hakim Ziyech", "position": "RW" },
+      { "number": 6, "name": "Donny van de Beek", "position": "CM" },
+      { "number": 10, "name": "Dušan Tadić", "position": "ST" },
+      { "number": 25, "name": "Kasper Dolberg", "position": "LW" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 2, "name": "Kieran Trippier", "position": "RB" },
+      { "number": 4, "name": "Tobias Alderweireld", "position": "RCB" },
+      { "number": 5, "name": "Jan Vertonghen", "position": "LCB" },
+      { "number": 3, "name": "Danny Rose", "position": "LB" },
+      { "number": 17, "name": "Moussa Sissoko", "position": "RCM" },
+      { "number": 12, "name": "Victor Wanyama", "position": "CDM" },
+      { "number": 23, "name": "Christian Eriksen", "position": "CAM" },
+      { "number": 20, "name": "Dele Alli", "position": "LCM" },
+      { "number": 7, "name": "Heung-min Son", "position": "LS" },
+      { "number": 27, "name": "Lucas Rodrigues Moura da Silva", "position": "RS", "alias": "lucas-moura", "display": "Lucas Moura" }
+    ]
+  }
+]

@@ -8,6 +8,7 @@
         "dev": "nodemon --exec tsx src/server.ts",
         "seed": "npx prisma db seed",
         "start": "tsx src/server.ts",
+        "reset-db": "npx prisma migrate reset --force",
         "prisma:migrate": "prisma migrate deploy",
         "prisma:generate": "prisma generate",
         "import:match": "tsx scripts/importMatch.ts"

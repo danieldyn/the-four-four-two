@@ -38,5 +38,46 @@
       { "number": 21, "name": "Alexander Zickler", "position": "LW" },
       { "number": 19, "name": "Carsten Jancker", "position": "ST" }
     ]
+  },
+
+  {
+    "homeTeam": "Juventus",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Manchester United",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#DA291C",
+    "competition": "Champions League Semi Final 1999 (2nd Leg)",
+    "venue": "Stadio delle Alpi, Turin",
+    "date": "1999-04-21",
+    "score": "2 - 3",
+
+    "homeLineup": [
+      { "number": 1, "name": "Angelo Peruzzi", "position": "GK" },
+      { "number": 15, "name": "Alessandro Birindelli", "position": "RB" },
+      { "number": 2, "name": "Ciro Ferrara", "position": "LCB" },
+      { "number": 13, "name": "Mark Iuliano", "position": "LCB" },
+      { "number": 17, "name": "Gianluca Pessotto", "position": "LB" },
+      { "number": 7, "name": "Angelo Di Livio", "position": "LM" },
+      { "number": 8, "name": "Antonio Conte", "position": "RM" },
+      { "number": 14, "name": "Didier Deschamps", "position": "LDM" },
+      { "number": 26, "name": "Edgar Davids", "position": "RDM" },
+      { "number": 21, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 9, "name": "Filippo Inzaghi", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Peter Schmeichel", "position": "GK" },
+      { "number": 2, "name": "Gary Neville", "position": "RB" },
+      { "number": 5, "name": "Ronny Johnsen", "position": "LCB" },
+      { "number": 6, "name": "Jaap Stam", "position": "RCB" },
+      { "number": 3, "name": "Denis Irwin", "position": "LB" },
+      { "number": 7, "name": "David Beckham", "position": "RM" },
+      { "number": 16, "name": "Roy Keane", "position": "LCM" },
+      { "number": 8, "name": "Nicky Butt", "position": "RCM" },
+      { "number": 15, "name": "Jesper Blomqvist", "position": "LM" },
+      { "number": 19, "name": "Dwight Yorke", "position": "SS" },
+      { "number": 9, "name": "Andy Cole", "position": "LS" }
+    ]
   }
 ]

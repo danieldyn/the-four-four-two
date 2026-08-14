@@ -22,7 +22,8 @@ export default function splitName(fullName: string): NameSplit {
     "di", "de", "del", "della", "da",
     "van", "von", "le", "la", "den",
     "el", "al", "dos", "das", "mac",
-    "van der", "van den", "De", "lo"
+    "van de", "van der", "van den",
+    "De", "Di", "lo", "ter"
   ];
 
   const parts: string[] = fullName.trim().split(" ");

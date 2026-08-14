@@ -30,7 +30,10 @@ const GameHeader: React.FC<GameHeaderProps> = ({ onRestart }) => {
 
       <button
         className="home-button"
-        onClick={() => navigate("/")}
+        onClick={() => { 
+          localStorage.removeItem("playedMatches");
+          navigate("/"); 
+        }}
       >
         Back to Home
       </button>
