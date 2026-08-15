@@ -137,7 +137,7 @@
     "homeLineup": [
       { "number": 16, "name": "Mike Maignan", "position": "GK" },
       { "number": 2, "name": "Davide Calabria", "position": "RB" },
-      { "number": 24, "name": "Simon Kjaer", "position": "RCB" },
+      { "number": 24, "name": "Simon Kjaer", "position": "RCB", "display": "Kjær" },
       { "number": 23, "name": "Fikayo Tomori", "position": "LCB" },
       { "number": 19, "name": "Théo Hernandez", "position": "LB" },
       { "number": 8, "name": "Sandro Tonali", "position": "LDM" },

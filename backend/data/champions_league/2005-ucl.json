@@ -38,5 +38,46 @@
       { "number": 7, "name": "Harry Kewell", "position": "CAM" },
       { "number": 5, "name": "Milan Baroš", "position": "ST" }
     ]
+  },
+
+  {
+    "homeTeam": "Chelsea",
+    "homePrimaryColour": "#034694",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FC Barcelona",
+    "awayPrimaryColour": "#D2C29D",
+    "awaySecondaryColour": "#004D98",
+    "competition": "Champions League Round of 16 2005 (2nd Leg)",
+    "venue": "Stamford Bridge, London",
+    "date": "2005-03-08",
+    "score": "4 - 2",
+
+    "homeLineup": [
+      { "number": 1, "name": "Petr Čech", "position": "GK" },
+      { "number": 20, "name": "Paulo Ferreira", "position": "RB" },
+      { "number": 6, "name": "Ricardo Alberto Silveira de Carvalho", "position": "LCB", "alias": "ricardo-carvalho", "display": "Ricardo Carvalho" },
+      { "number": 26, "name": "John Terry", "position": "RCB" },
+      { "number": 13, "name": "William Gallas", "position": "LB" },
+      { "number": 4, "name": "Claude Makélélé", "position": "RCM" },
+      { "number": 10, "name": "Joe Cole", "position": "RM" },
+      { "number": 8, "name": "Frank Lampard", "position": "LCM" },
+      { "number": 11, "name": "Damien Duff", "position": "LM" },
+      { "number": 22, "name": "Eidur Gudjohnsen", "position": "ST", "display": "Guðjohnsen" },
+      { "number": 9, "name": "Mateja Kežman", "position": "SS" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Víctor Valdés", "position": "GK" },
+      { "number": 2, "name": "Juliano Belletti", "position": "RB" },
+      { "number": 5, "name": "Carles Puyol", "position": "RCB" },
+      { "number": 23, "name": "Oleguer Presas Renom", "position": "LCB", "alias": "oleguer", "display": "Oleguer" },
+      { "number": 12, "name": "Giovanni van Bronckhorst", "position": "LB" },
+      { "number": 14, "name": "Gerard López Segú", "position": "CDM", "alias": "gerard", "display": "Gerard" },
+      { "number": 6, "name": "Xavier Hernández", "position": "RCM", "alias": "xavi", "display": "Xavi" },
+      { "number": 20, "name": "Anderson Luís de Souza", "position": "LCM", "alias": "deco", "display": "Deco" },
+      { "number": 24, "name": "Andrés Iniesta", "position": "RW" },
+      { "number": 10, "name": "Ronaldo de Assis Moreira", "position": "LW", "alias": "ronaldinho", "display": "Ronaldinho" },
+      { "number": 9, "name": "Samuel Eto'o", "position": "ST" }
+    ]
   }
 ]
