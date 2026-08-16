@@ -38,5 +38,46 @@
       { "number": 7, "name": "Heung-min Son", "position": "LS" },
       { "number": 27, "name": "Lucas Rodrigues Moura da Silva", "position": "RS", "alias": "lucas-moura", "display": "Lucas Moura" }
     ]
+  }, 
+
+  {
+    "homeTeam": "Liverpool",
+    "homePrimaryColour": "#C8102E",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FC Barcelona",
+    "awayPrimaryColour": "#E3F542",
+    "awaySecondaryColour": "#004D98",
+    "competition": "Champions League Semi Final 2019 (2nd Leg)",
+    "venue": "Anfield, Liverpool",
+    "date": "2019-05-07",
+    "score": "4 - 0",
+
+    "homeLineup": [
+      { "number": 13, "name": "Alisson Ramses Becker", "position": "GK", "alias": "alisson", "display": "Alisson" },
+      { "number": 66, "name": "Trent Alexander-Arnold", "position": "RB" },
+      { "number": 32, "name": "Joël Matip", "position": "RCB" },
+      { "number": 4, "name": "Virgil van Dijk", "position": "LCB" },
+      { "number": 26, "name": "Andrew Robertson", "position": "LB" },
+      { "number": 14, "name": "Jordan Henderson", "position": "RCM" },
+      { "number": 3, "name": "Fábio Henrique Tavares", "position": "CDM", "alias": "fabinho", "display": "Fabinho" },
+      { "number": 7, "name": "James Milner", "position": "LCM" },
+      { "number": 23, "name": "Xherdan Shaqiri", "position": "RW" },
+      { "number": 27, "name": "Divock Origi", "position": "LW" },
+      { "number": 10, "name": "Sadio Mané", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Marc-André ter Stegen", "position": "GK" },
+      { "number": 20, "name": "Sergi Roberto", "position": "RB", "display": "Sergi Roberto" },
+      { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
+      { "number": 15, "name": "Clément Lenglet", "position": "LCB" },
+      { "number": 18, "name": "Jordi Alba", "position": "LB", "display": "Jordi Alba" },
+      { "number": 22, "name": "Arturo Vidal", "position": "RCM" },
+      { "number": 5, "name": "Sergio Busquets", "position": "CDM" },
+      { "number": 4, "name": "Ivan Rakitić", "position": "LCM" },
+      { "number": 10, "name": "Lionel Messi", "position": "RW" },
+      { "number": 9, "name": "Luis Suárez", "position": "ST" },
+      { "number": 7, "name": "Philippe Coutinho", "position": "LW" }
+    ]
   }
 ]

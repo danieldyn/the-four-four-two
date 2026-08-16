@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "FC Barcelona",
+    "homePrimaryColour": "#004D98",
+    "homeSecondaryColour": "#A50044",
+    "awayTeam": "Inter Milan",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2010 (2nd Leg)",
+    "venue": "Camp Nou, Barcelona",
+    "date": "2010-04-28",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 1, "name": "Víctor Valdés", "position": "GK" },
+      { "number": 2, "name": "Daniel Alves da Silva", "position": "RB", "alias": "dani-alves", "display": "Dani Alves" },
+      { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
+			{ "number": 18, "name": "Gabriel Milito", "position": "LCB", "display": "G. Milito" },
+			{ "number": 15, "name": "Seydou Keita", "position": "LB" },
+      { "number": 24, "name": "Yaya Touré", "position": "CDM" },
+      { "number": 16, "name": "Sergio Busquets", "position": "LCM" },
+      { "number": 6, "name": "Xavi Hernández", "position": "RCM", "alias": "xavi", "display": "Xavi" },
+      { "number": 10, "name": "Lionel Messi", "position": "LW" },
+      { "number": 9, "name": "Zlatan Ibrahimović", "position": "ST" },
+      { "number": 17, "name": "Pedro Rodríguez", "position": "RW", "alias": "pedro", "display": "Pedro" }
+    ],
+
+		"awayLineup": [
+      { "number": 12, "name": "Júlio César Soares de Espíndola", "position": "GK", "alias": "julio-cesar", "display": "Júlio César" },
+      { "number": 13, "name": "Maicon Douglas Sisenando", "position": "RB", "alias": "maicon", "display": "Maicon" },
+      { "number": 6, "name": "Lucimar da Silva Ferreira", "position": "RCB", "alias": "lucio", "display": "Lúcio" },
+      { "number": 25, "name": "Wálter Samuel", "position": "LCB" },
+      { "number": 4, "name": "Javier Zanetti", "position": "LB" },
+      { "number": 8, "name": "Thiago Motta", "position": "LDM", "display": "Thiago Motta" },
+      { "number": 19, "name": "Esteban Cambiasso", "position": "RDM" },
+      { "number": 10, "name": "Wesley Sneijder", "position": "CAM" },
+      { "number": 9, "name": "Samuel Eto'o", "position": "RW" },
+      { "number": 22, "name": "Diego Milito", "position": "ST", "display": "D. Milito" },
+      { "number": 26, "name": "Cristian Chivu", "position": "LW" }
+    ]
+  }
+]

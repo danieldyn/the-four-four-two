@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Chelsea",
+    "homePrimaryColour": "#034694",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Liverpool",
+    "awayPrimaryColour": "#C8102E",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Quarter Final 2009 (2nd Leg)",
+    "venue": "Stamford Bridge, London",
+    "date": "2009-04-14",
+    "score": "4 - 4",
+
+		"homeLineup": [
+      { "number": 1, "name": "Petr Čech", "position": "GK" },
+      { "number": 2, "name": "Branislav Ivanović", "position": "RB" },
+      { "number": 33, "name": "Alex Rodrigo Dias da Costa", "position": "RCB", "alias": "alex", "display": "Alex" },
+      { "number": 6, "name": "Ricardo Alberto Silveira de Carvalho", "position": "LCB", "alias": "ricardo-carvalho", "display": "Ricardo Carvalho" },
+      { "number": 3, "name": "Ashley Cole", "position": "LB" },
+      { "number": 5, "name": "Michael Essien", "position": "CDM" },
+      { "number": 13, "name": "Michael Ballack", "position": "RCM" },
+      { "number": 8, "name": "Frank Lampard", "position": "LCM" },
+      { "number": 21, "name": "Salomon Kalou", "position": "RW" },
+      { "number": 11, "name": "Didier Drogba", "position": "ST" },
+      { "number": 15, "name": "Florent Malouda", "position": "LW" }
+    ],
+
+		"awayLineup": [
+      { "number": 25, "name": "Pepe Reina", "position": "GK" },
+      { "number": 17, "name": "Álvaro Arbeloa", "position": "RB" },
+      { "number": 23, "name": "Jamie Carragher", "position": "RCB" },
+      { "number": 37, "name": "Martin Škrtel", "position": "LCB" },
+      { "number": 12, "name": "Fábio Aurélio", "position": "LB", "display": "Fábio Aurélio" },
+      { "number": 20, "name": "Javier Mascherano", "position": "CDM" },
+      { "number": 14, "name": "Xabi Alonso", "position": "LCM" },
+      { "number": 21, "name": "Lucas Leiva", "position": "RCM" },
+      { "number": 18, "name": "Dirk Kuyt", "position": "RW" },
+      { "number": 9, "name": "Fernando Torres", "position": "ST" },
+      { "number": 15, "name": "Yossef Benayoun", "position": "LW" }
+    ]
+  }
+]
