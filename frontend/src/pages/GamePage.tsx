@@ -35,6 +35,7 @@ const GamePage: React.FC = () => {
   const [hintsUsed, setHintsUsed] = useState<HintsUsed>({});
   const [isFinished, setIsFinished] = useState<boolean>(false);
   const [gameOverMessage, setGameOverMessage] = useState<string | null>(null);
+  const [mobileView, setMobileView] = useState<'lineups' | 'history'>('lineups');
   const navigate: NavigateFunction = useNavigate();
 
   // Resigning will reveal unguessed players and finish the game
@@ -224,38 +225,27 @@ const GamePage: React.FC = () => {
 
   return (
     <div className="game-page">
-      <GameHeader onRestart={fetchNewGame}/>
+      <GameHeader onRestart={fetchNewGame} />
+
+      <div className="mobile-view-toggle">
+        <button
+          className={mobileView === 'lineups' ? 'active' : ''}
+          onClick={() => setMobileView('lineups')}
+        >
+          Pitch
+        </button>
+        <button
+          className={mobileView === 'history' ? 'active' : ''}
+          onClick={() => setMobileView('history')}
+        >
+          Grid
+        </button>
+      </div>
 
       <div className="game-layout">
-        <div className="main-content">
-          <MatchHeader match={match}/>
+        <div className={`main-content ${mobileView !== 'lineups' ? 'mobile-hidden' : ''}`}>
+          <MatchHeader match={match} />
 
-          <div className="pitches">
-            <div>
-              <h2>{match.homeTeam}</h2>
-              <LineupBoard
-                lineup={homeLineup}
-                guesses={guesses}
-                isFinished={isFinished}
-                primaryColour={match.homePrimaryColour}
-                secondaryColour={match.homeSecondaryColour}
-              />
-            </div>
-
-            <div>
-              <h2>{match.awayTeam}</h2>
-              <LineupBoard
-                lineup={awayLineup}
-                guesses={guesses}
-                isFinished={isFinished}
-                primaryColour={match.awayPrimaryColour}
-                secondaryColour={match.awaySecondaryColour}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="side-panel right-panel">
           <GuessInput
             onGuess={handleGuessSubmission}
             onHint={handleHint}
@@ -263,6 +253,26 @@ const GamePage: React.FC = () => {
             onResign={handleResign}
           />
 
+          <div className="pitches">
+            <LineupBoard
+              lineup={homeLineup}
+              guesses={guesses}
+              isFinished={isFinished}
+              primaryColour={match.homePrimaryColour}
+              secondaryColour={match.homeSecondaryColour}
+            />
+
+            <LineupBoard
+              lineup={awayLineup}
+              guesses={guesses}
+              isFinished={isFinished}
+              primaryColour={match.awayPrimaryColour}
+              secondaryColour={match.awaySecondaryColour}
+            />
+          </div>
+        </div>
+
+        <div className={`side-panel right-panel ${mobileView !== 'history' ? 'mobile-hidden' : ''}`}>
           <GuessHistory
             homeLineup={homeLineup}
             awayLineup={awayLineup}
