@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "AC Milan",
+    "homePrimaryColour": "#FB090B",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Manchester United",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2007 (2nd Leg)",
+    "venue": "San Siro, Milan",
+    "date": "2007-05-02",
+    "score": "3 - 0",
+
+		"homeLineup": [
+      { "number": 1, "name": "Nelson de Jesus Silva", "position": "GK", "alias": "dida", "display": "Dida" },
+      { "number": 44, "name": "Massimo Oddo", "position": "RB" },
+      { "number": 13, "name": "Alessandro Nesta", "position": "RCB" },
+      { "number": 4, "name": "Kakhaber Kaladze", "position": "LCB" },
+      { "number": 18, "name": "Marek Jankulovski", "position": "LB" },
+      { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 23, "name": "Massimo Ambrosini", "position": "LCM" },
+      { "number": 10, "name": "Clarence Seedorf", "position": "CAM" },
+      { "number": 22, "name": "Ricardo Izecson dos Santos Leite", "position": "SS", "alias": "kaka", "display": "Kaká" },
+      { "number": 9, "name": "Filippo Inzaghi", "position": "ST" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Edwin van der Sar", "position": "GK" },
+      { "number": 22, "name": "John O'Shea", "position": "RB" },
+      { "number": 6, "name": "Wes Brown", "position": "RCB" },
+      { "number": 15, "name": "Nemanja Vidić", "position": "LCB" },
+      { "number": 4, "name": "Gabriel Heinze", "position": "LB" },
+      { "number": 24, "name": "Darren Fletcher", "position": "RCM" },
+      { "number": 16, "name": "Michael Carrick", "position": "LCM" },
+      { "number": 18, "name": "Paul Scholes", "position": "CM" },
+      { "number": 7, "name": "Cristiano Ronaldo", "position": "RW" },
+      { "number": 11, "name": "Ryan Giggs", "position": "LW" },
+      { "number": 8, "name": "Wayne Rooney", "position": "ST" }
+    ]
+  }
+]
