@@ -53,6 +53,11 @@
   overflow-y: auto;
 }
 
+/* toggle only exists visually on mobile */
+.mobile-view-toggle {
+  display: none;
+}
+
 /* Responsiveness enhancement for mobile */
 @media (max-width: 800px) {
   .game-page {
@@ -150,11 +155,6 @@
     background-color: #2563eb;
     color: white;
   }
-}
-
-/* toggle only exists visually on mobile */
-.mobile-view-toggle {
-  display: none;
 }
 
 /* Main content container */
