@@ -1,0 +1,165 @@
+[
+  {
+    "homeTeam": "Juventus",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FC Barcelona",
+    "awayPrimaryColour": "#004D98",
+    "awaySecondaryColour": "#A50044",
+    "competition": "Champions League Final 2015",
+    "venue": "Olympiastadion, Berlin",
+    "date": "2015-06-06",
+    "score": "1 - 3",
+
+		"homeLineup": [
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 26, "name": "Stephan Lichtsteiner", "position": "RB" },
+      { "number": 15, "name": "Andrea Barzagli", "position": "RCB" },
+      { "number": 19, "name": "Leonardo Bonucci", "position": "LCB" },
+      { "number": 33, "name": "Patrice Evra", "position": "LB" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 8, "name": "Claudio Marchisio", "position": "RCM" },
+      { "number": 6, "name": "Paul Pogba", "position": "LCM" },
+      { "number": 23, "name": "Arturo Vidal", "position": "CAM" },
+      { "number": 10, "name": "Carlos Tevez", "position": "RS" },
+      { "number": 9, "name": "Álvaro Morata", "position": "LS" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Marc-André ter Stegen", "position": "GK" },
+      { "number": 22, "name": "Daniel Alves da Silva", "position": "RB", "alias": "dani-alves", "display": "Dani Alves" },
+      { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
+      { "number": 14, "name": "Javier Mascherano", "position": "LCB" },
+      { "number": 18, "name": "Jordi Alba", "position": "LB" },
+      { "number": 5, "name": "Sergio Busquets", "position": "CDM" },
+      { "number": 4, "name": "Ivan Rakitić", "position": "RCM" },
+      { "number": 8, "name": "Andrés Iniesta", "position": "LCM" },
+      { "number": 10, "name": "Lionel Messi", "position": "RW" },
+      { "number": 9, "name": "Luis Suárez", "position": "ST" },
+      { "number": 11, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar" }
+    ]
+  },
+
+	{
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Juventus",
+    "awayPrimaryColour": "#002B5C",
+    "awaySecondaryColour": "#FADF00",
+    "competition": "Champions League Semi Final 2015 (2nd Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2015-05-13",
+    "score": "1 - 1",
+
+    "homeLineup": [
+      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 15, "name": "Daniel Carvajal", "position": "RB" },
+      { "number": 4, "name": "Sergio Ramos", "position": "RCB" },
+      { "number": 2, "name": "Raphaël Varane", "position": "LCB" },
+      { "number": 12, "name": "Marcelo Vieira da Silva Júnior", "position": "LB", "alias": "marcelo", "display": "Marcelo" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 23, "name": "Francisco Román Alarcón Suárez", "position": "LCM", "alias": "isco", "display": "Isco" },
+      { "number": 10, "name": "James Rodríguez", "position": "RCM", "alias": "james", "display": "James Rodríguez" },
+      { "number": 11, "name": "Gareth Bale", "position": "RW" },
+      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 26, "name": "Stephan Lichtsteiner", "position": "RB" },
+      { "number": 19, "name": "Leonardo Bonucci", "position": "RCB" },
+      { "number": 3, "name": "Giorgio Chiellini", "position": "LCB" },
+      { "number": 33, "name": "Patrice Evra", "position": "LB" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 8, "name": "Claudio Marchisio", "position": "LCM" },
+      { "number": 6, "name": "Paul Pogba", "position": "RCM" },
+      { "number": 23, "name": "Arturo Vidal", "position": "CAM" },
+      { "number": 10, "name": "Carlos Tevez", "position": "RS" },
+      { "number": 9, "name": "Álvaro Morata", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Schalke 04",
+    "awayPrimaryColour": "#004D9D",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Round of 16 2015 (2nd Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2015-03-10",
+    "score": "3 - 4",
+
+    "homeLineup": [
+      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 17, "name": "Álvaro Arbeloa", "position": "RB" },
+      { "number": 3, "name": "Képler Laveran de Lima Ferreira", "position": "RCB", "alias": "pepe", "display": "Pepe" },
+      { "number": 2, "name": "Raphaël Varane", "position": "LCB" },
+      { "number": 5, "name": "Fábio Coentrão", "position": "LB" },
+      { "number": 6, "name": "Sami Khedira", "position": "RCM" },
+      { "number": 8, "name": "Toni Kroos", "position": "CDM" },
+      { "number": 23, "name": "Francisco Román Alarcón Suárez", "position": "LCM", "alias": "isco", "display": "Isco" },
+      { "number": 11, "name": "Gareth Bale", "position": "RW" },
+      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW" },
+      { "number": 9, "name": "Karim Benzema", "position": "ST" }
+    ],
+
+		"awayLineup": [
+      { "number": 40, "name": "Timon Wellenreuther", "position": "GK" },
+      { "number": 4, "name": "Benedikt Höwedes", "position": "RB" },
+      { "number": 32, "name": "Joël Matip", "position": "RCB" },
+      { "number": 31, "name": "Matija Nastasić", "position": "LCB" },
+      { "number": 23, "name": "Christian Fuchs", "position": "LB" },
+			{ "number": 19, "name": "Tranquillo Barnetta", "position": "LM" },
+      { "number": 33, "name": "Roman Neustädter", "position": "RCM" },
+      { "number": 12, "name": "Marco Höger", "position": "LCM" },
+      { "number": 7, "name": "Maximilian Meyer", "position": "RM" },
+      { "number": 25, "name": "Klaas-Jan Huntelaar", "position": "LS" },
+      { "number": 13, "name": "Eric Maxim Choupo-Moting", "position": "RS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Shakhtar Donetsk",
+    "homePrimaryColour": "#F28C00",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Bayern Munich",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#DC052D",
+    "competition": "Champions League Round of 16 2015 (1st Leg)",
+    "venue": "Arena Lviv, Lviv",
+    "date": "2015-02-17",
+    "score": "0 - 0",
+
+		"homeLineup": [
+      { "number": 30, "name": "Andriy Pyatov", "position": "GK" },
+      { "number": 33, "name": "Darijo Srna", "position": "RB" },
+      { "number": 5, "name": "Oleksandr Kucher", "position": "RCB" },
+      { "number": 44, "name": "Yaroslav Rakitskyi", "position": "LCB" },
+      { "number": 13, "name": "Vyacheslav Shevchuk", "position": "LB" },
+      { "number": 8, "name": "Frederico Rodrigues de Paula Santos", "position": "LDM", "alias": "fred", "display": "Fred" },
+      { "number": 11, "name": "Fernando Lucas Martins", "position": "RDM", "alias": "fernando", "display": "Fernando" },
+      { "number": 20, "name": "Douglas Costa de Souza", "position": "RM", "alias": "douglas-costa", "display": "Douglas Costa" },
+      { "number": 29, "name": "Alex Teixeira Santos", "position": "SS", "alias": "alex-teixeira", "display": "Alex Teixeira" },
+      { "number": 28, "name": "Taison Barcellos Freda", "position": "LM", "alias": "taison", "display": "Taison" },
+      { "number": 9, "name": "Luiz Adriano de Souza da Silva", "position": "ST", "alias": "luiz-adriano", "display": "Luiz Adriano" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Manuel Neuer", "position": "GK" },
+      { "number": 13, "name": "Márcio Rafael Ferreira de Souza", "position": "RCB", "alias": "rafinha", "display": "Rafinha" },
+      { "number": 17, "name": "Jérôme Boateng", "position": "CB" },
+      { "number": 27, "name": "David Alaba", "position": "LCB" },
+      { "number": 18, "name": "Juan Bernat", "position": "LWB" },
+      { "number": 3, "name": "Xabi Alonso", "position": "CDM" },
+      { "number": 31, "name": "Bastian Schweinsteiger", "position": "RWB" },
+      { "number": 10, "name": "Arjen Robben", "position": "RAM" },
+      { "number": 7, "name": "Franck Ribéry", "position": "LAM" },
+      { "number": 19, "name": "Mario Götze", "position": "CAM" },
+			{ "number": 25, "name": "Thomas Müller", "position": "ST" }
+    ]
+  }
+]
