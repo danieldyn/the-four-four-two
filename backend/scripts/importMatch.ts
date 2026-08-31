@@ -18,6 +18,8 @@ interface PlayerInput {
   position: string;
   alias?: string;
   display?: string;
+  goalsScored?: number;
+  isCaptain?: boolean;
 }
 
 /**
@@ -98,7 +100,9 @@ async function importMatch(filePath: string | undefined): Promise<void> {
         team,
         shirtNumber: player.number,
         position: player.position,
-        starter: true
+        starter: true,
+        isCaptain: player.isCaptain ?? false,
+        goalsScored: player.goalsScored ?? 0
       }
     });
   }

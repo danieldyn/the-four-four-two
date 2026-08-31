@@ -25,6 +25,8 @@ export interface LineupEntry {
   shirtNumber: number | null;
   position: string | null;
   starter: boolean;
+  isCaptain: boolean;
+  goalsScored: number;
   player: Player;
 }
 

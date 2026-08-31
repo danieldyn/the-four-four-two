@@ -26,19 +26,22 @@ model Match {
 }
 
 model Lineup {
-    id Int @id @default(autoincrement())
+    id          Int @id @default(autoincrement())
 
-    matchId  Int
-    playerId Int
+    matchId     Int
+    playerId    Int
 
-    team String
+    team        String
 
     shirtNumber Int
     position    String
 
-    starter Boolean @default(true)
-    minuteIn  Int?
-    minuteOut Int?
+    starter     Boolean @default(true)
+    minuteIn    Int?
+    minuteOut   Int?
+
+    isCaptain   Boolean @default(false)
+    goalsScored Int @default(0)
 
     match  Match  @relation(fields: [matchId], references: [id])
     player Player @relation(fields: [playerId], references: [id])

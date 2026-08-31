@@ -76,15 +76,61 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
               </div>
             )}
 
-            <div
-              className={`player-slot ${showPlayer ? "revealed" : ""}`}
-              style={{
-                backgroundColor: primaryColour || defaultPrimary,
-                color: secondaryColour || defaultSecondary,
-                borderColor: secondaryColour || defaultSecondary
-              }}
-            >
-              {p.shirtNumber ?? "?"}
+            {/* Added relative wrapper for the badges */}
+            <div style={{ position: "relative" }}>
+              <div
+                className={`player-slot ${showPlayer ? "revealed" : ""}`}
+                style={{
+                  backgroundColor: primaryColour || defaultPrimary,
+                  color: secondaryColour || defaultSecondary,
+                  borderColor: secondaryColour || defaultSecondary
+                }}
+              >
+                {p.shirtNumber ?? "?"}
+              </div>
+
+              {/* Goals - Top Right */}
+              {p.goalsScored > 0 && (
+                <div
+                  className="player-goals"
+                  style={{
+                    position: "absolute",
+                    top: "-8px",
+                    right: "-12px",
+                    fontSize: "14px",
+                    whiteSpace: "nowrap",
+                    pointerEvents: "none",
+                    zIndex: 10,
+                    filter: "drop-shadow(0px 1px 1px rgba(0,0,0,0.5))"
+                  }}
+                >
+                  {"⚽".repeat(p.goalsScored)}
+                </div>
+              )}
+
+              {/* Captain Badge - Bottom Right */}
+              {p.isCaptain && (
+                <div
+                  className="player-captain"
+                  style={{
+                    position: "absolute",
+                    bottom: "-4px",
+                    right: "-8px",
+                    backgroundColor: "#fbbf24",
+                    color: "#000",
+                    fontSize: "10px",
+                    fontWeight: "bold",
+                    padding: "1px 4px",
+                    borderRadius: "3px",
+                    border: "1px solid #d97706",
+                    pointerEvents: "none",
+                    lineHeight: 1
+                  }}
+                  title="Captain"
+                >
+                  C
+                </div>
+              )}
             </div>
           </div>
         );

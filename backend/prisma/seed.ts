@@ -23,6 +23,8 @@ interface PlayerInput {
   position: string;
   alias?: string;
   display?: string;
+  goalsScored?: number;
+  isCaptain?: boolean;
 }
 
 /**
@@ -81,7 +83,9 @@ async function processMatch(data: any) {
         team: teamName,
         shirtNumber: player.number,
         position: player.position,
-        starter: true
+        starter: true,
+        isCaptain: player.isCaptain ?? false,
+        goalsScored: player.goalsScored ?? 0
       }
     });
   };
