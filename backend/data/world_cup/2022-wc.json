@@ -20,13 +20,13 @@
       { "number": 7, "name": "Rodrigo De Paul", "position": "RCM" },
       { "number": 24, "name": "Enzo Fernández", "position": "CDM" },
       { "number": 20, "name": "Alexis Mac Allister", "position": "LCM" },
-      { "number": 10, "name": "Lionel Messi", "position": "RW" },
+      { "number": 10, "name": "Lionel Messi", "position": "RW", "isCaptain": true, "goalsScored": 2 },
       { "number": 9, "name": "Julián Alvarez", "position": "ST" },
-      { "number": 11, "name": "Ángel Di María", "position": "LW" }
+      { "number": 11, "name": "Ángel Di María", "position": "LW", "goalsScored": 1 }
     ],
 
     "awayLineup": [
-      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 1, "name": "Hugo Lloris", "position": "GK", "isCaptain": true },
       { "number": 5, "name": "Jules Koundé", "position": "RB" },
       { "number": 4, "name": "Raphaël Varane", "position": "RCB" },
       { "number": 18, "name": "Dayot Upamecano", "position": "LCB" },
@@ -35,7 +35,7 @@
       { "number": 14, "name": "Adrien Rabiot", "position": "LDM" },
       { "number": 11, "name": "Ousmane Dembélé", "position": "RW" },
       { "number": 7, "name": "Antoine Griezmann", "position": "CAM" },
-      { "number": 10, "name": "Kylian Mbappé", "position": "LW" },
+      { "number": 10, "name": "Kylian Mbappé", "position": "LW", "goalsScored": 3 },
       { "number": 9, "name": "Olivier Giroud", "position": "ST" }
     ]
   },
@@ -62,8 +62,8 @@
       { "number": 5, "name": "Leandro Paredes", "position": "RCM" },
       { "number": 24, "name": "Enzo Fernández", "position": "LCM" },
       { "number": 20, "name": "Alexis Mac Allister", "position": "LM" },
-      { "number": 10, "name": "Lionel Messi", "position": "RS" },
-      { "number": 9, "name": "Julián Álvarez", "position": "LS" }
+      { "number": 10, "name": "Lionel Messi", "position": "RS", "isCaptain": true, "goalsScored": 1 },
+      { "number": 9, "name": "Julián Álvarez", "position": "LS", "goalsScored": 2 }
     ],
 
     "awayLineup": [
@@ -73,7 +73,7 @@
       { "number": 20, "name": "Joško Gvardiol", "position": "LCB" },
       { "number": 19, "name": "Borna Sosa", "position": "LB" },
       { "number": 11, "name": "Marcelo Brozović", "position": "CDM" },
-      { "number": 10, "name": "Luka Modrić", "position": "RCM" },
+      { "number": 10, "name": "Luka Modrić", "position": "RCM", "isCaptain": true },
       { "number": 8, "name": "Mateo Kovačić", "position": "LCM" },
       { "number": 15, "name": "Mario Pašalić", "position": "RW" },
       { "number": 9, "name": "Andrej Kramarić", "position": "ST" },
@@ -94,11 +94,11 @@
     "score": "2 - 0",
 
     "homeLineup": [
-      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 1, "name": "Hugo Lloris", "position": "GK", "isCaptain": true },
       { "number": 5, "name": "Jules Koundé", "position": "RB" },
       { "number": 4, "name": "Raphaël Varane", "position": "RCB" },
       { "number": 24, "name": "Ibrahima Konaté", "position": "LCB" },
-      { "number": 22, "name": "Théo Hernandez", "position": "LB" },
+      { "number": 22, "name": "Théo Hernandez", "position": "LB", "goalsScored": 1 },
       { "number": 8, "name": "Aurélien Tchouaméni", "position": "RDM" },
       { "number": 13, "name": "Youssouf Fofana", "position": "LDM" },
       { "number": 11, "name": "Ousmane Dembélé", "position": "RW" },
@@ -111,7 +111,7 @@
       { "number": 1, "name": "Yassine Bounou", "position": "GK" },
       { "number": 2, "name": "Achraf Hakimi", "position": "RWB" },
       { "number": 20, "name": "Achraf Dari", "position": "RCB" },
-      { "number": 6, "name": "Romain Saïss", "position": "CB" },
+      { "number": 6, "name": "Romain Saïss", "position": "CB", "isCaptain": true },
       { "number": 18, "name": "Jawad El Yamiq", "position": "LCB" },
       { "number": 3, "name": "Noussair Mazraoui", "position": "LWB" },
       { "number": 8, "name": "Azzedine Ounahi", "position": "RCM" },

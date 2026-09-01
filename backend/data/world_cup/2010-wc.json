@@ -7,7 +7,7 @@
     "awayPrimaryColour": "#21304D",
     "awaySecondaryColour": "#FEDF00",
     "competition": "World Cup Final 2010",
-    "venue": "Soccer City",
+    "venue": "Soccer City, Johannesburg",
     "date": "2010-07-11",
     "score": "0 - 1 (a.e.t.)",
 
@@ -16,7 +16,7 @@
       { "number": 2, "name": "Gregory van der Wiel", "position": "RB" },
       { "number": 3, "name": "John Heitinga", "position": "RCB" },
       { "number": 4, "name": "Joris Mathijsen", "position": "LCB" },
-      { "number": 5, "name": "Giovanni van Bronckhorst", "position": "LB" },
+      { "number": 5, "name": "Giovanni van Bronckhorst", "position": "LB", "isCaptain": true },
       { "number": 6, "name": "Mark van Bommel", "position": "RDM" },
       { "number": 8, "name": "Nigel de Jong", "position": "LDM" },
       { "number": 11, "name": "Arjen Robben", "position": "RW" },
@@ -26,7 +26,7 @@
     ],
 
     "awayLineup": [
-      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 1, "name": "Iker Casillas", "position": "GK", "isCaptain": true },
       { "number": 15, "name": "Sergio Ramos", "position": "RB" },
       { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
       { "number": 5, "name": "Carles Puyol", "position": "LCB" },
@@ -34,7 +34,7 @@
       { "number": 16, "name": "Sergio Busquets", "position": "RDM" },
       { "number": 14, "name": "Xabi Alonso", "position": "LDM" },
       { "number": 8, "name": "Xavi Hernández", "position": "CM", "alias": "xavi", "display": "Xavi" },
-      { "number": 6, "name": "Andrés Iniesta", "position": "RW" },
+      { "number": 6, "name": "Andrés Iniesta", "position": "RW", "goalsScored": 1 },
       { "number": 18, "name": "Pedro Rodríguez", "position": "LW", "alias": "pedro", "display": "Pedro" },
       { "number": 7, "name": "David Villa", "position": "ST" }
     ]
@@ -54,7 +54,7 @@
 
     "homeLineup": [
       { "number": 1, "name": "Fernando Muslera", "position": "GK" },
-      { "number": 16, "name": "Maxi Pereira", "position": "RB", "display": "M. Pereira" },
+      { "number": 16, "name": "Maxi Pereira", "position": "RB", "display": "M. Pereira", "goalsScored": 1 },
       { "number": 6, "name": "Mauricio Victorino", "position": "LCB" },
       { "number": 3, "name": "Diego Godín", "position": "RCB" },
       { "number": 22, "name": "Martín Cáceres", "position": "LB" },
@@ -63,7 +63,7 @@
       { "number": 17, "name": "Egidio Arévalo Ríos", "position": "LCM", "display": "Arévalo Ríos" },
       { "number": 11, "name": "Álvaro Pereira", "position": "LM", "display": "A. Pereira" },
       { "number": 7, "name": "Edinson Cavani", "position": "RS" },
-      { "number": 10, "name": "Diego Forlán", "position": "LS" }
+      { "number": 10, "name": "Diego Forlán", "position": "LS", "isCaptain": true, "goalsScored": 1 }
     ],
 
     "awayLineup": [
@@ -71,11 +71,11 @@
       { "number": 12, "name": "Khalid Boulahrouz", "position": "RB" },
       { "number": 3, "name": "John Heitinga", "position": "RCB" },
       { "number": 4, "name": "Joris Mathijsen", "position": "LCB" },
-      { "number": 5, "name": "Giovanni van Bronckhorst", "position": "LB" },
+      { "number": 5, "name": "Giovanni van Bronckhorst", "position": "LB", "isCaptain": true, "goalsScored": 1 },
       { "number": 6, "name": "Mark van Bommel", "position": "RDM" },
       { "number": 14, "name": "Demy de Zeeuw", "position": "LDM" },
-      { "number": 11, "name": "Arjen Robben", "position": "RW" },
-      { "number": 10, "name": "Wesley Sneijder", "position": "CAM" },
+      { "number": 11, "name": "Arjen Robben", "position": "RW", "goalsScored": 1 },
+      { "number": 10, "name": "Wesley Sneijder", "position": "CAM", "goalsScored": 1 },
       { "number": 7, "name": "Dirk Kuyt", "position": "LW" },
       { "number": 9, "name": "Robin van Persie", "position": "ST" }
     ]
@@ -89,13 +89,13 @@
     "awayPrimaryColour": "#0A2240",
     "awaySecondaryColour": "#FFC400",
     "competition": "World Cup Semi Final 2010",
-    "venue": "Moses Mabhida Stadium",
+    "venue": "Moses Mabhida Stadium, Durban",
     "date": "2010-07-07",
     "score": "0 - 1",
 
     "homeLineup": [
       { "number": 1, "name": "Manuel Neuer", "position": "GK" },
-      { "number": 16, "name": "Philipp Lahm", "position": "RB" },
+      { "number": 16, "name": "Philipp Lahm", "position": "RB", "isCaptain": true },
       { "number": 3, "name": "Arne Friedrich", "position": "RCB" },
       { "number": 17, "name": "Per Mertesacker", "position": "LCB" },
       { "number": 20, "name": "Jérôme Boateng", "position": "LB" },
@@ -108,10 +108,10 @@
     ],
 
     "awayLineup": [
-      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 1, "name": "Iker Casillas", "position": "GK", "isCaptain": true },
       { "number": 15, "name": "Sergio Ramos", "position": "RB" },
       { "number": 3, "name": "Gerard Piqué", "position": "RCB" },
-      { "number": 5, "name": "Carles Puyol", "position": "LCB" },
+      { "number": 5, "name": "Carles Puyol", "position": "LCB", "goalsScored": 1 },
       { "number": 11, "name": "Joan Capdevila", "position": "LB" },
       { "number": 16, "name": "Sergio Busquets", "position": "RDM" },
       { "number": 14, "name": "Xabi Alonso", "position": "LDM" },

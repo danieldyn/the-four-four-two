@@ -26,14 +26,33 @@
   - name: Player's full legal name, including correct accents/diacritics (e.g., "Vinícius José Paixão de Oliveira Júnior").
   - position: Standard tactical position abbreviation (e.g., "GK", "RB", "RCB", "LCB", "LB", "CDM", "RCM", "LCM", "CAM", "RW", "LW", "ST", "LS", "RS", "SS").
 
-## 4. Optional Fields: alias and display
+## 4. Captains and Goalscorers
+
+The database automatically defaults to zero goals scored and no captaincy for all players in a match.
+It is only necessary to outline the captain and the goalscores using:
+
+```JSON
+"isCaptain": true
+```
+
+And, respectively:
+
+```JSON
+"goalsScored: 1
+```
+
+Failing to add these currently does not void the input as invalid, it just does not display the additional data in-game.
+
+> Note: Own goals, penalties and free kicks are not yet supported.
+
+## 6. Optional Fields: alias and display
 
 - Condition for Inclusion: Included only for players widely known in the footballing world by a single-word moniker or nickname rather than their legal surname (e.g., Brazilian/Portuguese single names, or monikers like "Chicharito", "Koke", "Memphis").
 - alias: Strictly lowercase, no special accents, must be separated by hyphens and should avoid abbreviations (e.g., "vinicius-junior", "gilberto-silva", "cafu").
 - display: Appears every time alias is present. Contains the properly capitalised and accented version as shown on official TV graphics or shirt names (e.g., "Roberto Carlos", "Thiago Silva", "Vinícius Júnior"). It is possible to have display without an alias for names that are very complex but no aliases exist (e.g., "Miguel Ángel Nadal", "Bruno Martins Indi", "Juan Sebastián Verón")
 - Standard Names: If a player is known by their standard legal surname (e.g., "David Beckham", "Oliver Kahn", "Lionel Messi"), both "alias" and "display" are completely omitted.
 
-## 5. Format Sample
+## 7. Format Sample
 
 ```JSON
 [
@@ -53,8 +72,8 @@
 
     "homeLineup": [
       { "number": 1, "name": "A B", "position": "GK", "alias": "normalised-alias", "display": "Capitalised Display Name" },
-      { "number": 2, "name": "C D", "position": "RB" },
-      { "number": 3, "name": "E F", "position": "RCB" },
+      { "number": 2, "name": "C D", "position": "RB", "isCaptain": true },
+      { "number": 3, "name": "E F", "position": "RCB", "goalsScored": 2 },
       { "number": 4, "name": "G H", "position": "LCB" },
       { "number": 5, "name": "I J", "position": "LB" },
       { "number": 6, "name": "K L", "position": "RCM" },

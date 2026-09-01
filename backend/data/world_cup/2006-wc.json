@@ -19,7 +19,7 @@
       { "number": 3, "name": "Eric Abidal", "position": "LB" },
       { "number": 4, "name": "Patrick Vieira", "position": "RDM" },
       { "number": 6, "name": "Claude Makélélé", "position": "LDM" },
-      { "number": 10, "name": "Zinedine Zidane", "position": "CAM" },
+      { "number": 10, "name": "Zinedine Zidane", "position": "CAM", "isCaptain": true, "goalsScored": 1 },
       { "number": 7, "name": "Franck Ribéry", "position": "RW" },
       { "number": 22, "name": "Florent Malouda", "position": "LW" },
       { "number": 12, "name": "Thierry Henry", "position": "ST" }
@@ -28,8 +28,8 @@
     "awayLineup": [
       { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
       { "number": 19, "name": "Gianluca Zambrotta", "position": "RB" },
-      { "number": 23, "name": "Marco Materazzi", "position": "LCB" },
-      { "number": 5, "name": "Fabio Cannavaro", "position": "RCB" },
+      { "number": 23, "name": "Marco Materazzi", "position": "LCB", "goalsScored": 1 },
+      { "number": 5, "name": "Fabio Cannavaro", "position": "RCB", "isCaptain": true },
       { "number": 3, "name": "Fabio Grosso", "position": "LB" },
       { "number": 8, "name": "Gennaro Gattuso", "position": "RDM" },
       { "number": 21, "name": "Andrea Pirlo", "position": "LDM" },
@@ -60,7 +60,7 @@
       { "number": 16, "name": "Philipp Lahm", "position": "LB" },
       { "number": 19, "name": "Bernd Schneider", "position": "RM" },
       { "number": 5, "name": "Sebastian Kehl", "position": "RCM" },
-      { "number": 13, "name": "Michael Ballack", "position": "LCM" },
+      { "number": 13, "name": "Michael Ballack", "position": "LCM", "isCaptain": true },
       { "number": 18, "name": "Tim Borowski", "position": "LM" },
       { "number": 11, "name": "Miroslav Klose", "position": "RS" },
       { "number": 20, "name": "Lukas Podolski", "position": "LS" }
@@ -70,8 +70,8 @@
       { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
       { "number": 19, "name": "Gianluca Zambrotta", "position": "RB" },
       { "number": 23, "name": "Marco Materazzi", "position": "LCB" },
-      { "number": 5, "name": "Fabio Cannavaro", "position": "RCB" },
-      { "number": 3, "name": "Fabio Grosso", "position": "LB" },
+      { "number": 5, "name": "Fabio Cannavaro", "position": "RCB", "isCaptain": true },
+      { "number": 3, "name": "Fabio Grosso", "position": "LB", "goalsScored": 1 },
       { "number": 16, "name": "Mauro Camoranesi", "position": "RM" },
       { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
       { "number": 21, "name": "Andrea Pirlo", "position": "LCM" },
@@ -101,7 +101,7 @@
       { "number": 14, "name": "Nuno Valente", "position": "LB" },
       { "number": 6, "name": "Francisco José Rodrigues da Costa", "position": "RDM", "alias": "costinha", "display": "Costinha" },
       { "number": 18, "name": "Nuno Ricardo de Oliveira Ribeiro", "position": "LDM", "alias": "maniche", "display": "Maniche" },
-      { "number": 7, "name": "Luís Figo", "position": "RW" },
+      { "number": 7, "name": "Luís Figo", "position": "RW", "isCaptain": true },
       { "number": 20, "name": "Anderson Luís de Souza", "position": "CAM", "alias": "deco", "display": "Deco" },
       { "number": 17, "name": "Cristiano Ronaldo", "position": "LW" },
       { "number": 9, "name": "Pedro Miguel Carreiro Resendes", "position": "ST", "alias": "pauleta", "display": "Pauleta`" }
@@ -116,7 +116,7 @@
       { "number": 4, "name": "Patrick Vieira", "position": "RDM" },
       { "number": 6, "name": "Claude Makélélé", "position": "LDM" },
       { "number": 22, "name": "Franck Ribéry", "position": "RW" },
-      { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 10, "name": "Zinédine Zidane", "position": "CAM", "isCaptain": true, "goalsScored": 1 },
       { "number": 7, "name": "Florent Malouda", "position": "LW" },
       { "number": 12, "name": "Thierry Henry", "position": "ST" }
     ]

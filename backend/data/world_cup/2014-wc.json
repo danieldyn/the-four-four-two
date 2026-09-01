@@ -13,7 +13,7 @@
 
     "homeLineup": [
       { "number": 1, "name": "Manuel Neuer", "position": "GK" },
-      { "number": 16, "name": "Philipp Lahm", "position": "RB" },
+      { "number": 16, "name": "Philipp Lahm", "position": "RB", "isCaptain": true },
       { "number": 20, "name": "Jérôme Boateng", "position": "RCB" },
       { "number": 5, "name": "Mats Hummels", "position": "LCB" },
       { "number": 4, "name": "Benedikt Höwedes", "position": "LB" },
@@ -35,7 +35,7 @@
       { "number": 14, "name": "Javier Mascherano", "position": "RDM" },
       { "number": 6, "name": "Lucas Biglia", "position": "LDM" },
       { "number": 22, "name": "Ezequiel Lavezzi", "position": "LW" },
-      { "number": 10, "name": "Lionel Messi", "position": "CAM" },
+      { "number": 10, "name": "Lionel Messi", "position": "CAM", "isCaptain": true },
       { "number": 9, "name": "Gonzalo Higuaín", "position": "ST" }
     ]
   },
@@ -55,29 +55,29 @@
     "homeLineup": [
       { "number": 12, "name": "Júlio César Soares de Espíndola", "position": "GK", "alias": "julio-cesar", "display": "Júlio César" },
       { "number": 23, "name": "Maicon Douglas Sisenando", "position": "RB", "alias": "maicon", "display": "Maicon" },
-      { "number": 4, "name": "David Luiz Moreira Marinho", "position": "RCB", "alias": "david-luiz", "display": "David Luiz" },
+      { "number": 4, "name": "David Luiz Moreira Marinho", "position": "RCB", "alias": "david-luiz", "display": "David Luiz", "isCaptain": true },
       { "number": 13, "name": "Dante Bonfim Costa Santos", "position": "LCB", "alias": "dante", "display": "Dante" },
       { "number": 6, "name": "Marcelo Vieira da Silva Júnior", "position": "LB", "alias": "marcelo", "display": "Marcelo" },
       { "number": 17, "name": "Luiz Gustavo Dias", "position": "RDM", "alias": "luiz-gustavo", "display": "Luiz Gustavo" },
       { "number": 5, "name": "Fernando Luiz Roza", "position": "LDM", "alias": "fernandinho", "display": "Fernandinho" },
       { "number": 7, "name": "Givanildo Vieira de Sousa", "position": "RW", "alias": "hulk", "display": "Hulk" },
-      { "number": 11, "name": "Oscar dos Santos Emboaba Júnior", "position": "CAM", "alias": "oscar", "display": "Oscar" },
+      { "number": 11, "name": "Oscar dos Santos Emboaba Júnior", "position": "CAM", "alias": "oscar", "display": "Oscar", "goalsScored": 1 },
       { "number": 20, "name": "Bernard Anício Caldeira Duarte", "position": "LW", "alias": "bernard", "display": "Bernard" },
       { "number": 9, "name": "Frederico Chaves Guedes", "position": "ST", "alias": "fred", "display": "Fred" }
     ],
 
     "awayLineup": [
       { "number": 1, "name": "Manuel Neuer", "position": "GK" },
-      { "number": 16, "name": "Philipp Lahm", "position": "RB" },
+      { "number": 16, "name": "Philipp Lahm", "position": "RB", "isCaptain": true },
       { "number": 20, "name": "Jérôme Boateng", "position": "RCB" },
       { "number": 5, "name": "Mats Hummels", "position": "LCB" },
       { "number": 4, "name": "Benedikt Höwedes", "position": "LB" },
-      { "number": 6, "name": "Sami Khedira", "position": "LDM" },
+      { "number": 6, "name": "Sami Khedira", "position": "LDM", "goalsScored": 1 },
       { "number": 7, "name": "Bastian Schweinsteiger", "position": "RDM" },
-      { "number": 13, "name": "Thomas Müller", "position": "RW" },
-      { "number": 18, "name": "Toni Kroos", "position": "CAM" },
+      { "number": 13, "name": "Thomas Müller", "position": "RW", "goalsScored": 1 },
+      { "number": 18, "name": "Toni Kroos", "position": "CAM", "goalsScored": 2 },
       { "number": 8, "name": "Mesut Özil", "position": "LW" },
-      { "number": 11, "name": "Miroslav Klose", "position": "ST" }
+      { "number": 11, "name": "Miroslav Klose", "position": "ST", "goalsScored": 1 }
     ]
   },
 
@@ -97,14 +97,14 @@
       { "number": 1, "name": "Jasper Cillessen", "position": "GK" },
       { "number": 3, "name": "Stefan de Vrij", "position": "RCB" },
       { "number": 2, "name": "Ron Vlaar", "position": "CB" },
-      { "number": 4, "name": "Bruno Martins Indi", "position": "LCB", "alias": "martins-indi", "display": "Martins Indi" },
+      { "number": 4, "name": "Bruno Martins Indi", "position": "LCB", "display": "Martins Indi" },
       { "number": 15, "name": "Dirk Kuyt", "position": "RWB" },
       { "number": 20, "name": "Georginio Wijnaldum", "position": "LCM" },
       { "number": 6, "name": "Nigel de Jong", "position": "RCM" },
       { "number": 5, "name": "Daley Blind", "position": "LWB" },
       { "number": 10, "name": "Wesley Sneijder", "position": "CAM" },
       { "number": 11, "name": "Arjen Robben", "position": "RS" },
-      { "number": 9, "name": "Robin van Persie", "position": "LS" }
+      { "number": 9, "name": "Robin van Persie", "position": "LS", "isCaptain": true }
     ],
 
     "awayLineup": [
@@ -117,7 +117,7 @@
       { "number": 14, "name": "Javier Mascherano", "position": "CDM" },
       { "number": 6, "name": "Lucas Biglia", "position": "RCM" },
       { "number": 22, "name": "Ezequiel Lavezzi", "position": "RS" },
-      { "number": 10, "name": "Lionel Messi", "position": "CAM" },
+      { "number": 10, "name": "Lionel Messi", "position": "CAM", "isCaptain": true },
       { "number": 9, "name": "Gonzalo Higuaín", "position": "LS" }
     ]
   }

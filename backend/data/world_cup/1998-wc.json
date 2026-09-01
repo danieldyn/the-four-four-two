@@ -18,7 +18,7 @@
       { "number": 4, "name": "Raimundo Ferreira Ramos Júnior", "position": "LCB", "alias": "junior-baiano", "display": "Júnior Baiano" },
       { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
       { "number": 5, "name": "César Sampaio", "position": "LDM" },
-      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga" },
+      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga", "isCaptain": true },
       { "number": 18, "name": "Leonardo Araújo", "position": "RW", "alias": "leonardo", "display": "Leonardo" },
       { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "LW", "alias": "rivaldo", "display": "Rivaldo" },
       { "number": 20, "name": "José Roberto Gama de Oliveira", "position": "RS", "alias": "bebeto", "display": "Bebeto" },
@@ -31,10 +31,10 @@
       { "number": 8, "name": "Marcel Desailly", "position": "LCB" },
       { "number": 18, "name": "Frank Leboeuf", "position": "RCB" },
       { "number": 3, "name": "Bixente Lizarazu", "position": "LB" },
-      { "number": 7, "name": "Didier Deschamps", "position": "CDM" },
+      { "number": 7, "name": "Didier Deschamps", "position": "CDM", "isCaptain": true },
       { "number": 19, "name": "Christian Karembeu", "position": "RCM" },
-      { "number": 17, "name": "Emmanuel Petit", "position": "LCM" },
-      { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
+      { "number": 17, "name": "Emmanuel Petit", "position": "LCM", "goalsScored": 1 },
+      { "number": 10, "name": "Zinédine Zidane", "position": "CAM", "goalsScored": 2 },
       { "number": 6, "name": "Youri Djorkaeff", "position": "LS" },
       { "number": 9, "name": "Stéphane Guivarc'h", "position": "RS" }
     ]
@@ -59,25 +59,25 @@
       { "number": 4, "name": "Raimundo Ferreira Ramos Júnior", "position": "LCB", "alias": "junior-baiano", "display": "Júnior Baiano" },
       { "number": 6, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
       { "number": 5, "name": "César Sampaio", "position": "LDM" },
-      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga" },
+      { "number": 8, "name": "Carlos Caetano Bledorn Verri", "position": "RDM", "alias": "dunga", "display": "Dunga", "isCaptain": true },
       { "number": 18, "name": "Leonardo Araújo", "position": "RW", "alias": "leonardo", "display": "Leonardo" },
       { "number": 10, "name": "Rivaldo Vítor Borba Ferreira", "position": "LW", "alias": "rivaldo", "display": "Rivaldo" },
       { "number": 20, "name": "José Roberto Gama de Oliveira", "position": "RS", "alias": "bebeto", "display": "Bebeto" },
-      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo" }
+      { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "LS", "alias": "ronaldo", "display": "Ronaldo", "goalsScored": 1 }
     ],
 
     "awayLineup": [
       { "number": 1, "name": "Edwin van der Sar", "position": "GK" },
       { "number": 2, "name": "Michael Reiziger", "position": "RB" },
       { "number": 3, "name": "Jaap Stam", "position": "RCB" },
-      { "number": 4, "name": "Frank de Boer", "position": "LCB", "display": "F. de Boer" },
+      { "number": 4, "name": "Frank de Boer", "position": "LCB", "display": "F. de Boer", "isCaptain": true },
       { "number": 11, "name": "Phillip Cocu", "position": "LB" },
       { "number": 6, "name": "Wim Jonk", "position": "RDM" },
       { "number": 16, "name": "Edgar Davids", "position": "LDM" },
       { "number": 7, "name": "Ronald de Boer", "position": "RM", "display": "R. de Boer" },
       { "number": 12, "name": "Boudewijn Zenden", "position": "LM" },
       { "number": 8, "name": "Dennis Bergkamp", "position": "SS" },
-      { "number": 9, "name": "Patrick Kluivert", "position": "LS" }
+      { "number": 9, "name": "Patrick Kluivert", "position": "LS", "goalsScored": 1 }
     ]
   },
 
@@ -95,11 +95,11 @@
 
     "homeLineup": [
       { "number": 16, "name": "Fabien Barthez", "position": "GK" },
-      { "number": 15, "name": "Lilian Thuram", "position": "RB" },
+      { "number": 15, "name": "Lilian Thuram", "position": "RB", "goalsScored": 2 },
       { "number": 8, "name": "Marcel Desailly", "position": "RCB" },
       { "number": 5, "name": "Laurent Blanc", "position": "LCB" },
       { "number": 3, "name": "Bixente Lizarazu", "position": "LB" },
-      { "number": 7, "name": "Didier Deschamps", "position": "CDM" },
+      { "number": 7, "name": "Didier Deschamps", "position": "CDM", "isCaptain": true },
       { "number": 19, "name": "Christian Karembeu", "position": "RCM" },
       { "number": 17, "name": "Emmanuel Petit", "position": "LCM" },
       { "number": 10, "name": "Zinédine Zidane", "position": "CAM" },
@@ -116,9 +116,9 @@
       { "number": 17, "name": "Robert Jarni", "position": "LM" },
       { "number": 14, "name": "Zvonimir Soldo", "position": "LDM" },
       { "number": 7, "name": "Aljoša Asanović", "position": "RDM" },
-      { "number": 10, "name": "Zvonimir Boban", "position": "CM" },
+      { "number": 10, "name": "Zvonimir Boban", "position": "CM", "isCaptain": true },
       { "number": 19, "name": "Goran Vlaović", "position": "LS" },
-      { "number": 9, "name": "Davor Šuker", "position": "RS" }
+      { "number": 9, "name": "Davor Šuker", "position": "RS", "goalsScored": 1 }
     ]
   }
 ]
