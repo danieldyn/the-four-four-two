@@ -12,17 +12,17 @@
     "score": "3 - 2",
 
     "homeLineup": [
-      { "number": 1, "name": "Roman Weidenfeller", "position": "GK" },
+      { "number": 1, "name": "Roman Weidenfeller", "position": "GK", "isCaptain": true },
       { "number": 26, "name": "Łukasz Piszczek", "position": "RB" },
       { "number": 4, "name": "Neven Subotić", "position": "RCB" },
-      { "number": 27, "name": "Felipe Augusto Santana", "position": "LCB", "alias": "felipe-santana", "display": "Felipe Santana" },
+      { "number": 27, "name": "Felipe Augusto Santana", "position": "LCB", "alias": "felipe-santana", "display": "Felipe Santana", "goalsScored": 1 },
       { "number": 29, "name": "Marcel Schmelzer", "position": "LB" },
       { "number": 8, "name": "İlkay Gündoğan", "position": "RDM" },
       { "number": 6, "name": "Sven Bender", "position": "LDM" },
       { "number": 16, "name": "Jakub Blaszczykowski", "position": "RW", "display": "Błaszczykowski" },
       { "number": 10, "name": "Mario Götze", "position": "CAM" },
-      { "number": 11, "name": "Marco Reus", "position": "LW" },
-      { "number": 9, "name": "Robert Lewandowski", "position": "ST" }
+      { "number": 11, "name": "Marco Reus", "position": "LW", "goalsScored": 1 },
+      { "number": 9, "name": "Robert Lewandowski", "position": "ST", "goalsScored": 1 }
     ],
 
 		"awayLineup": [
@@ -33,9 +33,9 @@
       { "number": 25, "name": "Vitorino Antunes", "position": "LB" },
       { "number": 28, "name": "Jérémy Toulalan", "position": "RDM" },
       { "number": 6, "name": "Ignacio Camacho", "position": "LDM" },
-      { "number": 7, "name": "Joaquín Sánchez Rodríguez", "position": "RM", "alias": "joaquin", "display": "Joaquín" },
+      { "number": 7, "name": "Joaquín Sánchez Rodríguez", "position": "RM", "alias": "joaquin", "display": "Joaquín", "goalsScored": 1 },
       { "number": 22, "name": "Francisco Román Alarcón Suárez", "position": "SS", "alias": "isco", "display": "Isco" },
-      { "number": 17, "name": "Sérgio Paulo Marceneiro da Conceição", "position": "LM", "alias": "duda", "display": "Duda" },
+      { "number": 17, "name": "Sérgio Paulo Marceneiro da Conceição", "position": "LM", "alias": "duda", "display": "Duda", "isCaptain": true },
       { "number": 9, "name": "Júlio César Baptista", "position": "ST", "alias": "julio-baptista", "display": "Júlio Baptista" }
     ]
   }

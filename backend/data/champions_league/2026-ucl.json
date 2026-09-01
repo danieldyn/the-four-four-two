@@ -14,7 +14,7 @@
 		"homeLineup": [
 			{ "number": 39, "name": "Matvey Safonov", "position": "GK" },
 			{ "number": 2, "name": "Achraf Hakimi", "position": "RB" },
-			{ "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+			{ "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos", "isCaptain": true },
 			{ "number": 51, "name": "Willian Pacho", "position": "LCB" },
 			{ "number": 25, "name": "Nuno Mendes", "position": "LB" },
 			{ "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
@@ -22,7 +22,7 @@
 			{ "number": 87, "name": "João Neves", "position": "RCM" },
 			{ "number": 14, "name": "Désiré Doué", "position": "RW" },
 			{ "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW" },
-			{ "number": 10, "name": "Ousmane Dembélé", "position": "ST" }
+			{ "number": 10, "name": "Ousmane Dembélé", "position": "ST", "goalsScored": 1 }
 		],
 
 		"awayLineup": [
@@ -33,10 +33,10 @@
 			{ "number": 5, "name": "Piero Hincapié", "position": "LB" },
 			{ "number": 41, "name": "Declan Rice", "position": "RDM" },
 			{ "number": 49, "name": "Myles Lewis-Skelly", "position": "LDM" },
-			{ "number": 8, "name": "Martin Ødegaard", "position": "CAM" },
+			{ "number": 8, "name": "Martin Ødegaard", "position": "CAM", "isCaptain": true },
 			{ "number": 7, "name": "Bukayo Saka", "position": "RW" },
 			{ "number": 19, "name": "Leandro Trossard", "position": "LW" },
-			{ "number": 29, "name": "Kai Havertz", "position": "ST" }
+			{ "number": 29, "name": "Kai Havertz", "position": "ST", "goalsScored": 1 }
 		]
 	}
 ]

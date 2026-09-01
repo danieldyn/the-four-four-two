@@ -16,13 +16,13 @@
       { "number": 2, "name": "Marcos Evangelista de Morais", "position": "RB", "alias": "cafu", "display": "Cafu" },
       { "number": 13, "name": "Alessandro Nesta", "position": "RCB" },
       { "number": 31, "name": "Jaap Stam", "position": "LCB" },
-      { "number": 3, "name": "Paolo Maldini", "position": "LB" },
+      { "number": 3, "name": "Paolo Maldini", "position": "LB", "isCaptain": true, "goalsScored": 1 },
       { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
       { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
       { "number": 20, "name": "Clarence Seedorf", "position": "LCM" },
       { "number": 22, "name": "Ricardo Izecson dos Santos Leite", "position": "CAM", "alias": "kaka", "display": "Kaká" },
       { "number": 7, "name": "Andriy Shevchenko", "position": "LS" },
-      { "number": 11, "name": "Hernán Crespo", "position": "RS" }
+      { "number": 11, "name": "Hernán Crespo", "position": "RS", "goalsScored": 2 }
     ],
 
     "awayLineup": [
@@ -31,9 +31,9 @@
       { "number": 23, "name": "Jamie Carragher", "position": "RCB" },
       { "number": 4, "name": "Sami Hyypiä", "position": "LCB" },
       { "number": 21, "name": "Djimi Traoré", "position": "LB" },
-      { "number": 14, "name": "Xabi Alonso", "position": "RDM" },
+      { "number": 14, "name": "Xabi Alonso", "position": "RDM", "goalsScored": 1 },
       { "number": 10, "name": "Luis García", "position": "RM" },
-      { "number": 8, "name": "Steven Gerrard", "position": "LDM" },
+      { "number": 8, "name": "Steven Gerrard", "position": "LDM", "isCaptain": true, "goalsScored": 1 },
       { "number": 6, "name": "John Arne Riise", "position": "LM" },
       { "number": 7, "name": "Harry Kewell", "position": "CAM" },
       { "number": 5, "name": "Milan Baroš", "position": "ST" }
@@ -56,27 +56,27 @@
       { "number": 1, "name": "Petr Čech", "position": "GK" },
       { "number": 20, "name": "Paulo Ferreira", "position": "RB" },
       { "number": 6, "name": "Ricardo Alberto Silveira de Carvalho", "position": "LCB", "alias": "ricardo-carvalho", "display": "Ricardo Carvalho" },
-      { "number": 26, "name": "John Terry", "position": "RCB" },
+      { "number": 26, "name": "John Terry", "position": "RCB", "isCaptain": true, "goalsScored": 1 },
       { "number": 13, "name": "William Gallas", "position": "LB" },
       { "number": 4, "name": "Claude Makélélé", "position": "RCM" },
       { "number": 10, "name": "Joe Cole", "position": "RM" },
-      { "number": 8, "name": "Frank Lampard", "position": "LCM" },
-      { "number": 11, "name": "Damien Duff", "position": "LM" },
-      { "number": 22, "name": "Eidur Gudjohnsen", "position": "ST", "display": "Guðjohnsen" },
+      { "number": 8, "name": "Frank Lampard", "position": "LCM", "goalsScored": 1 },
+      { "number": 11, "name": "Damien Duff", "position": "LM", "goalsScored": 1 },
+      { "number": 22, "name": "Eidur Gudjohnsen", "position": "ST", "display": "Guðjohnsen", "goalsScored": 1 },
       { "number": 9, "name": "Mateja Kežman", "position": "SS" }
     ],
 
     "awayLineup": [
       { "number": 1, "name": "Víctor Valdés", "position": "GK" },
       { "number": 2, "name": "Juliano Belletti", "position": "RB" },
-      { "number": 5, "name": "Carles Puyol", "position": "RCB" },
+      { "number": 5, "name": "Carles Puyol", "position": "RCB", "isCaptain": true },
       { "number": 23, "name": "Oleguer Presas Renom", "position": "LCB", "alias": "oleguer", "display": "Oleguer" },
       { "number": 12, "name": "Giovanni van Bronckhorst", "position": "LB" },
       { "number": 14, "name": "Gerard López Segú", "position": "CDM", "alias": "gerard", "display": "Gerard" },
       { "number": 6, "name": "Xavier Hernández", "position": "RCM", "alias": "xavi", "display": "Xavi" },
       { "number": 20, "name": "Anderson Luís de Souza", "position": "LCM", "alias": "deco", "display": "Deco" },
       { "number": 24, "name": "Andrés Iniesta", "position": "RW" },
-      { "number": 10, "name": "Ronaldo de Assis Moreira", "position": "LW", "alias": "ronaldinho", "display": "Ronaldinho" },
+      { "number": 10, "name": "Ronaldo de Assis Moreira", "position": "LW", "alias": "ronaldinho", "display": "Ronaldinho", "goalsScored": 2 },
       { "number": 9, "name": "Samuel Eto'o", "position": "ST" }
     ]
   }

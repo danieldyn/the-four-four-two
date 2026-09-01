@@ -12,7 +12,7 @@
     "score": "1 - 3",
 
 		"homeLineup": [
-      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK", "isCaptain": true },
       { "number": 26, "name": "Stephan Lichtsteiner", "position": "RB" },
       { "number": 15, "name": "Andrea Barzagli", "position": "RCB" },
       { "number": 19, "name": "Leonardo Bonucci", "position": "LCB" },
@@ -22,7 +22,7 @@
       { "number": 6, "name": "Paul Pogba", "position": "LCM" },
       { "number": 23, "name": "Arturo Vidal", "position": "CAM" },
       { "number": 10, "name": "Carlos Tevez", "position": "RS" },
-      { "number": 9, "name": "Álvaro Morata", "position": "LS" }
+      { "number": 9, "name": "Álvaro Morata", "position": "LS", "goalsScored": 1 }
     ],
 
 		"awayLineup": [
@@ -32,11 +32,11 @@
       { "number": 14, "name": "Javier Mascherano", "position": "LCB" },
       { "number": 18, "name": "Jordi Alba", "position": "LB" },
       { "number": 5, "name": "Sergio Busquets", "position": "CDM" },
-      { "number": 4, "name": "Ivan Rakitić", "position": "RCM" },
-      { "number": 8, "name": "Andrés Iniesta", "position": "LCM" },
+      { "number": 4, "name": "Ivan Rakitić", "position": "RCM", "goalsScored": 1 },
+      { "number": 8, "name": "Andrés Iniesta", "position": "LCM", "isCaptain": true },
       { "number": 10, "name": "Lionel Messi", "position": "RW" },
-      { "number": 9, "name": "Luis Suárez", "position": "ST" },
-      { "number": 11, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar" }
+      { "number": 9, "name": "Luis Suárez", "position": "ST", "goalsScored": 1 },
+      { "number": 11, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar", "goalsScored": 1 }
     ]
   },
 
@@ -53,7 +53,7 @@
     "score": "1 - 1",
 
     "homeLineup": [
-      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 1, "name": "Iker Casillas", "position": "GK", "isCaptain": true },
       { "number": 15, "name": "Daniel Carvajal", "position": "RB" },
       { "number": 4, "name": "Sergio Ramos", "position": "RCB" },
       { "number": 2, "name": "Raphaël Varane", "position": "LCB" },
@@ -62,12 +62,12 @@
       { "number": 23, "name": "Francisco Román Alarcón Suárez", "position": "LCM", "alias": "isco", "display": "Isco" },
       { "number": 10, "name": "James Rodríguez", "position": "RCM", "alias": "james", "display": "James Rodríguez" },
       { "number": 11, "name": "Gareth Bale", "position": "RW" },
-      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW" },
+      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW", "goalsScored": 1 },
       { "number": 9, "name": "Karim Benzema", "position": "ST" }
     ],
 
     "awayLineup": [
-      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK", "isCaptain": true },
       { "number": 26, "name": "Stephan Lichtsteiner", "position": "RB" },
       { "number": 19, "name": "Leonardo Bonucci", "position": "RCB" },
       { "number": 3, "name": "Giorgio Chiellini", "position": "LCB" },
@@ -77,7 +77,7 @@
       { "number": 6, "name": "Paul Pogba", "position": "RCM" },
       { "number": 23, "name": "Arturo Vidal", "position": "CAM" },
       { "number": 10, "name": "Carlos Tevez", "position": "RS" },
-      { "number": 9, "name": "Álvaro Morata", "position": "LS" }
+      { "number": 9, "name": "Álvaro Morata", "position": "LS", "goalsScored": 1 }
     ]
   },
 
@@ -94,7 +94,7 @@
     "score": "3 - 4",
 
     "homeLineup": [
-      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 1, "name": "Iker Casillas", "position": "GK", "isCaptain": true },
       { "number": 17, "name": "Álvaro Arbeloa", "position": "RB" },
       { "number": 3, "name": "Képler Laveran de Lima Ferreira", "position": "RCB", "alias": "pepe", "display": "Pepe" },
       { "number": 2, "name": "Raphaël Varane", "position": "LCB" },
@@ -103,21 +103,21 @@
       { "number": 8, "name": "Toni Kroos", "position": "CDM" },
       { "number": 23, "name": "Francisco Román Alarcón Suárez", "position": "LCM", "alias": "isco", "display": "Isco" },
       { "number": 11, "name": "Gareth Bale", "position": "RW" },
-      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW" },
-      { "number": 9, "name": "Karim Benzema", "position": "ST" }
+      { "number": 7, "name": "Cristiano Ronaldo", "position": "LW", "goalsScored": 2 },
+      { "number": 9, "name": "Karim Benzema", "position": "ST", "goalsScored": 1 }
     ],
 
 		"awayLineup": [
       { "number": 40, "name": "Timon Wellenreuther", "position": "GK" },
-      { "number": 4, "name": "Benedikt Höwedes", "position": "RB" },
+      { "number": 4, "name": "Benedikt Höwedes", "position": "RB", "isCaptain": true },
       { "number": 32, "name": "Joël Matip", "position": "RCB" },
       { "number": 31, "name": "Matija Nastasić", "position": "LCB" },
-      { "number": 23, "name": "Christian Fuchs", "position": "LB" },
+      { "number": 23, "name": "Christian Fuchs", "position": "LB", "goalsScored": 1 },
 			{ "number": 19, "name": "Tranquillo Barnetta", "position": "LM" },
       { "number": 33, "name": "Roman Neustädter", "position": "RCM" },
       { "number": 12, "name": "Marco Höger", "position": "LCM" },
       { "number": 7, "name": "Maximilian Meyer", "position": "RM" },
-      { "number": 25, "name": "Klaas-Jan Huntelaar", "position": "LS" },
+      { "number": 25, "name": "Klaas-Jan Huntelaar", "position": "LS", "goalsScored": 2 },
       { "number": 13, "name": "Eric Maxim Choupo-Moting", "position": "RS" }
     ]
   },
@@ -136,7 +136,7 @@
 
 		"homeLineup": [
       { "number": 30, "name": "Andriy Pyatov", "position": "GK" },
-      { "number": 33, "name": "Darijo Srna", "position": "RB" },
+      { "number": 33, "name": "Darijo Srna", "position": "RB", "isCaptain": true },
       { "number": 5, "name": "Oleksandr Kucher", "position": "RCB" },
       { "number": 44, "name": "Yaroslav Rakitskyi", "position": "LCB" },
       { "number": 13, "name": "Vyacheslav Shevchuk", "position": "LB" },
@@ -155,7 +155,7 @@
       { "number": 27, "name": "David Alaba", "position": "LCB" },
       { "number": 18, "name": "Juan Bernat", "position": "LWB" },
       { "number": 3, "name": "Xabi Alonso", "position": "CDM" },
-      { "number": 31, "name": "Bastian Schweinsteiger", "position": "RWB" },
+      { "number": 31, "name": "Bastian Schweinsteiger", "position": "RWB", "isCaptain": true },
       { "number": 10, "name": "Arjen Robben", "position": "RAM" },
       { "number": 7, "name": "Franck Ribéry", "position": "LAM" },
       { "number": 19, "name": "Mario Götze", "position": "CAM" },

@@ -19,10 +19,10 @@
       { "number": 3, "name": "Patrice Evra", "position": "LB" },
       { "number": 14, "name": "Édouard Cissé", "position": "RCM" },
       { "number": 6, "name": "Jaroslav Plašil", "position": "CDM" },
-      { "number": 8, "name": "Ludovic Giuly", "position": "CAM" },
+      { "number": 8, "name": "Ludovic Giuly", "position": "CAM", "isCaptain": true, "goalsScored": 2 },
       { "number": 25, "name": "Jérôme Rothen", "position": "LM" },
       { "number": 9, "name": "Miladin Pršo", "position": "RS" },
-      { "number": 10, "name": "Fernando Morientes", "position": "LS" }
+      { "number": 10, "name": "Fernando Morientes", "position": "LS", "goalsScored": 1 }
     ],
 
     "awayLineup": [
@@ -35,7 +35,7 @@
       { "number": 14, "name": "José María Gutiérrez Hernández", "position": "LDM", "alias": "guti", "display": "Guti" },
       { "number": 10, "name": "Luís Filipe Madeira Caeiro Figo", "position": "RW", "alias": "luis-figo", "display": "Luís Figo" },
       { "number": 5, "name": "Zinédine Zidane", "position": "LW" },
-      { "number": 7, "name": "Raúl González Blanco", "position": "CAM", "alias": "raul", "display": "Raúl" },
+      { "number": 7, "name": "Raúl González Blanco", "position": "CAM", "alias": "raul", "display": "Raúl", "isCaptain": true, "goalsScored": 1 },
       { "number": 9, "name": "Ronaldo Luís Nazário de Lima", "position": "ST", "alias": "ronaldo", "display": "Ronaldo" }
     ]
   }

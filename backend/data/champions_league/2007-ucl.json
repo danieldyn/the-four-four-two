@@ -19,9 +19,9 @@
       { "number": 18, "name": "Marek Jankulovski", "position": "LB" },
       { "number": 8, "name": "Gennaro Gattuso", "position": "RCM" },
       { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
-      { "number": 23, "name": "Massimo Ambrosini", "position": "LCM" },
-      { "number": 10, "name": "Clarence Seedorf", "position": "CAM" },
-      { "number": 22, "name": "Ricardo Izecson dos Santos Leite", "position": "SS", "alias": "kaka", "display": "Kaká" },
+      { "number": 23, "name": "Massimo Ambrosini", "position": "LCM", "isCaptain": true },
+      { "number": 10, "name": "Clarence Seedorf", "position": "CAM", "goalsScored": 1 },
+      { "number": 22, "name": "Ricardo Izecson dos Santos Leite", "position": "SS", "alias": "kaka", "display": "Kaká", "goalsScored": 1 },
       { "number": 9, "name": "Filippo Inzaghi", "position": "ST" }
     ],
 
@@ -35,7 +35,7 @@
       { "number": 16, "name": "Michael Carrick", "position": "LCM" },
       { "number": 18, "name": "Paul Scholes", "position": "CM" },
       { "number": 7, "name": "Cristiano Ronaldo", "position": "RW" },
-      { "number": 11, "name": "Ryan Giggs", "position": "LW" },
+      { "number": 11, "name": "Ryan Giggs", "position": "LW", "isCaptain": true },
       { "number": 8, "name": "Wayne Rooney", "position": "ST" }
     ]
   }

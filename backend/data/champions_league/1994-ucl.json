@@ -13,16 +13,16 @@
 
     "homeLineup": [
       { "number": 1, "name": "Sebastiano Rossi", "position": "GK" },
-      { "number": 2, "name": "Mauro Tassotti", "position": "RB" },
+      { "number": 2, "name": "Mauro Tassotti", "position": "RB", "isCaptain": true },
       { "number": 5, "name": "Filippo Galli", "position": "LCB" },
       { "number": 6, "name": "Paolo Maldini", "position": "RCB" },
       { "number": 3, "name": "Christian Panucci", "position": "LB" },
       { "number": 7, "name": "Roberto Donadoni", "position": "LM" },
       { "number": 4, "name": "Demetrio Albertini", "position": "RDM" },
-      { "number": 8, "name": "Marcel Desailly", "position": "LDM" },
+      { "number": 8, "name": "Marcel Desailly", "position": "LDM", "goalsScored": 1 },
       { "number": 9, "name": "Zvonimir Boban", "position": "RM" },
-      { "number": 10, "name": "Dejan Savićević", "position": "RS" },
-      { "number": 11, "name": "Daniele Massaro", "position": "LS" }
+      { "number": 10, "name": "Dejan Savićević", "position": "RS", "goalsScored": 1 },
+      { "number": 11, "name": "Daniele Massaro", "position": "LS", "goalsScored": 2 }
     ],
 
     "awayLineup": [
@@ -33,7 +33,7 @@
       { "number": 7, "name": "Sergi Barjuan", "position": "LB" },
       { "number": 3, "name": "Josep Guardiola", "position": "CDM" },
       { "number": 9, "name": "Guillermo Amor", "position": "RCM" },
-      { "number": 6, "name": "José Mari Bakero", "position": "LCM", "display": "Bakero" },
+      { "number": 6, "name": "José Mari Bakero", "position": "LCM", "display": "Bakero", "isCaptain": true },
       { "number": 8, "name": "Hristo Stoichkov", "position": "RW" },
       { "number": 10, "name": "Romário de Souza Faria", "position": "ST", "alias": "romario", "display": "Romário" },
       { "number": 11, "name": "Txiki Begiristain", "position": "LW" }

@@ -14,27 +14,27 @@
 		"homeLineup": [
       { "number": 1, "name": "Petr Čech", "position": "GK" },
       { "number": 2, "name": "Branislav Ivanović", "position": "RB" },
-      { "number": 33, "name": "Alex Rodrigo Dias da Costa", "position": "RCB", "alias": "alex", "display": "Alex" },
+      { "number": 33, "name": "Alex Rodrigo Dias da Costa", "position": "RCB", "alias": "alex", "display": "Alex", "goalsScored": 1 },
       { "number": 6, "name": "Ricardo Alberto Silveira de Carvalho", "position": "LCB", "alias": "ricardo-carvalho", "display": "Ricardo Carvalho" },
       { "number": 3, "name": "Ashley Cole", "position": "LB" },
       { "number": 5, "name": "Michael Essien", "position": "CDM" },
       { "number": 13, "name": "Michael Ballack", "position": "RCM" },
-      { "number": 8, "name": "Frank Lampard", "position": "LCM" },
+      { "number": 8, "name": "Frank Lampard", "position": "LCM", "isCaptain": true, "goalsScored": 2 },
       { "number": 21, "name": "Salomon Kalou", "position": "RW" },
-      { "number": 11, "name": "Didier Drogba", "position": "ST" },
+      { "number": 11, "name": "Didier Drogba", "position": "ST", "goalsScored": 1 },
       { "number": 15, "name": "Florent Malouda", "position": "LW" }
     ],
 
 		"awayLineup": [
       { "number": 25, "name": "Pepe Reina", "position": "GK" },
       { "number": 17, "name": "Álvaro Arbeloa", "position": "RB" },
-      { "number": 23, "name": "Jamie Carragher", "position": "RCB" },
+      { "number": 23, "name": "Jamie Carragher", "position": "RCB", "isCaptain": true },
       { "number": 37, "name": "Martin Škrtel", "position": "LCB" },
-      { "number": 12, "name": "Fábio Aurélio", "position": "LB", "display": "Fábio Aurélio" },
+      { "number": 12, "name": "Fábio Aurélio", "position": "LB", "display": "Fábio Aurélio", "goalsScored": 1 },
       { "number": 20, "name": "Javier Mascherano", "position": "CDM" },
-      { "number": 14, "name": "Xabi Alonso", "position": "LCM" },
-      { "number": 21, "name": "Lucas Leiva", "position": "RCM" },
-      { "number": 18, "name": "Dirk Kuyt", "position": "RW" },
+      { "number": 14, "name": "Xabi Alonso", "position": "LCM", "goalsScored": 1 },
+      { "number": 21, "name": "Lucas Leiva", "position": "RCM", "goalsScored": 1 },
+      { "number": 18, "name": "Dirk Kuyt", "position": "RW", "goalsScored": 1 },
       { "number": 9, "name": "Fernando Torres", "position": "ST" },
       { "number": 15, "name": "Yossef Benayoun", "position": "LW" }
     ]

@@ -19,23 +19,23 @@
       { "number": 12, "name": "Rafael Alcântara do Nascimento", "position": "RW", "alias": "rafinha", "display": "Rafinha" },
       { "number": 4, "name": "Ivan Rakitić", "position": "RCM" },
       { "number": 5, "name": "Sergio Busquets", "position": "CDM" },
-      { "number": 8, "name": "Andrés Iniesta", "position": "LCM" },
-      { "number": 10, "name": "Lionel Messi", "position": "CAM" },
-      { "number": 9, "name": "Luis Suárez", "position": "ST" },
-      { "number": 11, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar" }
+      { "number": 8, "name": "Andrés Iniesta", "position": "LCM", "isCaptain": true },
+      { "number": 10, "name": "Lionel Messi", "position": "CAM", "goalsScored": 1 },
+      { "number": 9, "name": "Luis Suárez", "position": "ST", "goalsScored": 1 },
+      { "number": 11, "name": "Neymar da Silva Santos Júnior", "position": "LW", "alias": "neymar", "display": "Neymar", "goalsScored": 2 }
     ],
 
     "awayLineup": [
       { "number": 1, "name": "Kevin Trapp", "position": "GK" },
       { "number": 12, "name": "Thomas Meunier", "position": "RB" },
       { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
-      { "number": 2, "name": "Thiago Emiliano da Silva", "position": "LCB", "alias": "thiago-silva", "display": "Thiago Silva" },
+      { "number": 2, "name": "Thiago Emiliano da Silva", "position": "LCB", "alias": "thiago-silva", "display": "Thiago Silva", "isCaptain": true },
       { "number": 20, "name": "Layvin Kurzawa", "position": "LB" },
       { "number": 6, "name": "Marco Verratti", "position": "CAM" },
       { "number": 25, "name": "Adrien Rabiot", "position": "RDM" },
       { "number": 14, "name": "Blaise Matuidi", "position": "LDM" },
       { "number": 7, "name": "Lucas Rodrigues Moura da Silva", "position": "RW", "alias": "lucas-moura", "display": "Lucas Moura" },
-      { "number": 9, "name": "Edinson Cavani", "position": "ST" },
+      { "number": 9, "name": "Edinson Cavani", "position": "ST", "goalsScored": 1 },
       { "number": 23, "name": "Julian Draxler", "position": "LW" }
     ]
   }

@@ -18,24 +18,24 @@
       { "number": 3, "name": "Gerard Piqué", "position": "LCB" },
       { "number": 22, "name": "Éric Abidal", "position": "LB" },
       { "number": 16, "name": "Sergio Busquets", "position": "CDM" },
-      { "number": 6, "name": "Xavier Hernández", "position": "RCM", "alias": "xavi", "display": "Xavi" },
+      { "number": 6, "name": "Xavier Hernández", "position": "RCM", "alias": "xavi", "display": "Xavi", "isCaptain": true },
       { "number": 8, "name": "Andrés Iniesta", "position": "LCM" },
-      { "number": 10, "name": "Lionel Messi", "position": "ST" },
-      { "number": 17, "name": "Pedro Rodríguez", "position": "LW", "alias": "pedro", "display": "Pedro" },
-      { "number": 7, "name": "David Villa ", "position": "RW" }
+      { "number": 10, "name": "Lionel Messi", "position": "ST", "goalsScored": 1 },
+      { "number": 17, "name": "Pedro Rodríguez", "position": "LW", "alias": "pedro", "display": "Pedro", "goalsScored": 1 },
+      { "number": 7, "name": "David Villa ", "position": "RW", "goalsScored": 1 }
     ],
 
 		"awayLineup": [
       { "number": 1, "name": "Edwin van der Sar", "position": "GK" },
       { "number": 20, "name": "Fábio Pereira da Silva", "position": "RB", "alias": "fabio", "display": "Fábio" },
       { "number": 5, "name": "Rio Ferdinand", "position": "RCB" },
-      { "number": 15, "name": "Nemanja Vidić", "position": "LCB" },
+      { "number": 15, "name": "Nemanja Vidić", "position": "LCB", "isCaptain": true },
       { "number": 3, "name": "Patrice Evra", "position": "LB" },
       { "number": 25, "name": "Antonio Valencia", "position": "RM" },
       { "number": 16, "name": "Michael Carrick", "position": "RCM" },
       { "number": 11, "name": "Ryan Giggs", "position": "LCM" },
       { "number": 13, "name": "Ji-sung Park", "position": "LM" },
-      { "number": 10, "name": "Wayne Rooney", "position": "CAM" },
+      { "number": 10, "name": "Wayne Rooney", "position": "CAM", "goalsScored": 1 },
       { "number": 14, "name": "Javier Hernández", "position": "ST", "alias": "chicharito", "display": "Chicharito" }
     ]
   }

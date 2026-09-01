@@ -21,21 +21,21 @@
       { "number": 8, "name": "İlkay Gündoğan", "position": "CDM" },
       { "number": 47, "name": "Phil Foden", "position": "LCM" },
       { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
-      { "number": 17, "name": "Kevin De Bruyne", "position": "CAM" },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "CAM","isCaptain": true },
       { "number": 7, "name": "Raheem Sterling", "position": "LW" }
     ],
 
 		"awayLineup": [
       { "number": 16, "name": "Édouard Mendy", "position": "GK" },
-      { "number": 28, "name": "César Azpilicueta", "position": "RCB" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RCB", "isCaptain": true },
       { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
       { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
       { "number": 24, "name": "Reece James", "position": "RWB" },
       { "number": 7, "name": "N'Golo Kanté", "position": "LCM" },
-      { "number": 5, "name": "Jorginho", "position": "RCM" },
+      { "number": 5, "name": "Jorge Luiz Frello Filho,", "position": "RCM", "alias": "jorginho", "display": "Jorginho" },
       { "number": 21, "name": "Ben Chilwell", "position": "LWB" },
       { "number": 19, "name": "Mason Mount", "position": "LW" },
-      { "number": 29, "name": "Kai Havertz", "position": "RW" },
+      { "number": 29, "name": "Kai Havertz", "position": "RW", "goalsScored": 1 },
       { "number": 11, "name": "Timo Werner", "position": "ST" }
     ]
   },
@@ -61,8 +61,8 @@
       { "number": 10, "name": "Luka Modrić", "position": "RCM" },
       { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
       { "number": 8, "name": "Toni Kroos", "position": "LCM" },
-      { "number": 12, "name": "Marcelo Vieira da Silva Júnior", "position": "LWB", "alias": "marcelo", "display": "Marcelo" },
-      { "number": 9, "name": "Karim Benzema", "position": "RS" },
+      { "number": 12, "name": "Marcelo Vieira da Silva Júnior", "position": "LWB", "alias": "marcelo", "display": "Marcelo", "isCaptain": true },
+      { "number": 9, "name": "Karim Benzema", "position": "RS", "goalsScored": 1 },
       { "number": 20, "name": "Vinícius José Paixão de Oliveira Júnior", "position": "LS", "alias": "vinicius-junior", "display": "Vinícius Júnior" }
     ],
 
@@ -71,12 +71,12 @@
       { "number": 4, "name": "Andreas Christensen", "position": "RCB" },
       { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
       { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
-      { "number": 28, "name": "César Azpilicueta", "position": "RWB" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RWB", "isCaptain": true },
       { "number": 7, "name": "N'Golo Kanté", "position": "RCM" },
-      { "number": 5, "name": "Jorginho", "position": "LCM" },
+      { "number": 5, "name": "Jorge Luiz Frello Filho,", "position": "LCM", "alias": "jorginho", "display": "Jorginho" },
       { "number": 21, "name": "Ben Chilwell", "position": "LWB" },
       { "number": 19, "name": "Mason Mount", "position": "LW" },
-      { "number": 10, "name": "Christian Pulisic", "position": "RW" },
+      { "number": 10, "name": "Christian Pulisic", "position": "RW", "goalsScored": 1 },
       { "number": 11, "name": "Timo Werner", "position": "ST" }
     ]
   },
@@ -98,20 +98,20 @@
       { "number": 4, "name": "Andreas Christensen", "position": "RCB" },
       { "number": 6, "name": "Thiago Emiliano da Silva", "position": "CB", "alias": "thiago-silva", "display": "Thiago Silva" },
       { "number": 2, "name": "Antonio Rüdiger", "position": "LCB" },
-      { "number": 28, "name": "César Azpilicueta", "position": "RM" },
+      { "number": 28, "name": "César Azpilicueta", "position": "RM", "isCaptain": true },
       { "number": 7, "name": "N'Golo Kanté", "position": "RCM" },
-      { "number": 5, "name": "Jorginho", "position": "LCM" },
+      { "number": 5, "name": "Jorge Luiz Frello Filho,", "position": "LCM", "alias": "jorginho", "display": "Jorginho" },
       { "number": 21, "name": "Ben Chilwell", "position": "LM" },
-      { "number": 19, "name": "Mason Mount", "position": "LW" },
+      { "number": 19, "name": "Mason Mount", "position": "LW", "goalsScored": 1 },
       { "number": 29, "name": "Kai Havertz", "position": "RW" },
-      { "number": 11, "name": "Timo Werner", "position": "ST" }
+      { "number": 11, "name": "Timo Werner", "position": "ST", "goalsScored": 1 }
     ],
 
 		"awayLineup": [
       { "number": 1, "name": "Thibaut Courtois", "position": "GK" },
       { "number": 6, "name": "Nacho Fernández", "position": "RB", "alias": "nacho", "display": "Nacho" },
       { "number": 3, "name": "Éder Gabriel Militão", "position": "RCB", "alias": "eder-militao", "display": "Éder Militão" },
-      { "number": 4, "name": "Sergio Ramos", "position": "LCB" },
+      { "number": 4, "name": "Sergio Ramos", "position": "LCB", "isCaptain": true },
       { "number": 23, "name": "Ferland Mendy", "position": "LB" },
       { "number": 10, "name": "Luka Modrić", "position": "RCM" },
       { "number": 14, "name": "Carlos Henrique Casimiro", "position": "CDM", "alias": "casemiro", "display": "Casemiro" },
@@ -137,7 +137,7 @@
 		"homeLineup": [
       { "number": 1, "name": "Keylor Navas", "position": "GK" },
       { "number": 24, "name": "Alessandro Florenzi", "position": "RB" },
-      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos", "isCaptain": true, "goalsScored": 1 },
       { "number": 3, "name": "Presnel Kimpembe", "position": "LCB" },
       { "number": 25, "name": "Mitchel Bakker", "position": "LB" },
       { "number": 27, "name": "Idrissa Gueye", "position": "RDM" },
@@ -157,8 +157,8 @@
       { "number": 16, "name": "Rodrigo Hernández Cascante", "position": "CDM", "alias": "rodri", "display": "Rodri" },
       { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "CAM", "alias": "bernardo", "display": "Bernardo Silva" },
       { "number": 8, "name": "İlkay Gündoğan", "position": "RCM" },
-      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
-      { "number": 17, "name": "Kevin De Bruyne", "position": "LCM" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW", "goalsScored": 1 },
+      { "number": 17, "name": "Kevin De Bruyne", "position": "LCM", "isCaptain": true, "goalsScored": 1 },
       { "number": 47, "name": "Phil Foden", "position": "LW" }
     ]
   },
@@ -182,9 +182,9 @@
       { "number": 3, "name": "Rúben Dias", "position": "LCB" },
       { "number": 11, "name": "Oleksandr Zinchenko", "position": "LB" },
       { "number": 20, "name": "Bernardo Mota Veiga de Carvalho e Silva", "position": "RCM", "alias": "bernardo", "display": "Bernardo Silva" },
-      { "number": 25, "name": "Fernando Luiz Roza", "position": "CDM", "alias": "fernandinho", "display": "Fernandinho" },
+      { "number": 25, "name": "Fernando Luiz Roza", "position": "CDM", "alias": "fernandinho", "display": "Fernandinho", "isCaptain": true },
       { "number": 8, "name": "İlkay Gündoğan", "position": "LCM" },
-      { "number": 26, "name": "Riyad Mahrez", "position": "RW" },
+      { "number": 26, "name": "Riyad Mahrez", "position": "RW", "goalsScored": 2 },
       { "number": 17, "name": "Kevin De Bruyne", "position": "ST" },
       { "number": 47, "name": "Phil Foden", "position": "LW" }
     ],
@@ -192,7 +192,7 @@
 		"awayLineup": [
       { "number": 1, "name": "Keylor Navas", "position": "GK" },
       { "number": 24, "name": "Alessandro Florenzi", "position": "RB" },
-      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos", "isCaptain": true },
       { "number": 3, "name": "Presnel Kimpembe", "position": "LCB" },
       { "number": 22, "name": "Abdou Diallo", "position": "LB" },
       { "number": 21, "name": "Ander Herrera", "position": "RDM" },

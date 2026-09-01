@@ -13,14 +13,14 @@
     
 		"homeLineup": [
       { "number": 1, "name": "Manuel Neuer", "position": "GK" },
-      { "number": 21, "name": "Philipp Lahm", "position": "RB" },
+      { "number": 21, "name": "Philipp Lahm", "position": "RB", "isCaptain": true },
       { "number": 17, "name": "Jérôme Boateng", "position": "RCB" },
       { "number": 44, "name": "Anatoliy Tymoshchuk", "position": "LCB" },
       { "number": 26, "name": "Diego Contento", "position": "LB" },
       { "number": 31, "name": "Bastian Schweinsteiger", "position": "RDM" },
       { "number": 39, "name": "Toni Kroos", "position": "LDM" },
       { "number": 10, "name": "Arjen Robben", "position": "RW" },
-      { "number": 25, "name": "Thomas Müller", "position": "CAM" },
+      { "number": 25, "name": "Thomas Müller", "position": "CAM", "goalsScored": 1 },
       { "number": 7, "name": "Franck Ribéry", "position": "LW" },
       { "number": 33, "name": "Mario Gómez", "position": "ST" }
     ],
@@ -32,11 +32,11 @@
       { "number": 4, "name": "David Luiz Moreira Marinho", "position": "RCB", "alias": "david-luiz", "display": "David Luiz" },
       { "number": 3, "name": "Ashley Cole", "position": "LB" },
       { "number": 12, "name": "John Obi Mikel", "position": "RDM" },
-      { "number": 8, "name": "Frank Lampard", "position": "LDM" },
+      { "number": 8, "name": "Frank Lampard", "position": "LDM", "isCaptain": true },
       { "number": 21, "name": "Salomon Kalou", "position": "RW" },
       { "number": 10, "name": "Juan Mata", "position": "CAM" },
       { "number": 34, "name": "Ryan Bertrand", "position": "LW" },
-      { "number": 11, "name": "Didier Drogba", "position": "ST" }
+      { "number": 11, "name": "Didier Drogba", "position": "ST", "goalsScored": 1 }
     ]
   }
 ]

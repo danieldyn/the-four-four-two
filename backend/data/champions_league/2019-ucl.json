@@ -14,19 +14,19 @@
 		"homeLineup": [
       { "number": 24, "name": "André Onana", "position": "GK" },
       { "number": 12, "name": "Noussair Mazraoui", "position": "RB" },
-      { "number": 4, "name": "Matthijs de Ligt", "position": "RCB" },
+      { "number": 4, "name": "Matthijs de Ligt", "position": "RCB", "isCaptain": true, "goalsScored": 1 },
       { "number": 17, "name": "Daley Blind", "position": "LCB" },
       { "number": 31, "name": "Nicolás Tagliafico", "position": "LB" },
       { "number": 20, "name": "Lasse Schöne", "position": "RCM" },
       { "number": 21, "name": "Frenkie de Jong", "position": "LCM" },
-      { "number": 22, "name": "Hakim Ziyech", "position": "RW" },
+      { "number": 22, "name": "Hakim Ziyech", "position": "RW", "goalsScored": 1 },
       { "number": 6, "name": "Donny van de Beek", "position": "CM" },
       { "number": 10, "name": "Dušan Tadić", "position": "ST" },
       { "number": 25, "name": "Kasper Dolberg", "position": "LW" }
     ],
 
 		"awayLineup": [
-      { "number": 1, "name": "Hugo Lloris", "position": "GK" },
+      { "number": 1, "name": "Hugo Lloris", "position": "GK", "isCaptain": true },
       { "number": 2, "name": "Kieran Trippier", "position": "RB" },
       { "number": 4, "name": "Tobias Alderweireld", "position": "RCB" },
       { "number": 5, "name": "Jan Vertonghen", "position": "LCB" },
@@ -36,7 +36,7 @@
       { "number": 23, "name": "Christian Eriksen", "position": "CAM" },
       { "number": 20, "name": "Dele Alli", "position": "LCM" },
       { "number": 7, "name": "Heung-min Son", "position": "LS" },
-      { "number": 27, "name": "Lucas Rodrigues Moura da Silva", "position": "RS", "alias": "lucas-moura", "display": "Lucas Moura" }
+      { "number": 27, "name": "Lucas Rodrigues Moura da Silva", "position": "RS", "alias": "lucas-moura", "display": "Lucas Moura", "goalsScored": 3 }
     ]
   }, 
 
@@ -58,11 +58,11 @@
       { "number": 32, "name": "Joël Matip", "position": "RCB" },
       { "number": 4, "name": "Virgil van Dijk", "position": "LCB" },
       { "number": 26, "name": "Andrew Robertson", "position": "LB" },
-      { "number": 14, "name": "Jordan Henderson", "position": "RCM" },
+      { "number": 14, "name": "Jordan Henderson", "position": "RCM", "isCaptain": true },
       { "number": 3, "name": "Fábio Henrique Tavares", "position": "CDM", "alias": "fabinho", "display": "Fabinho" },
       { "number": 7, "name": "James Milner", "position": "LCM" },
       { "number": 23, "name": "Xherdan Shaqiri", "position": "RW" },
-      { "number": 27, "name": "Divock Origi", "position": "LW" },
+      { "number": 27, "name": "Divock Origi", "position": "LW", "goalsScored": 2 },
       { "number": 10, "name": "Sadio Mané", "position": "ST" }
     ],
 
@@ -75,7 +75,7 @@
       { "number": 22, "name": "Arturo Vidal", "position": "RCM" },
       { "number": 5, "name": "Sergio Busquets", "position": "CDM" },
       { "number": 4, "name": "Ivan Rakitić", "position": "LCM" },
-      { "number": 10, "name": "Lionel Messi", "position": "RW" },
+      { "number": 10, "name": "Lionel Messi", "position": "RW", "isCaptain": true },
       { "number": 9, "name": "Luis Suárez", "position": "ST" },
       { "number": 7, "name": "Philippe Coutinho", "position": "LW" }
     ]

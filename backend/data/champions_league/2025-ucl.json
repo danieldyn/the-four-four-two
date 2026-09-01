@@ -13,16 +13,16 @@
 
     "homeLineup": [
       { "number": 1, "name": "Gianluigi Donnarumma", "position": "GK" },
-      { "number": 2, "name": "Achraf Hakimi", "position": "RB" },
-      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos" },
+      { "number": 2, "name": "Achraf Hakimi", "position": "RB", "goalsScored": 1 },
+      { "number": 5, "name": "Marcos Aoás Corrêa", "position": "RCB", "alias": "marquinhos", "display": "Marquinhos", "isCaptain": true },
       { "number": 51, "name": "Willian Pacho", "position": "LCB" },
       { "number": 25, "name": "Nuno Mendes", "position": "LB" },
       { "number": 87, "name": "João Neves", "position": "RCM" },
       { "number": 17, "name": "Vítor Machado Ferreira", "position": "CDM", "alias": "vitinha", "display": "Vitinha" },
       { "number": 8, "name": "Fabián Ruiz", "position": "LCM", "alias": "fabian", "display": "Fabián Ruiz" },
       { "number": 10, "name": "Ousmane Dembélé", "position": "RW" },
-      { "number": 14, "name": "Désiré Doué", "position": "ST" },
-      { "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW" }
+      { "number": 14, "name": "Désiré Doué", "position": "ST", "goalsScored": 2 },
+      { "number": 7, "name": "Khvicha Kvaratskhelia", "position": "LW", "goalsScored": 1 }
     ],
 
     "awayLineup": [
@@ -36,7 +36,7 @@
       { "number": 22, "name": "Henrikh Mkhitaryan", "position": "LCM" },
       { "number": 32, "name": "Federico Dimarco", "position": "LWB" },
       { "number": 9, "name": "Marcus Thuram", "position": "RS" },
-      { "number": 10, "name": "Lautaro Martínez", "position": "LS" }
+      { "number": 10, "name": "Lautaro Martínez", "position": "LS", "isCaptain": true }
     ]
   }
 ]
