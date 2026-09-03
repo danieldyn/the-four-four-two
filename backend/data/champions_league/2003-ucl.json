@@ -1,0 +1,124 @@
+[
+    {
+    "homeTeam": "Juventus",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "AC Milan",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#FB090B",
+    "competition": "Champions League Final 2003",
+    "venue": "Old Trafford, Manchester",
+    "date": "2003-05-28",
+    "score": "0 - 0 (2 - 3 on pens)",
+
+		"homeLineup": [
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 21, "name": "Lilian Thuram", "position": "RB" },
+      { "number": 2, "name": "Ciro Ferrara", "position": "LCB" },
+      { "number": 5, "name": "Igor Tudor", "position": "RCB" },
+      { "number": 4, "name": "Paolo Montero", "position": "LB" },
+      { "number": 16, "name": "Mauro Camoranesi", "position": "RM" },
+      { "number": 3, "name": "Alessio Tacchinardi", "position": "LCM" },
+      { "number": 26, "name": "Edgar Davids", "position": "RCM" },
+      { "number": 19, "name": "Gianluca Zambrotta", "position": "LM" },
+      { "number": 10, "name": "Alessandro Del Piero", "position": "RS", "isCaptain": true },
+      { "number": 17, "name": "David Trezeguet", "position": "LS" }
+    ],
+
+		"awayLineup": [
+      { "number": 12, "name": "Nelson de Jesus Silva", "position": "GK", "alias": "dida", "display": "Dida" },
+      { "number": 19, "name": "Alessandro Costacurta", "position": "RB" },
+      { "number": 13, "name": "Alessandro Nesta", "position": "RCB" },
+      { "number": 3, "name": "Paolo Maldini", "position": "LCB", "isCaptain": true },
+      { "number": 4, "name": "Kakhaber Kaladze", "position": "LB" },
+      { "number": 8, "name": "Gennaro Gattuso", "position": "LCM" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 20, "name": "Clarence Seedorf", "position": "RCM" },
+      { "number": 10, "name": "Rui Manuel César Costa", "position": "CAM", "alias": "rui-costa", "display": "Rui Costa" },
+      { "number": 7, "name": "Andriy Shevchenko", "position": "RS" },
+      { "number": 9, "name": "Filippo Inzaghi", "position": "LS" }
+    ]
+  },
+
+  {
+    "homeTeam": "Juventus",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2003 (2nd Leg)",
+    "venue": "Stadio delle Alpi, Turin",
+    "date": "2003-05-14",
+    "score": "3 - 1",
+
+		"homeLineup": [
+      { "number": 1, "name": "Gianluigi Buffon", "position": "GK" },
+      { "number": 21, "name": "Lilian Thuram", "position": "RB" },
+      { "number": 5, "name": "Igor Tudor", "position": "RCB" },
+      { "number": 4, "name": "Paolo Montero", "position": "LCB" },
+      { "number": 15, "name": "Alessandro Birindelli", "position": "LB" },
+      { "number": 19, "name": "Gianluca Zambrotta", "position": "RCM" },
+      { "number": 3, "name": "Alessio Tacchinardi", "position": "CDM" },
+      { "number": 26, "name": "Edgar Davids", "position": "LCM" },
+      { "number": 11, "name": "Pavel Nedvěd", "position": "CAM", "goalsScored": 1 },
+      { "number": 10, "name": "Alessandro Del Piero", "position": "RS", "isCaptain": true, "goalsScored": 1 },
+      { "number": 17, "name": "David Trezeguet", "position": "LS", "goalsScored": 1 }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Iker Casillas", "position": "GK" },
+      { "number": 2, "name": "Míchel Salgado", "position": "RB" },
+      { "number": 4, "name": "Fernando Hierro", "position": "RCB", "isCaptain": true },
+      { "number": 6, "name": "Iván Helguera", "position": "LCB" },
+      { "number": 3, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 19, "name": "Esteban Cambiasso", "position": "RDM" },
+      { "number": 16, "name": "Flávio da Conceição", "position": "LDM", "alias": "flavio-conceicao", "display": "Flávio Conceição" },
+      { "number": 10, "name": "Luís Figo", "position": "RW" },
+      { "number": 14, "name": "José María Gutiérrez Hernández", "position": "LW", "alias": "guti", "display": "Guti" },
+      { "number": 5, "name": "Zinédine Zidane", "position": "CAM", "goalsScored": 1 },
+      { "number": 7, "name": "Raúl González", "position": "ST", "alias": "raul", "display": "Raúl" }
+    ]
+  },
+
+	{
+    "homeTeam": "Inter Milan",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#0055A5",
+    "awayTeam": "AC Milan",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#FB090B",
+    "competition": "Champions League Semi Final 2003 (2nd Leg)",
+    "venue": "San Siro, Milan",
+    "date": "2003-05-13",
+    "score": "1 - 1",
+
+		"homeLineup": [
+      { "number": 1, "name": "Francesco Toldo", "position": "GK" },
+      { "number": 4, "name": "Javier Zanetti", "position": "RB", "display": "J. Zanetti", "isCaptain": true },
+      { "number": 13, "name": "Fabio Cannavaro", "position": "RCB" },
+      { "number": 23, "name": "Marco Materazzi", "position": "LCB" },
+      { "number": 2, "name": "Iván Córdoba", "position": "LB" },
+      { "number": 6, "name": "Cristiano Zanetti", "position": "LCM", "display": "C. Zanetti" },
+      { "number": 14, "name": "Luigi Di Biagio", "position": "CDM" },
+      { "number": 5, "name": "Emre Belözoğlu", "position": "RCM" },
+			{ "number": 7, "name": "Sérgio Paulo Marceneiro da Conceição", "position": "RW", "alias": "sergio-conceicao", "display": "Sérgio Conceição" },
+      { "number": 9, "name": "Hernán Crespo", "position": "ST" },
+      { "number": 20, "name": "Álvaro Recoba", "position": "LW" }
+    ],
+
+		"awayLineup": [
+      { "number": 18, "name": "Christian Abbiati", "position": "GK" },
+      { "number": 19, "name": "Alessandro Costacurta", "position": "RB" },
+      { "number": 13, "name": "Alessandro Nesta", "position": "RCB" },
+      { "number": 3, "name": "Paolo Maldini", "position": "LCB", "isCaptain": true },
+      { "number": 4, "name": "Kakhaber Kaladze", "position": "LB" },
+      { "number": 8, "name": "Gennaro Gattuso", "position": "LCM" },
+      { "number": 21, "name": "Andrea Pirlo", "position": "CDM" },
+      { "number": 20, "name": "Clarence Seedorf", "position": "RCM" },
+      { "number": 10, "name": "Rui Manuel César Costa", "position": "CAM", "alias": "rui-costa", "display": "Rui Costa" },
+      { "number": 7, "name": "Andriy Shevchenko", "position": "RS", "goalsScored": 1 },
+      { "number": 9, "name": "Filippo Inzaghi", "position": "LS" }
+    ]
+  }
+]

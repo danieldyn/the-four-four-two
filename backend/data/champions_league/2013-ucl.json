@@ -35,7 +35,7 @@
       { "number": 6, "name": "Ignacio Camacho", "position": "LDM" },
       { "number": 7, "name": "Joaquín Sánchez Rodríguez", "position": "RM", "alias": "joaquin", "display": "Joaquín", "goalsScored": 1 },
       { "number": 22, "name": "Francisco Román Alarcón Suárez", "position": "SS", "alias": "isco", "display": "Isco" },
-      { "number": 17, "name": "Sérgio Paulo Marceneiro da Conceição", "position": "LM", "alias": "duda", "display": "Duda", "isCaptain": true },
+      { "number": 17, "name": "Sérgio Paulo Barbosa Valente", "position": "LM", "alias": "duda", "display": "Duda", "isCaptain": true },
       { "number": 9, "name": "Júlio César Baptista", "position": "ST", "alias": "julio-baptista", "display": "Júlio Baptista" }
     ]
   }

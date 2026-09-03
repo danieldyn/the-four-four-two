@@ -38,5 +38,46 @@
       { "number": 10, "name": "Wayne Rooney", "position": "CAM", "goalsScored": 1 },
       { "number": 14, "name": "Javier Hernández", "position": "ST", "alias": "chicharito", "display": "Chicharito" }
     ]
+  },
+
+  {
+    "homeTeam": "Inter Milan",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#0055A5",
+    "awayTeam": "Schalke 04",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#004D9D",
+    "competition": "Champions League Quarter Final 2011 (1st Leg)",
+    "venue": "San Siro, Milan",
+    "date": "2011-04-05",
+    "score": "2 - 5",
+
+    "homeLineup": [
+      { "number": 1, "name": "Júlio César Soares de Espíndola", "position": "GK", "alias": "julio-cesar", "display": "Júlio César" },
+      { "number": 13, "name": "Maicon Douglas Sisenando", "position": "RB", "alias": "maicon", "display": "Maicon" },
+      { "number": 15, "name": "Andrea Ranocchia", "position": "RCB" },
+      { "number": 26, "name": "Cristian Chivu", "position": "LCB" },
+      { "number": 4, "name": "Javier Zanetti", "position": "LB", "isCaptain": true },
+      { "number": 5, "name": "Dejan Stanković", "position": "RCM", "goalsScored": 1 },
+      { "number": 8, "name": "Thiago Motta", "position": "CDM", "display": "Thiago Motta" },
+      { "number": 19, "name": "Esteban Cambiasso", "position": "LCM" },
+      { "number": 10, "name": "Wesley Sneijder", "position": "CAM" },
+      { "number": 9, "name": "Samuel Eto'o", "position": "RS" },
+      { "number": 22, "name": "Diego Milito", "position": "LS", "goalsScored": 1 }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Manuel Neuer", "position": "GK", "isCaptain": true },
+      { "number": 22, "name": "Atsuto Uchida", "position": "RB" },
+      { "number": 4, "name": "Benedikt Höwedes", "position": "LCB" },
+      { "number": 32, "name": "Joël Matip", "position": "RCB", "goalsScored": 1 },
+      { "number": 2, "name": "Hans Sarpei", "position": "LB" },
+      { "number": 17, "name": "Jefferson Farfán", "position": "RM" },
+      { "number": 14, "name": "Kyriakos Papadopoulos", "position": "RCM" },
+      { "number": 18, "name": "José Manuel Jurado", "position": "LCM" },
+      { "number": 11, "name": "Alexander Baumjohann", "position": "LM" },
+      { "number": 7, "name": "Raúl González", "position": "RS", "alias": "raul", "display": "Raúl", "goalsScored": 1 },
+      { "number": 9, "name": "Eduardo Gonçalves de Oliveira", "position": "LS", "alias": "edu", "display": "Edu", "goalsScored": 2 }
+    ]
   }
 ]
