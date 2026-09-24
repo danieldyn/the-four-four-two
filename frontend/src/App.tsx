@@ -11,6 +11,7 @@ import "./styles/components/lineup.css";
 import "./styles/components/guess-history.css";
 import "./styles/components/forms.css";
 import "./styles/components/loading.css"
+import "./styles/mobile.css"
 
 const App: React.FC = () => {
   return (

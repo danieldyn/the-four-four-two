@@ -15,10 +15,10 @@ interface MatchHeaderProps {
 const MatchHeader: React.FC<MatchHeaderProps> = ({ match }) => {
   return (
     <div className="match-header">
-      <h3>
-        {formatDate(match.date.toString())}, {match.competition} — {match.venue}
-      </h3>
-      <h2>{match.homeTeam} vs {match.awayTeam}, Score: {match.score}</h2>
+      <h3>{match.competition}</h3>
+      <h3>{formatDate(match.date.toString())} -- {match.venue}</h3>
+      <h2>{match.homeTeam} vs {match.awayTeam}</h2>
+      <h2>Score: {match.score}</h2>
     </div>
   );
 };

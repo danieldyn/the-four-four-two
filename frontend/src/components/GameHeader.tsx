@@ -17,26 +17,19 @@ const GameHeader: React.FC<GameHeaderProps> = ({ onRestart }) => {
 
   return (
     <div className="game-header">
-      <h2 className="game-title">
-        Football Starting XI Guessing Game
-      </h2>
-
-      <button
-        className="home-button"
-        onClick={onRestart}
-      >
-        New Random Game
-      </button>
-
-      <button
-        className="home-button"
-        onClick={() => { 
-          localStorage.removeItem("playedMatches");
-          navigate("/"); 
-        }}
-      >
-        Back to Home
-      </button>
+      <h2 className="game-title">Football Starting XI Game</h2>
+      <div className="header-buttons">
+        <button className="home-button" onClick={onRestart}>New Random Game</button>
+        <button
+          className="home-button"
+          onClick={() => { 
+            localStorage.removeItem("playedMatches");
+            navigate("/"); 
+          }}
+        >
+          Back to Home
+        </button>
+      </div>
     </div>
   );
 };

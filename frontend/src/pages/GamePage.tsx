@@ -6,6 +6,7 @@ import GuessHistory from "../components/GuessHistory";
 import LineupBoard from "../components/LineupBoard";
 import MatchHeader from "../components/MatchHeader";
 import GameHeader from "../components/GameHeader";
+import { GridIcon, PitchIcon } from "../assets/icons";
 import { Match, GuessResponse } from "../types/football";
 import slugify from "../utils/slugify";
 
@@ -227,31 +228,25 @@ const GamePage: React.FC = () => {
     <div className="game-page">
       <GameHeader onRestart={fetchNewGame} />
 
-      <div className="mobile-view-toggle">
-        <button
-          className={mobileView === 'lineups' ? 'active' : ''}
-          onClick={() => setMobileView('lineups')}
-        >
-          Pitch
-        </button>
-        <button
-          className={mobileView === 'history' ? 'active' : ''}
-          onClick={() => setMobileView('history')}
-        >
-          Grid
-        </button>
-      </div>
+      <MatchHeader match={match} />
+
+      <button
+        className="view-toggle-button"
+        onClick={() => setMobileView(mobileView === 'lineups' ? 'history' : 'lineups')}
+      >
+        {mobileView === 'lineups' ? (
+          <>
+            <GridIcon /> Grid View
+          </>
+        ) : (
+          <>
+            <PitchIcon /> Pitch View
+          </>
+        )}
+      </button>
 
       <div className="game-layout">
         <div className={`main-content ${mobileView !== 'lineups' ? 'mobile-hidden' : ''}`}>
-          <MatchHeader match={match} />
-
-          <GuessInput
-            onGuess={handleGuessSubmission}
-            onHint={handleHint}
-            isFinished={isFinished}
-            onResign={handleResign}
-          />
 
           <div className="pitches">
             <LineupBoard
@@ -281,6 +276,13 @@ const GamePage: React.FC = () => {
             isFinished={isFinished}
           />
         </div>
+
+        <GuessInput
+            onGuess={handleGuessSubmission}
+            onHint={handleHint}
+            isFinished={isFinished}
+            onResign={handleResign}
+          />
       </div>
     </div>
   );
