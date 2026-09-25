@@ -1,0 +1,42 @@
+[
+	{
+    "homeTeam": "Bayern Munich",
+    "homePrimaryColour": "#DC052D",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Real Madrid",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#000000",
+    "competition": "Champions League Semi Final 2001 (2nd Leg)",
+    "venue": "Olympiastadion, Munich",
+    "date": "2001-05-09",
+    "score": "2 - 1",
+
+		"homeLineup": [
+      { "number": 1, "name": "Oliver Kahn", "position": "GK", "isCaptain": true },
+      { "number": 2, "name": "Willy Sagnol", "position": "RWB" },
+      { "number": 5, "name": "Patrik Andersson", "position": "RCB" },
+      { "number": 25, "name": "Thomas Linke", "position": "CB" },
+      { "number": 4, "name": "Samuel Kuffour", "position": "LCB" },
+      { "number": 3, "name": "Bixente Lizarazu", "position": "LWB" },
+      { "number": 23, "name": "Owen Hargreaves", "position": "RCM" },
+      { "number": 16, "name": "Jens Jeremies", "position": "LCM", "goalsScored": 1 },
+      { "number": 7, "name": "Mehmet Scholl", "position": "LW" },
+      { "number": 20, "name": "Hasan Salihamidžić", "position": "RW" },
+      { "number": 9, "name": "Élber de Souza", "position": "ST", "alias": "giovane-elber", "display": "Giovane Élber", "goalsScored": 1 }
+    ],
+
+		"awayLineup": [
+      { "number": 25, "name": "Iker Casillas", "position": "GK" },
+      { "number": 2, "name": "Míchel Salgado", "position": "RB" },
+      { "number": 4, "name": "Fernando Hierro", "position": "RCB", "isCaptain": true },
+      { "number": 18, "name": "Aitor Karanka", "position": "LCB" },
+			{ "number": 3, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 6, "name": "Iván Helguera", "position": "RDM" },
+      { "number": 24, "name": "Claude Makélélé", "position": "LDM" },
+      { "number": 8, "name": "Steve McManaman", "position": "LW" },
+      { "number": 14, "name": "José María Gutiérrez Hernández", "position": "CAM", "alias": "guti", "display": "Guti" },
+      { "number": 10, "name": "Luís Figo", "position": "RW", "goalsScored": 1 },
+      { "number": 7, "name": "Raúl González", "position": "ST", "alias": "raul", "display": "Raúl" }
+    ]
+  }
+]

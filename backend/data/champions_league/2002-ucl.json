@@ -1,0 +1,83 @@
+[
+	{
+    "homeTeam": "Manchester United",
+    "homePrimaryColour": "#DA291C",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Bayer Leverkusen",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#E32221",
+    "competition": "Champions League Semi Final 2002 (1st Leg)",
+    "venue": "Old Trafford, Manchester",
+    "date": "2002-04-24",
+    "score": "2 - 2",
+
+		"homeLineup": [
+      { "number": 1, "name": "Fabien Barthez", "position": "GK" },
+      { "number": 2, "name": "Gary Neville", "position": "RB" },
+      { "number": 5, "name": "Laurent Blanc", "position": "RCB" },
+      { "number": 24, "name": "Wes Brown", "position": "LCB" },
+      { "number": 27, "name": "Mikaël Silvestre", "position": "LB" },
+      { "number": 4, "name": "Juan Sebastián Verón", "position": "RM" },
+      { "number": 8, "name": "Nicky Butt", "position": "RCM" },
+      { "number": 18, "name": "Paul Scholes", "position": "LCM" },
+      { "number": 20, "name": "Ole Gunnar Solskjaer", "position": "LM", "display": "Solskjær" },
+      { "number": 11, "name": "Ryan Giggs", "position": "SS" },
+      { "number": 10, "name": "Ruud van Nistelrooy", "position": "ST", "goalsScored": 1 }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Hans-Jörg Butt", "position": "GK" },
+      { "number": 6, "name": "Boris Živković", "position": "RB" },
+      { "number": 19, "name": "Lucimar da Silva Ferreira", "position": "RCB", "alias": "lucio", "display": "Lúcio" },
+      { "number": 5, "name": "Jens Nowotny", "position": "LCB", "isCaptain": true },
+      { "number": 35, "name": "Diego Placente", "position": "LB" },
+      { "number": 28, "name": "Carsten Ramelow", "position": "CDM" },
+      { "number": 25, "name": "Bernd Schneider", "position": "RW" },
+      { "number": 13, "name": "Michael Ballack", "position": "RCM", "goalsScored": 1 },
+      { "number": 10, "name": "Yıldıray Baştürk", "position": "LCM" },
+      { "number": 23, "name": "José Roberto da Silva Júnior", "position": "LW", "alias": "ze-roberto", "display": "Zé Roberto" },
+      { "number": 9, "name": "Dimitar Berbatov", "position": "ST" }
+    ]
+  },
+
+  {
+    "homeTeam": "Real Madrid",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#000000",
+    "awayTeam": "Bayern Munich",
+    "awayPrimaryColour": "#363636",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "Champions League Quarter Final 2002 (2nd Leg)",
+    "venue": "Santiago Bernabéu, Madrid",
+    "date": "2002-04-10",
+    "score": "2 - 0",
+
+    "homeLineup": [
+      { "number": 13, "name": "César Sánchez", "position": "GK" },
+      { "number": 2, "name": "Míchel Salgado", "position": "RB" },
+      { "number": 4, "name": "Fernando Hierro", "position": "RCB", "isCaptain": true },
+      { "number": 6, "name": "Iván Helguera", "position": "LCB", "goalsScored": 1 },
+      { "number": 3, "name": "Roberto Carlos da Silva Rocha", "position": "LB", "alias": "roberto-carlos", "display": "Roberto Carlos" },
+      { "number": 24, "name": "Claude Makélélé", "position": "RDM" },
+			{ "number": 5, "name": "Zinédine Zidane", "position": "LDM" },
+      { "number": 10, "name": "Luís Figo", "position": "RW" },
+      { "number": 21, "name": "Santiago Solari", "position": "LW" },
+      { "number": 7, "name": "Raúl González", "position": "RS", "alias": "raul", "display": "Raúl" },
+      { "number": 9, "name": "Fernando Morientes", "position": "LS" }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Oliver Kahn", "position": "GK" },
+      { "number": 4, "name": "Samuel Kuffour", "position": "RB" },
+      { "number": 12, "name": "Robert Kovač", "position": "LCB" },
+      { "number": 25, "name": "Thomas Linke", "position": "RCB" },
+      { "number": 3, "name": "Bixente Lizarazu", "position": "LB" },
+      { "number": 23, "name": "Owen Hargreaves", "position": "RCM" },
+      { "number": 16, "name": "Jens Jeremies", "position": "LCM" },
+      { "number": 11, "name": "Stefan Effenberg", "position": "CM", "isCaptain": true },
+			{ "number": 20, "name": "Hasan Salihamidžić", "position": "RW" },
+      { "number": 24, "name": "Roque Santa Cruz", "position": "LW", "display": "Santa Cruz" },
+      { "number": 9, "name": "Élber de Souza", "position": "ST", "alias": "giovane-elber", "display": "Giovane Élber" }
+    ]
+  }
+]

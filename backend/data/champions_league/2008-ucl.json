@@ -1,0 +1,42 @@
+[
+	{
+    "homeTeam": "Liverpool",
+    "homePrimaryColour": "#C8102E",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "Arsenal",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#7A003C",
+    "competition": "Champions League Quarter Final 2008 (2nd Leg)",
+    "venue": "Anfield, Liverpool",
+    "date": "2008-04-08",
+    "score": "4 - 2",
+
+    "homeLineup": [
+      { "number": 25, "name": "José Manuel Reina Páez", "position": "GK", "alias": "pepe-reina", "display": "Pepe Reina" },
+      { "number": 23, "name": "Jamie Carragher", "position": "RB" },
+      { "number": 37, "name": "Martin Škrtel", "position": "LCB" },
+      { "number": 4, "name": "Sami Hyypiä", "position": "RCB", "goalsScored": 1 },
+      { "number": 12, "name": "Fábio Aurélio Rodrigues", "position": "LB", "alias": "fabio-aurelio", "display": "Fábio Aurélio" },
+      { "number": 20, "name": "Javier Mascherano", "position": "RCM" },
+      { "number": 14, "name": "Xabi Alonso", "position": "LCM" },
+      { "number": 18, "name": "Dirk Kuyt", "position": "RM" },
+      { "number": 8, "name": "Steven Gerrard", "position": "LM", "isCaptain": true, "goalsScored": 1 },
+      { "number": 15, "name": "Peter Crouch", "position": "LS" },
+      { "number": 9, "name": "Fernando Torres", "position": "RS", "goalsScored": 1 }
+    ],
+
+		"awayLineup": [
+      { "number": 24, "name": "Manuel Almunia", "position": "GK" },
+      { "number": 5, "name": "Kolo Touré", "position": "RB" },
+      { "number": 10, "name": "William Gallas", "position": "RCB", "isCaptain": true },
+      { "number": 6, "name": "Philippe Senderos", "position": "LCB" },
+      { "number": 22, "name": "Gaël Clichy", "position": "LB" },
+      { "number": 27, "name": "Emmanuel Eboué", "position": "RM" },
+      { "number": 4, "name": "Cesc Fàbregas", "position": "RCM" },
+      { "number": 16, "name": "Mathieu Flamini", "position": "LCM" },
+      { "number": 2, "name": "Abou Diaby", "position": "LM", "goalsScored": 1 },
+      { "number": 13, "name": "Alexander Hleb", "position": "SS" },
+      { "number": 25, "name": "Emmanuel Adebayor", "position": "ST", "goalsScored": 1 }
+    ]
+  }
+]

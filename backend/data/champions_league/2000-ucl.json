@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "FC Barcelona",
+    "homePrimaryColour": "#004D98",
+    "homeSecondaryColour": "#A50044",
+    "awayTeam": "Chelsea",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#034694",
+    "competition": "Champions League Quarter Final 2000 (2nd Leg)",
+    "venue": "Camp Nou, Barcelona",
+    "date": "2000-04-18",
+    "score": "5 - 1 (a.e.t.)",
+
+		"homeLineup": [
+      { "number": 1, "name": "Ruud Hesp", "position": "GK" },
+      { "number": 2, "name": "Michael Reiziger", "position": "RCB" },
+      { "number": 32, "name": "Carles Puyol", "position": "LCB" },
+      { "number": 22, "name": "Frank de Boer", "position": "CB" },
+      { "number": 4, "name": "Josep Guardiola", "position": "CDM", "alias": "pep-guardiola", "display": "Pep Guardiola", "isCaptain": true },
+      { "number": 18, "name": "Gabriel García de la Torre", "position": "RCM", "alias": "gabri", "display": "Gabri" },
+      { "number": 8, "name": "Phillip Cocu", "position": "LCM" },
+			{ "number": 23, "name": "Boudewijn Zenden", "position": "LW" },
+      { "number": 7, "name": "Luís Figo", "position": "RW", "goalsScored": 1 },
+      { "number": 11, "name": "Rivaldo Vítor Borba Ferreira", "position": "CAM", "alias": "rivaldo", "display": "Rivaldo", "goalsScored": 2 },
+      { "number": 9, "name": "Patrick Kluivert", "position": "ST", "goalsScored": 1 }
+    ],
+
+		"awayLineup": [
+      { "number": 1, "name": "Ed de Goey", "position": "GK" },
+      { "number": 17, "name": "Albert Ferrer", "position": "RB" },
+      { "number": 6, "name": "Marcel Desailly", "position": "LCB" },
+      { "number": 5, "name": "Frank Leboeuf", "position": "RCB" },
+      { "number": 3, "name": "Celestine Babayaro", "position": "LB" },
+      { "number": 7, "name": "Didier Deschamps", "position": "LDM" },
+			{ "number": 16, "name": "Roberto Di Matteo", "position": "RDM" },
+      { "number": 20, "name": "Jody Morris", "position": "RM" },
+      { "number": 11, "name": "Dennis Wise", "position": "LM", "isCaptain": true },
+      { "number": 25, "name": "Gianfranco Zola", "position": "RS" },
+      { "number": 19, "name": "Tore André Flo", "position": "LS", "goalsScored": 1 }
+    ]
+  }
+]
