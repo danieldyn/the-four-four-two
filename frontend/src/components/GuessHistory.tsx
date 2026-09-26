@@ -37,23 +37,30 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
     });
 
     return (
-      <div className="team-block">
-        <h4>{teamName ?? "Unknown Team"}</h4>
+      <div className="my-1.5">
+        <h4 className="text-left text-base font-semibold text-amber-200 my-1.5">{teamName ?? "Unknown Team"} &mdash; Starting XI</h4>
 
-        <ul>
+        <ul className="list-none p-0 m-0">
           {sorted.map((p) => {
             const isGuessed = guessedSlugs.includes(p.player.slug);
             const isMissing = !isGuessed && isFinished;
             const showRealName = isGuessed || isFinished;
-            const correctAnswer = (p.player.alias && p.player.display)
-                                ? p.player.display 
-                                : `${p.player.firstName} ${p.player.lastName}`;
+            const correctAnswer = p.player.alias && p.player.display
+                ? p.player.display
+                : `${p.player.firstName} ${p.player.lastName}`;
 
             return (
-              <li key={p.id} className={`player-row ${isGuessed ? "revealed" : ""} ${isMissing ? "missed" : ""}`}>
-                <span className="shirt-number">{p.shirtNumber ?? "?"}</span>
-                <span 
-                  className="history-player-name"
+              <li
+                key={p.id}
+                className={`flex items-center justify-between gap-2.5 my-0.5 text-base ${
+                  isGuessed ? "text-[#bbe017]" : "text-white"
+                }`}
+              >
+                <span className="w-6 text-right font-medium text-slate-300">{p.shirtNumber ?? "?"}</span>
+                <span
+                  className={`text-right font-mono tracking-widest transition-all duration-300 ${
+                    isGuessed ? "animate-reveal" : ""
+                  }`}
                   style={{ color: isMissing ? "#ef4444" : undefined }}
                 >
                   {showRealName ? correctAnswer : maskName(correctAnswer, hintsUsed[p.player.slug])}
@@ -67,10 +74,10 @@ const GuessHistory: React.FC<GuessHistoryProps> = ({
   };
 
   return (
-    <div className="guess-history">
-      <hr></hr>
+    <div className="text-white w-full">
+      <hr className="border-t border-white/10 my-2" />
       {renderTeam(homeLineup[0]?.team, homeLineup)}
-      <hr></hr>
+      <hr className="border-t border-white/10 my-2" />
       {renderTeam(awayLineup[0]?.team, awayLineup)}
     </div>
   );
