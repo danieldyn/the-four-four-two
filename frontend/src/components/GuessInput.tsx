@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 /**
  * The shape of the Guess Input panel's attributes.
@@ -17,6 +17,7 @@ interface GuessInputProps {
  */
 const GuessInput: React.FC<GuessInputProps> = ({ onGuess, onHint, isFinished, onResign }) => {
   const [value, setValue] = useState<string>("");
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -27,32 +28,36 @@ const GuessInput: React.FC<GuessInputProps> = ({ onGuess, onHint, isFinished, on
 
     onGuess(trimmedGuess);
     setValue("");
+
+    // Dismiss keyboard on mobile after submission
+    inputRef.current?.blur();
   };
 
   return (
-    <form onSubmit={handleSubmit} className="guess-form">
+    <form onSubmit={handleSubmit} className="my-1.5 flex justify-between items-center gap-2 w-full max-w-[360px] flex-nowrap">
       <input
+        ref={inputRef}
         type="text"
         value={value}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
-        placeholder="Enter player last name"
-        className="guess-input"
+        placeholder="Enter player name"
         disabled={isFinished}
+        className="flex-1 min-w-0 p-2 font-bold text-base rounded-md border border-white/20 bg-black/40 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-50"
       />
-      <div className="button-group">
+      <div className="flex items-center gap-2">
         <button
           type="button"
-          className="hint-button"
           onClick={onHint}
           disabled={isFinished}
+          className="m-0 py-2 px-3 bg-[#253fb3] hover:bg-[#2054a8] text-cyan-200 text-base font-medium rounded-md border-0 cursor-pointer whitespace-nowrap transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Hint
         </button>
         <button
           type="button"
-          className="resign-button"
           onClick={onResign}
           disabled={isFinished}
+          className="m-0 py-2 px-3 bg-[#bb4419] hover:bg-[#ba260c] text-rose-200 text-base font-medium rounded-md border-0 cursor-pointer whitespace-nowrap transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isFinished ? "Game Over" : "Resign"}
         </button>
