@@ -32,25 +32,27 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
   const defaultSecondary = "#ffffff";
 
   return (
-    <div className="pitch">
-      {/* Pitch Markings */}
-      <div className="center-line"></div>
-      <div className="center-circle"></div>
-      <div className="center-spot"></div>
+    <div
+      className="relative w-[420px] h-[480px] rounded-xl p-5 overflow-hidden flex flex-col justify-between items-center border-[3px] border-white/70 shadow-[inset_0_0_60px_rgba(0,0,0,0.6),0_10px_30px_rgba(0,0,0,0.4)] bg-[repeating-linear-gradient(to_bottom,#4caf50,#4caf50_40px,#43a047_40px,#43a047_80px)]"
+    >
+      {/* Centre Markings */}
+      <div className="absolute w-full h-[2px] bg-white/70 top-1/2 left-0 -translate-y-1/2 z-[1]" />
+      <div className="absolute w-[120px] h-[120px] border-2 border-white/70 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" />
+      <div className="absolute w-1.5 h-1.5 bg-white/70 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" />
 
       {/* Top Goal Area */}
-      <div className="penalty-box top"></div>
-      <div className="goal-box top"></div>
-      <div className="penalty-arc top"></div>
-      <div className="penalty-spot top"></div>
+      <div className="absolute w-[200px] h-[90px] border-2 border-white/70 border-t-0 left-1/2 -translate-x-1/2 top-0 z-[1]" />
+      <div className="absolute w-[90px] h-[35px] border-2 border-white/70 border-t-0 left-1/2 -translate-x-1/2 top-0 z-[1]" />
+      <div className="absolute w-[70px] h-[35px] top-[90px] rounded-b-[70px] border-2 border-white/70 border-t-0 left-1/2 -translate-x-1/2 z-[1]" />
+      <div className="absolute w-[5px] h-[5px] bg-white/70 rounded-full left-1/2 -translate-x-1/2 top-[65px] z-[1]" />
 
       {/* Bottom Goal Area */}
-      <div className="penalty-box bottom"></div>
-      <div className="goal-box bottom"></div>
-      <div className="penalty-arc bottom"></div>
-      <div className="penalty-spot bottom"></div>
+      <div className="absolute w-[200px] h-[90px] border-2 border-white/70 border-b-0 left-1/2 -translate-x-1/2 bottom-0 z-[1]" />
+      <div className="absolute w-[90px] h-[35px] border-2 border-white/70 border-b-0 left-1/2 -translate-x-1/2 bottom-0 z-[1]" />
+      <div className="absolute w-[70px] h-[35px] bottom-[90px] rounded-t-[70px] border-2 border-white/70 border-b-0 left-1/2 -translate-x-1/2 z-[1]" />
+      <div className="absolute w-[5px] h-[5px] bg-white/70 rounded-full left-1/2 -translate-x-1/2 bottom-[65px] z-[1]" />
 
-      {/* Player Rendering */}
+      {/* Players */}
       {positioned.map((p) => {
         const isGuessed = guesses.some((g) => g.guess === p.player.slug);
         const isMissing = !isGuessed && isFinished;
@@ -59,73 +61,47 @@ const LineupBoard: React.FC<LineupBoardProps> = ({
         return (
           <div
             key={p.id}
-            className="player-wrapper"
+            className="absolute flex flex-col items-center z-[2]"
             style={{
-              position: "absolute",
               left: `${p.x}%`,
               top: `${p.y}%`,
               transform: "translate(-50%, -50%)",
             }}
           >
+            {/* Player Name Pill */}
             {showPlayer && (
-              <div 
-                className="player-name"
+              <div
+                className="absolute bottom-full left-1/2 -translate-x-1/2 text-[0.75rem] font-semibold text-white mb-1.5 text-center whitespace-nowrap z-[3] tracking-[0.5px] bg-black/50 py-[3px] px-2 rounded-xl border border-white/15 backdrop-blur-[2px]"
                 style={{ color: isMissing ? "#ef4444" : undefined }}
               >
-                {p.player.display || p.player.lastName} 
+                {p.player.display || p.player.lastName}
               </div>
             )}
 
-            {/* Added relative wrapper for the badges */}
-            <div style={{ position: "relative" }}>
+            {/* Shirt Token + Badges */}
+            <div className="relative">
               <div
-                className={`player-slot ${showPlayer ? "revealed" : ""}`}
+                className="w-[50px] h-[50px] rounded-full border-2 flex items-center justify-center font-bold"
                 style={{
                   backgroundColor: primaryColour || defaultPrimary,
                   color: secondaryColour || defaultSecondary,
-                  borderColor: secondaryColour || defaultSecondary
+                  borderColor: secondaryColour || defaultSecondary,
                 }}
               >
                 {p.shirtNumber ?? "?"}
               </div>
 
-              {/* Goals - Top Right */}
+              {/* Goals */}
               {p.goalsScored > 0 && (
-                <div
-                  className="player-goals"
-                  style={{
-                    position: "absolute",
-                    top: "-8px",
-                    right: "-12px",
-                    fontSize: "14px",
-                    whiteSpace: "nowrap",
-                    pointerEvents: "none",
-                    zIndex: 10,
-                    filter: "drop-shadow(0px 1px 1px rgba(0,0,0,0.5))"
-                  }}
-                >
+                <div className="absolute -top-2 -right-3 text-[15px] whitespace-nowrap pointer-events-none z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]">
                   {"⚽".repeat(p.goalsScored)}
                 </div>
               )}
 
-              {/* Captain Badge - Bottom Right */}
+              {/* Captain Badge */}
               {p.isCaptain && (
                 <div
-                  className="player-captain"
-                  style={{
-                    position: "absolute",
-                    bottom: "-4px",
-                    right: "-8px",
-                    backgroundColor: "#fbbf24",
-                    color: "#000",
-                    fontSize: "10px",
-                    fontWeight: "bold",
-                    padding: "1px 4px",
-                    borderRadius: "3px",
-                    border: "1px solid #d97706",
-                    pointerEvents: "none",
-                    lineHeight: 1
-                  }}
+                  className="absolute -bottom-1 -right-2 bg-[#fbbf24] text-black text-[11px] font-bold py-[1px] px-1 rounded-[3px] border border-[#d97706] pointer-events-none leading-none"
                   title="Captain"
                 >
                   C

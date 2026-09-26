@@ -180,13 +180,13 @@ const GamePage: React.FC = () => {
   // Return a special victory screen when the user beats all games in the selected category
   if (gameOverMessage) {
     return (
-      <div className="warmup-container">
-        <h2>Category Conquered!</h2>
-        <p>{gameOverMessage}</p>
-        <div className="button-group" style={{ display: "flex", gap: "50px" }}>
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[min(90vw,500px)] max-h-[500px] py-8 px-10 text-center text-slate-200 bg-black/25 border-l border-white/10 rounded-xl box-border">
+        <h2 className="mt-4 text-2xl text-sky-400 animate-pulse font-bold">Category Conquered!</h2>
+        <p className="text-slate-400 text-sm my-3">{gameOverMessage}</p>
+        <div className="flex justify-center gap-12 mt-4">
           <button
             type="button"
-            className="home-button"
+            className="py-2 px-4 bg-[#2e7d32] hover:bg-[#1b5e20] text-white rounded-md border-0 cursor-pointer font-medium transition-colors"
             onClick={() => {
               localStorage.removeItem("playedMatches");
               fetchNewGame();
@@ -196,7 +196,7 @@ const GamePage: React.FC = () => {
           </button>
           <button
             type="button"
-            className="home-button"
+            className="py-2 px-4 bg-[#2e7d32] hover:bg-[#1b5e20] text-white rounded-md border-0 cursor-pointer font-medium transition-colors"
             onClick={() => {
               localStorage.removeItem("playedMatches");
               navigate("/");
@@ -212,12 +212,12 @@ const GamePage: React.FC = () => {
    // Return a special warmup screen while the full match data is unavailable
   if (!match)
     return (
-      <div className="warmup-container">
-        <div className="pitch-spinner">
-          <div className="football">⚽</div>
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-[min(90vw,500px)] max-h-[500px] py-8 px-10 text-center text-slate-200 bg-black/25 border-l border-white/10 rounded-xl box-border">
+        <div className="text-5xl animate-spin">
+          <div>⚽</div>
         </div>
-        <h2>The players are warming up...</h2>
-        <p>Prepare your football knowledge for kickoff time!</p>
+        <h2 className="mt-4 text-2xl text-sky-400 animate-pulse font-bold">The players are warming up...</h2>
+        <p className="text-slate-400 text-sm mt-1">Prepare your football knowledge for kickoff time!</p>
       </div>
     );
 
@@ -225,16 +225,18 @@ const GamePage: React.FC = () => {
   const awayLineup = match.lineups.filter((p) => p.team === match.awayTeam);
 
   return (
-    <div className="game-page">
+    <div className="min-h-screen bg-gradient-to-b from-[#0b1d0b] to-[#123d12] flex flex-col">
       <GameHeader onRestart={fetchNewGame} />
 
       <MatchHeader match={match} />
 
+      {/* Mobile view toggle */}
       <button
-        className="view-toggle-button"
-        onClick={() => setMobileView(mobileView === 'lineups' ? 'history' : 'lineups')}
+        type="button"
+        className="lg:hidden mx-auto my-3 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-teal-200 text-lg"
+        onClick={() => setMobileView(mobileView === "lineups" ? "history" : "lineups")}
       >
-        {mobileView === 'lineups' ? (
+        {mobileView === "lineups" ? (
           <>
             <GridIcon /> Grid View
           </>
@@ -245,10 +247,13 @@ const GamePage: React.FC = () => {
         )}
       </button>
 
-      <div className="game-layout">
-        <div className={`main-content ${mobileView !== 'lineups' ? 'mobile-hidden' : ''}`}>
-
-          <div className="pitches">
+      {/* Main Game Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-10 max-w-[1400px] w-full mx-auto py-5 px-5">
+        {/* Left Side: Pitches Container */}
+        <div
+          className={`flex flex-col items-center gap-[30px] w-full ${mobileView !== "lineups" ? "hidden lg:flex" : "flex"}`}
+        >
+          <div className="flex justify-center gap-14 max-w-[1100px] w-full flex-wrap [&_h2]:bg-black/25 [&_h2]:border-l [&_h2]:border-white/10 [&_h2]:rounded-xl">
             <LineupBoard
               lineup={homeLineup}
               guesses={guesses}
@@ -267,7 +272,12 @@ const GamePage: React.FC = () => {
           </div>
         </div>
 
-        <div className={`side-panel right-panel ${mobileView !== 'history' ? 'mobile-hidden' : ''}`}>
+        {/* Right Side: History Panel */}
+        <div
+          className={`min-h-[600px] bg-black/25 border-l border-white/10 rounded-xl sticky top-5 flex flex-col p-5 gap-[15px] h-full max-h-[calc(100vh-180px)] overflow-y-auto ${
+            mobileView !== "history" ? "hidden lg:flex" : "flex"
+          }`}
+        >
           <GuessHistory
             homeLineup={homeLineup}
             awayLineup={awayLineup}
@@ -277,12 +287,15 @@ const GamePage: React.FC = () => {
           />
         </div>
 
-        <GuessInput
+        {/* Input Bar */}
+        <div className="col-span-1 lg:col-span-2 flex justify-center">
+          <GuessInput
             onGuess={handleGuessSubmission}
             onHint={handleHint}
             isFinished={isFinished}
             onResign={handleResign}
           />
+        </div>
       </div>
     </div>
   );
