@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Universitatea Craiova",
+    "homePrimaryColour": "#004D98",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FCSB",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#002395",
+    "competition": "Liga I 2018/2019",
+    "venue": "Stadionul Ion Oblemenco, Craiova",
+    "date": "2018-10-21",
+    "score": "2 - 1",
+
+    "homeLineup": [
+      { "number": 13, "name": "Mirko Pigliacelli", "position": "GK" },
+      { "number": 15, "name": "Ivan Martić", "position": "RCB" },
+      { "number": 30, "name": "Isaac Donkor", "position": "CB" },
+      { "number": 4, "name": "Renato Kelić", "position": "LCB" },
+      { "number": 2, "name": "Cristian Bărbuț", "position": "RM" },
+      { "number": 11, "name": "Nicușor Bancu", "position": "LM", "isCaptain": true },
+      { "number": 8, "name": "Alexandru Mateiu", "position": "LCM" },
+      { "number": 20, "name": "Matteo Fedele", "position": "RCM", "goalsScored": 1 },
+      { "number": 33, "name": "Valentin Mihăilă", "position": "RW" },
+      { "number": 28, "name": "Alexandru Mitriță", "position": "LW" },
+      { "number": 19, "name": "Elvir Koljić", "position": "ST", "goalsScored": 1 }
+    ],
+
+    "awayLineup": [
+      { "number": 34, "name": "Cristian Bălgrădean", "position": "GK" },
+      { "number": 20, "name": "Romario Benzar", "position": "RB" },
+      { "number": 16, "name": "Bogdan Planić", "position": "RCB" },
+      { "number": 8, "name": "Lucian Filip", "position": "LCB", "isCaptain": true },
+      { "number": 13, "name": "Júnior Morais", "position": "LB", "display": "Júnior Morais" },
+      { "number": 16, "name": "Dragoș Nedelcu", "position": "LDM" },
+      { "number": 23, "name": "Ovidiu Popescu", "position": "RDM" },
+      { "number": 98, "name": "Dennis Man", "position": "RW" },
+      { "number": 10, "name": "Florin Tănase", "position": "CAM" },
+      { "number": 17, "name": "Florinel Coman", "position": "LW" },
+      { "number": 9, "name": "Harlem Gnohéré", "position": "ST" }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 // REVIEW: More categories are to be added
-const CATEGORIES = ["All Matches", "World Cup", "Champions League"];
+const CATEGORIES = ["All Matches", "World Cup", "Champions League", "🇷🇴 SuperLiga"];
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
     <main className="min-h-screen flex justify-center items-center py-10 px-4">
       {/* Central Card */}
       <div className="w-full max-w-2xl bg-black/35 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-10 shadow-2xl flex flex-col gap-8">
-        
+
         {/* Title & Introduction */}
         <header className="text-center space-y-3">
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-emerald-200 m-0">
@@ -62,11 +62,11 @@ const HomePage: React.FC = () => {
           <p></p>
           <div className="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
             <p className="text-left">
-              Type the player&apos;s <strong className="text-lime-200">last name</strong> and hit Enter. 
+              Type the player&apos;s <strong className="text-lime-200">last name</strong> and hit Enter.
               Accents are optional. A correct guess immediately reveals the player on the tactical board and the panel.
             </p>
             <p className="text-left">
-              <strong className="text-lime-200">Tiebreaker rule:</strong> If multiple players share a surname 
+              <strong className="text-lime-200">Tiebreaker rule:</strong> If multiple players share a surname
               (e.g., Gabriel and Diego Milito in 2009 UCL), you must type their first name as well to distinguish them.
             </p>
             <p className="text-left">

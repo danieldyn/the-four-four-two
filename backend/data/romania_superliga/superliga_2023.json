@@ -1,0 +1,124 @@
+[
+  {
+    "homeTeam": "Petrolul Ploiești",
+    "homePrimaryColour": "#FDE100",
+    "homeSecondaryColour": "#004D98",
+    "awayTeam": "FC Rapid București",
+    "awayPrimaryColour": "#7A003C",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "🇷🇴 SuperLiga 2022/2023",
+    "venue": "Stadionul Ilie Oană, Ploiești",
+    "date": "2022-08-13",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 31, "name": "Octavian Vâlceanu", "position": "GK" },
+      { "number": 3, "name": "Bart Meijers", "position": "RCB" },
+      { "number": 30, "name": "Gabriel Tamaș", "position": "CB", "isCaptain": true },
+      { "number": 2, "name": "Marian Huja", "position": "LCB" },
+      { "number": 5, "name": "Valentin Țicu", "position": "LM" },
+      { "number": 11, "name": "Takayuki Seto", "position": "LCM" },
+      { "number": 26, "name": "Georgi Pashov", "position": "RM" },
+      { "number": 8, "name": "Jair Tavares da Silva", "position": "RCM", "alias": "jair", "display": "Jair" },
+      { "number": 24, "name": "Marius Cioiu", "position": "RW" },
+      { "number": 7, "name": "Gheorghe Grozav", "position": "LW", "goalsScored": 1 },
+      { "number": 22, "name": "Mirko Ivanovski", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 31, "name": "Horațiu Moldovan", "position": "GK" },
+      { "number": 13, "name": "Júnior Morais", "position": "RB", "display": "Júnior Morais" },
+      { "number": 22, "name": "Cristian Săpunaru", "position": "RCB", "isCaptain": true },
+      { "number": 6, "name": "Paul Iacob", "position": "LCB" },
+      { "number": 3, "name": "Florin Ștefan", "position": "LB" },
+      { "number": 14, "name": "Mattias Käit", "position": "RCM" },
+      { "number": 4, "name": "Ljuban Crepulja", "position": "CDM" },
+      { "number": 8, "name": "Andrei Ciobanu", "position": "LCM" },
+      { "number": 7, "name": "Antonio Sefer", "position": "RW" },
+      { "number": 96, "name": "Jayson Papeau", "position": "LW" },
+      { "number": 45, "name": "Marko Dugandžić", "position": "ST" }
+    ]
+  },
+
+  {
+    "homeTeam": "FC Rapid București",
+    "homePrimaryColour": "#7A003C",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FCSB",
+    "awayPrimaryColour": "#002395",
+    "awaySecondaryColour": "#DA291C",
+    "competition": "🇷🇴 SuperLiga 2022/2023",
+    "venue": "Stadionul Giulești, Bucharest",
+    "date": "2023-04-23",
+    "score": "1 - 0",
+
+    "homeLineup": [
+      { "number": 31, "name": "Horațiu Moldovan", "position": "GK" },
+      { "number": 19, "name": "Răzvan Onea", "position": "RB" },
+      { "number": 22, "name": "Cristian Săpunaru", "position": "RCB", "isCaptain": true },
+      { "number": 21, "name": "Dragoș Grigore", "position": "LCB" },
+      { "number": 13, "name": "Júnior Morais", "position": "LB", "display": "Júnior Morais" },
+      { "number": 23, "name": "Alexandru Albu", "position": "LDM", "goalsScored": 1 },
+      { "number": 14, "name": "Mattias Käit", "position": "RDM" },
+      { "number": 7, "name": "Antonio Sefer", "position": "RW" },
+      { "number": 10, "name": "Alexandru Ioniță", "position": "CAM" },
+      { "number": 70, "name": "Funsho Bamgboye", "position": "LW" },
+      { "number": 45, "name": "Marko Dugandžić", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 32, "name": "Ștefan Târnovanu", "position": "GK" },
+      { "number": 22, "name": "Deian Sorescu", "position": "RB" },
+      { "number": 5, "name": "Joyskim Dawa", "position": "RCB" },
+      { "number": 16, "name": "Joonas Tamm", "position": "LCB" },
+      { "number": 33, "name": "Risto Radunovic", "position": "LB" },
+      { "number": 18, "name": "Malcom Edjouma", "position": "RCM" },
+      { "number": 8, "name": "Adrian Șut", "position": "CDM" },
+      { "number": 27, "name": "Darius Olaru", "position": "LCM", "isCaptain": true },
+      { "number": 10, "name": "Octavian Popescu", "position": "RW", "display": "Oct. Popescu" },
+      { "number": 96, "name": "Andrea Compagno", "position": "ST" },
+      { "number": 7, "name": "Florinel Coman", "position": "LW" }
+    ]
+  },
+
+  {
+    "homeTeam": "Farul Constanța",
+    "homePrimaryColour": "#FFFFFF",
+    "homeSecondaryColour": "#004D98",
+    "awayTeam": "FCSB",
+    "awayPrimaryColour": "#DA291C",
+    "awaySecondaryColour": "#002395",
+    "competition": "🇷🇴 SuperLiga 2022/2023",
+    "venue": "Stadionul Central, Ovidiu",
+    "date": "2023-05-21",
+    "score": "3 - 2",
+
+    "homeLineup": [
+      { "number": 1, "name": "Marian Aioani", "position": "GK" },
+      { "number": 25, "name": "David Kiki", "position": "RCB" },
+      { "number": 17, "name": "Ionuț Larie", "position": "RCB", "isCaptain": true },
+      { "number": 18, "name": "Andrei Artean", "position": "LCB" },
+      { "number": 27, "name": "Andrei Borza", "position": "LB" },
+      { "number": 6, "name": "Tudor Băluță", "position": "RCM", "goalsScored": 1 },
+      { "number": 16, "name": "Dragoș Nedelcu", "position": "CDM" },
+      { "number": 24, "name": "Constantin Grameni", "position": "LCM" },
+      { "number": 26, "name": "Adrian Mazilu", "position": "RW" },
+      { "number": 9, "name": "Louis Munteanu", "position": "ST", "goalsScored": 1 },
+      { "number": 11, "name": "Mateus Santos", "position": "LW", "alias": "mateus", "display": "Mateus Santos", "goalsScored": 1 }
+    ],
+
+    "awayLineup": [
+      { "number": 32, "name": "Ștefan Târnovanu", "position": "GK" },
+      { "number": 22, "name": "Deian Sorescu", "position": "RB" },
+      { "number": 5, "name": "Joyskim Dawa", "position": "RCB" },
+      { "number": 16, "name": "Joonas Tamm", "position": "LCB" },
+      { "number": 33, "name": "Risto Radunovic", "position": "LB" },
+      { "number": 23, "name": "Ovidiu Popescu", "position": "RCM", "display": "Ov. Popescu" },
+      { "number": 8, "name": "Adrian Șut", "position": "CDM", "goalsScored": 1 },
+      { "number": 27, "name": "Darius Olaru", "position": "LCM", "isCaptain": true },
+      { "number": 10, "name": "Octavian Popescu", "position": "RW", "display": "Oct. Popescu" },
+      { "number": 96, "name": "Andrea Compagno", "position": "ST", "goalsScored": 1 },
+      { "number": 7, "name": "Florinel Coman", "position": "LW" }
+    ]
+  }
+]

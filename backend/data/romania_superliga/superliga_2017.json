@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "Dinamo București",
+    "homePrimaryColour": "#E30613",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FCSB",
+    "awayPrimaryColour": "#002395",
+    "awaySecondaryColour": "#DA291C",
+    "competition": "🇷🇴 SuperLiga 2016/2017",
+    "venue": "Arena Națională, Bucharest",
+    "date": "2017-05-01",
+    "score": "2 - 1",
+
+    "homeLineup": [
+      { "number": 26, "name": "Jaime Penedo", "position": "GK" },
+      { "number": 29, "name": "José Romera", "position": "RB" },
+      { "number": 15, "name": "Claude Dielna", "position": "LCB" },
+      { "number": 5, "name": "Ionuț Nedelcearu", "position": "RCB" },
+      { "number": 7, "name": "Steliano Filip", "position": "LB" },
+      { "number": 18, "name": "May Mahlangu", "position": "RDM" },
+      { "number": 20, "name": "Antun Palić", "position": "LDM" },
+      { "number": 4, "name": "Sergiu Hanca", "position": "RW", "goalsScored": 2 },
+      { "number": 9, "name": "Rivaldo Vítor Mosca Ferreira Júnior", "position": "CAM", "alias": "rivaldinho", "display": "Rivaldinho" },
+      { "number": 10, "name": "Dan Nistor", "position": "LW", "isCaptain": true },
+      { "number": 17, "name": "Adam Nemec", "position": "ST" }
+    ],
+
+    "awayLineup": [
+      { "number": 1, "name": "Florin Niță", "position": "GK" },
+      { "number": 21, "name": "Marian Pleașcă", "position": "RB", "goalsScored": 1 },
+      { "number": 14, "name": "Mihai Bălașa", "position": "RCB" },
+      { "number": 21, "name": "Wilfried Moke", "position": "LCB" },
+      { "number": 15, "name": "Marko Momčilović", "position": "LB" },
+      { "number": 5, "name": "Mihai Pintilii", "position": "RDM", "isCaptain": true },
+      { "number": 23, "name": "Ovidiu Popescu", "position": "LDM" },
+      { "number": 44, "name": "Gabriel Enache", "position": "RW" },
+      { "number": 27, "name": "Fernando Boldrin", "position": "CAM", "display": "Fernando Boldrin" },
+      { "number": 10, "name": "Florin Tănase", "position": "LW" },
+      { "number": 7, "name": "Denis Alibec", "position": "ST" }
+    ]
+  }
+]

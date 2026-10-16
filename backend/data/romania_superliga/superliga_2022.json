@@ -1,0 +1,42 @@
+[
+  {
+    "homeTeam": "FCSB",
+    "homePrimaryColour": "#DA291C",
+    "homeSecondaryColour": "#002395",
+    "awayTeam": "Dinamo București",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#E30613",
+    "competition": "🇷🇴 SuperLiga 2021/2022",
+    "venue": "Arena Națională, Bucharest",
+    "date": "2021-09-12",
+    "score": "6 - 0",
+
+    "homeLineup": [
+      { "number": 99, "name": "Andrei Vlad", "position": "GK" },
+      { "number": 2, "name": "Valentin Crețu", "position": "RB" },
+      { "number": 4, "name": "Andrei Miron", "position": "RCB", "isCaptain": true, "goalsScored": 1 },
+      { "number": 55, "name": "Paulo Vinícius", "position": "LCB", "goalsScored": 1 },
+      { "number": 33, "name": "Risto Radunovic", "position": "LB" },
+      { "number": 27, "name": "Darius Olaru", "position": "CDM" },
+      { "number": 17, "name": "Iulian Cristea", "position": "LCM" },
+      { "number": 9, "name": "Octavian Popescu", "position": "RCM", "goalsScored": 1, "display": "Oct. Popescu" },
+      { "number": 98, "name": "Andrei Cordea", "position": "RW", "goalsScored": 1 },
+      { "number": 28, "name": "Claudiu Keșerü", "position": "ST", "goalsScored": 1 },
+      { "number": 22, "name": "Valentin Gheorghe", "position": "LW", "goalsScored": 1 }
+    ],
+
+    "awayLineup": [
+      { "number": 12, "name": "Mihai Eșanu", "position": "GK" },
+      { "number": 3, "name": "Andrei Radu", "position": "RB" },
+      { "number": 24, "name": "Deniz Giafer", "position": "RCB" },
+      { "number": 27, "name": "Ricardo Grigore", "position": "LCB" },
+      { "number": 75, "name": "Costin Amzăr", "position": "LB" },
+      { "number": 7, "name": "Steliano Filip", "position": "LCM" },
+      { "number": 5, "name": "Alexandru Răuță", "position": "CDM" },
+      { "number": 18, "name": "Cătălin Itu", "position": "RCM" },
+      { "number": 22, "name": "Deian Sorescu", "position": "LW" },
+      { "number": 10, "name": "Cosmin Matei", "position": "RW" },
+      { "number": 8, "name": "Gabriel Torje", "position": "ST", "isCaptain": true }
+    ]
+  }
+]

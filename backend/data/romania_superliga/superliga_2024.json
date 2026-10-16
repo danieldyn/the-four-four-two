@@ -1,0 +1,83 @@
+[
+  {
+    "homeTeam": "Universitatea Cluj",
+    "homePrimaryColour": "#000000",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "CFR Cluj",
+    "awayPrimaryColour": "#800000",
+    "awaySecondaryColour": "#FFFFFF",
+    "competition": "🇷🇴 SuperLiga 2023/2024",
+    "venue": "Cluj Arena, Cluj-Napoca",
+    "date": "2023-08-21",
+    "score": "3 - 4",
+
+    "homeLineup": [
+      { "number": 33, "name": "Plamen Iliev", "position": "GK" },
+      { "number": 26, "name": "Dorinel Oancea", "position": "RWB" },
+      { "number": 17, "name": "Andrei Pitian", "position": "RCB" },
+      { "number": 4, "name": "George Miron", "position": "CB" },
+      { "number": 3, "name": "Bogdan Mitrea", "position": "LCB" },
+      { "number": 5, "name": "Bogdan Vătăjelu", "position": "LWB" },
+      { "number": 16, "name": "Dan Nistor", "position": "RCM", "goalsScored": 1 },
+      { "number": 94, "name": "Ovidiu Bic", "position": "CM" },
+      { "number": 27, "name": "Alexandru Chipciu", "position": "LCM", "isCaptain": true },
+      { "number": 9, "name": "Ianis Stoica", "position": "RS", "goalsScored": 2 },
+      { "number": 19, "name": "Daniel Popa", "position": "LS" }
+    ],
+
+    "awayLineup": [
+      { "number": 90, "name": "Răzvan Sava", "position": "GK" },
+      { "number": 7, "name": "Ermal Krasniqi", "position": "RWB" },
+      { "number": 19, "name": "Vasile Mogoș", "position": "RCB" },
+      { "number": 6, "name": "Arlind Ajeti", "position": "CB", "goalsScored": 1 },
+      { "number": 44, "name": "Anton Krešić", "position": "LCB" },
+      { "number": 45, "name": "Mário Camora", "position": "LWB", "isCaptain": true },
+      { "number": 73, "name": "Karlo Muhar", "position": "LCM" },
+      { "number": 77, "name": "Panagiotis Tachtsidis", "position": "CDM" },
+      { "number": 29, "name": "Durel Avounou", "position": "RCM", "goalsScored": 1 },
+      { "number": 30, "name": "Daniel Bîrligea", "position": "RS" },
+      { "number": 17, "name": "Philip Otele", "position": "LS", "goalsScored": 1 }
+    ]
+  },
+
+  {
+    "homeTeam": "FC Rapid București",
+    "homePrimaryColour": "#7A003C",
+    "homeSecondaryColour": "#FFFFFF",
+    "awayTeam": "FCSB",
+    "awayPrimaryColour": "#FFFFFF",
+    "awaySecondaryColour": "#DA291C",
+    "competition": "🇷🇴 SuperLiga 2023/2024",
+    "venue": "Arena Națională, Bucharest",
+    "date": "2024-03-09",
+    "score": "4 - 0",
+
+    "homeLineup": [
+      { "number": 16, "name": "Marian Aioani", "position": "GK" },
+      { "number": 47, "name": "Christopher Braun", "position": "RB" },
+      { "number": 22, "name": "Cristian Săpunaru", "position": "RCB", "isCaptain": true },
+      { "number": 6, "name": "Paul Iacob", "position": "LCB", "goalsScored": 1 },
+      { "number": 19, "name": "Robert Bădescu", "position": "LB" },
+      { "number": 14, "name": "Jakub Hromada", "position": "RCM" },
+      { "number": 26, "name": "Răzvan Oaidă", "position": "LCM" },
+      { "number": 8, "name": "Florent Hasani", "position": "CM" },
+      { "number": 77, "name": "Ermal Krasniqi", "position": "RW", "goalsScored": 1 },
+      { "number": 96, "name": "Jayson Papeau", "position": "LW" },
+      { "number": 9, "name": "Albion Rrahmani", "position": "ST", "goalsScored": 2 }
+    ],
+
+    "awayLineup": [
+      { "number": 32, "name": "Ștefan Târnovanu", "position": "GK" },
+      { "number": 2, "name": "Valentin Crețu", "position": "RB" },
+      { "number": 23, "name": "Ovidiu Popescu", "position": "RCB", "display": "Ov. Popescu" },
+      { "number": 5, "name": "Joyskim Dawa", "position": "LCB" },
+      { "number": 33, "name": "Risto Radunović", "position": "LB" },
+      { "number": 16, "name": "Mihai Lixandru", "position": "LCM" },
+      { "number": 8, "name": "Adrian Șut", "position": "CDM" },
+      { "number": 27, "name": "Darius Olaru", "position": "RCM", "isCaptain": true },
+      { "number": 10, "name": "Octavian Popescu", "position": "RW", "display": "Oct. Popescu" },
+      { "number": 7, "name": "Florinel Coman", "position": "LW" },
+      { "number": 25, "name": "Alexandru Băluță", "position": "ST" }
+    ]
+  }
+]
