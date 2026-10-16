@@ -5,12 +5,13 @@ import splitName, { NameSplit } from "../utils/splitName.js";
 
 /**
  * The shape of a player in the imported JSON lineup.
- * Players might have an alias that everyone calls them by, 
+ * Players might have an alias that everyone calls them by,
  * which is significant for UX and the corectness of the game.
  * The displayed name will greatly influence what appear on the UI
  * and may sometimes differ from the alias of the player. An example
  * would be players wearing their first name on the back of their
  * shirt, but being referred to using their full name for clarity.
+ * Optionally, there is support for goalscorers and captains.
  */
 interface PlayerInput {
   name: string;
@@ -39,8 +40,9 @@ interface MatchJson {
 }
 
 /**
- * Coordinates the JSON match import process, leading to 
- * a new entry in the Prisma database.
+ * Coordinates the JSON match import process, leading to
+ * a new Matche entry in the Prisma database.
+ * Creates new players or adds existing ones to the match.
  */
 async function importMatch(filePath: string | undefined): Promise<void> {
   if (!filePath) {
@@ -64,7 +66,7 @@ async function importMatch(filePath: string | undefined): Promise<void> {
   });
 
   /**
-   * Internal helper, adds a player to the given team, using a 
+   * Internal helper, adds a player to the given team, using a
    * full-name slug to avoid confusion.
    */
   async function addPlayer(player: PlayerInput, team: string): Promise<void> {

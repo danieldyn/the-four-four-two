@@ -59,10 +59,15 @@ export const positionCoords: Record<string, Coordinates> = {
   SS: { x: RLEFT_X, y: ATT_Y + 3 }
 };
 
+/**
+ * Creates the rows of players that will be rendered on the screen,
+ * according to the database Lineup objects. Handles spacing and
+ * groups players by proximity for a cleaner and more flexible look.
+ */
 export function mapLineupToPositions(lineup: LineupEntry[]): PositionedPlayer[] {
   // Assign static coordinates first, resulting in a draft of the mapped positions
   const positioned = lineup.map(player => {
-    const coords = (player.position && positionCoords[player.position]) 
+    const coords = (player.position && positionCoords[player.position])
       || { x: CENTRE_X, y: MID_Y };
 
     return {

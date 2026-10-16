@@ -3,6 +3,12 @@ import prisma from "./db.js";
 
 const router: Router = express.Router();
 
+/**
+ * Endpoint that provides a random match object from the database.
+ * Designed to be used when pressing the "New Game" button, so
+ * it allows the URL query to specify the category and the IDs
+ * of the already played matches from that category.
+ */
 router.get("/random", async (_req: Request, res: Response) => {
   try {
     // Extract additional information from the URL query string
